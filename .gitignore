@@ -1,0 +1,38 @@
+# DevTools
+/.idea/
+/.vscode/
+
+# Sub-repositories
+/docs/wiki/
+
+# Environment Files
+/.direnv/
+
+# Dependencies
+**/node_modules/
+apps/macos/.swiftpm/
+apps/macos/Package.resolved
+
+# Build
+__pycache__/
+*.pyc
+*.pyo
+apps/linux/*/build/
+apps/linux/cinnamon/dist/
+apps/linux/common/claudebar-helper/dist/
+apps/linux/common/claudebar-helper/target/
+apps/linux/gnome/dist/
+apps/linux/kde/dist/
+apps/macos/.build/
+apps/macos/dist/
+apps/windows/bin/
+apps/windows/obj/
+apps/windows/publish/
+result*
+
+# Misc.
+.DS_Store
+Thumbs.db
+desktop.ini
+*.sw?
+*~
