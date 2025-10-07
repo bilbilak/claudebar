@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleExecutable</key>
+    <string>ClaudeBar</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>CFBundleIdentifier</key>
+    <string>org.bilbilak.claudebar</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>ClaudeBar</string>
+    <key>CFBundleDisplayName</key>
+    <string>ClaudeBar</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.0.0</string>
+    <key>CFBundleVersion</key>
+    <string>0.0.0</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleSignature</key>
+    <string>????</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>NSHumanReadableCopyright</key>
+    <string>Copyright © 2025-2026 Bilbilak. Released under the GNU GPL v3.</string>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>CFBundleLocalizations</key>
+    <array>
+        <string>en</string>
+        <string>fr</string>
+        <string>nl</string>
+        <string>de</string>
+        <string>es</string>
+        <string>pt</string>
+        <string>sv</string>
+        <string>cs</string>
+        <string>pl</string>
+        <string>ru</string>
+        <string>uk</string>
+        <string>ar</string>
+        <string>fa</string>
+        <string>zh</string>
+        <string>ja</string>
+        <string>ko</string>
+        <string>tr</string>
+        <string>it</string>
+        <string>hi</string>
+    </array>
+</dict>
+</plist>
