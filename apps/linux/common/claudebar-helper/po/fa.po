@@ -1,0 +1,329 @@
+# fa translation for ClaudeBar.
+# Copyright (C) ClaudeBar contributors.
+# This file is distributed under the same license as the ClaudeBar package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: claudebar-helper 1.0\n"
+"POT-Creation-Date: 2026-05-13 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. key: brand_name, window_preferences_title, tooltip_default, installer_app_step
+#. DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.
+msgid "ClaudeBar"
+msgstr "ClaudeBar"
+
+#. key: menu_refresh_now
+msgid "Refresh now"
+msgstr "هم‌اکنون به‌روزرسانی کنید"
+
+#. key: menu_open_usage_page
+msgid "Open claude.ai/settings/usage"
+msgstr "باز کردن claude.ai/settings/usage"
+
+#. key: menu_settings
+msgid "Settings…"
+msgstr "تنظیمات…"
+
+#. key: menu_quit
+msgid "Quit ClaudeBar"
+msgstr "خروج از ClaudeBar"
+
+#. key: menu_refresh, prefs_refresh_section
+msgid "Refresh"
+msgstr "به‌روزرسانی"
+
+#. key: stat_session
+msgid "Current session"
+msgstr "نشست کنونی"
+
+#. key: stat_session_dash
+msgid "Current session: —"
+msgstr "نشست کنونی: —"
+
+#. key: stat_session_with_pct
+msgid "Current session: %d%%"
+msgstr "نشست کنونی: %d%%"
+
+#. key: stat_weekly
+msgid "Weekly (all models)"
+msgstr "هفتگی (همهٔ مدل‌ها)"
+
+#. key: stat_weekly_dash
+msgid "Weekly (all models): —"
+msgstr "هفتگی (همهٔ مدل‌ها): —"
+
+#. key: stat_weekly_with_pct
+msgid "Weekly (all models): %d%%"
+msgstr "هفتگی (همهٔ مدل‌ها): %d%%"
+
+#. key: stat_resets
+#. %s is a time-relative string like 'in 5 min'.
+msgid "Resets %s"
+msgstr "بازنشانی %s"
+
+#. key: time_now
+msgid "now"
+msgstr "اکنون"
+
+#. key: time_dash
+msgid "—"
+msgstr "—"
+
+#. key: time_in_minutes
+msgid "in %d min"
+msgstr "تا %d دقیقه دیگر"
+
+#. key: time_in_hours
+msgid "in %dh"
+msgstr "تا %d ساعت دیگر"
+
+#. key: time_in_hours_minutes
+msgid "in %dh %dm"
+msgstr "تا %d ساعت و %d دقیقه دیگر"
+
+#. key: time_in_days
+msgid "in %dd"
+msgstr "تا %d روز دیگر"
+
+#. key: time_in_days_hours
+msgid "in %dd %dh"
+msgstr "تا %d روز و %d ساعت دیگر"
+
+#. key: status_offline
+msgid "Offline — last value may be stale"
+msgstr "آفلاین — آخرین مقدار ممکن است قدیمی باشد"
+
+#. key: status_rate_limited
+msgid "Rate limited by Claude API"
+msgstr "محدودیت نرخ توسط Claude API اعمال شد"
+
+#. key: status_unauthenticated
+msgid "Not signed in — open Settings to add a token"
+msgstr "وارد نشده‌اید — برای افزودن توکن، تنظیمات را باز کنید"
+
+#. key: auth_sign_in, signin_dialog_heading
+msgid "Sign in with Claude"
+msgstr "ورود با Claude"
+
+#. key: auth_sign_out
+msgid "Sign out"
+msgstr "خروج"
+
+#. key: auth_signed_in_token
+#. %s is the last 6 chars of the access token.
+msgid "Signed in (token ends '…%s')"
+msgstr "وارد شدید (انتهای توکن: «…%s»)"
+
+#. key: auth_not_signed_in
+msgid "Not signed in"
+msgstr "وارد نشده‌اید"
+
+#. key: auth_checking
+msgid "Checking…"
+msgstr "در حال بررسی…"
+
+#. key: auth_waiting_browser
+msgid "Waiting for browser sign-in…"
+msgstr "در انتظار ورود از طریق مرورگر…"
+
+#. key: auth_keyring_error
+msgid "Keyring error — see logs"
+msgstr "خطای حلقه‌کلید — به گزارش‌ها مراجعه کنید"
+
+#. key: auth_sign_in_failed
+msgid "Sign-in failed"
+msgstr "ورود ناموفق بود"
+
+#. key: auth_could_not_start
+msgid "Could not start sign-in"
+msgstr "نمی‌توان فرایند ورود را آغاز کرد"
+
+#. key: auth_copy_link
+#. Short button label — used both in prefs dialogs and as a system-notification action where supported.
+msgid "Copy link"
+msgstr "کپی پیوند"
+
+#. key: auth_link_copied_notify
+#. Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.
+msgid "Sign-in link copied to clipboard"
+msgstr "پیوند ورود در کلیپ‌بورد کپی شد"
+
+#. key: prefs_account
+msgid "Account"
+msgstr "حساب"
+
+#. key: prefs_display
+msgid "Display"
+msgstr "نمایش"
+
+#. key: prefs_advanced
+msgid "Advanced"
+msgstr "پیشرفته"
+
+#. key: prefs_general
+msgid "General"
+msgstr "عمومی"
+
+#. key: prefs_authentication
+msgid "Authentication"
+msgstr "احراز هویت"
+
+#. key: prefs_status
+msgid "Status"
+msgstr "وضعیت"
+
+#. key: prefs_top_bar
+msgid "Top bar"
+msgstr "نوار بالا"
+
+#. key: prefs_tray_icon
+msgid "Tray icon"
+msgstr "نماد سینی"
+
+#. key: prefs_color_thresholds
+msgid "Color thresholds"
+msgstr "آستانه‌های رنگ"
+
+#. key: prefs_labels
+msgid "Labels:"
+msgstr "برچسب‌ها:"
+
+#. key: prefs_account_subtitle
+msgid "Sign in with your Claude account to fetch Max plan usage. Tokens are stored in GNOME Keyring via libsecret."
+msgstr "با حساب Claude خود وارد شوید تا میزان استفاده از طرح Max دریافت شود. توکن‌ها از طریق libsecret در GNOME Keyring ذخیره می‌شوند."
+
+#. key: prefs_show_percentages
+msgid "Show numeric percentages next to bars"
+msgstr "نمایش درصدهای عددی کنار نوارها"
+
+#. key: prefs_show_percentages_subtitle
+msgid "Small session and weekly percentages, stacked beside the bars."
+msgstr "درصدهای کوچک نشست و هفتگی، در کنار نوارها روی هم چیده می‌شوند."
+
+#. key: prefs_show_percentages_beside
+msgid "Show numeric percentages beside the bars"
+msgstr "نمایش درصدهای عددی کنار نوارها"
+
+#. key: prefs_color_thresholds_desc
+msgid "When bars switch from green to orange to red."
+msgstr "زمانی که رنگ نوارها از سبز به نارنجی و سپس قرمز تغییر می‌کند."
+
+#. key: prefs_orange_at
+msgid "Orange at"
+msgstr "نارنجی در"
+
+#. key: prefs_red_at
+msgid "Red at"
+msgstr "قرمز در"
+
+#. key: prefs_orange_at_pct
+msgid "Orange at (%)"
+msgstr "نارنجی در (%)"
+
+#. key: prefs_red_at_pct
+msgid "Red at (%)"
+msgstr "قرمز در (%)"
+
+#. key: prefs_orange_at_short
+msgid "Orange at (%):"
+msgstr "نارنجی در (%):"
+
+#. key: prefs_red_at_short
+msgid "Red at (%):"
+msgstr "قرمز در (%):"
+
+#. key: prefs_poll_interval_seconds
+msgid "Poll interval (seconds)"
+msgstr "فاصلهٔ نظرسنجی (ثانیه)"
+
+#. key: prefs_poll_interval_short
+msgid "Poll interval (s):"
+msgstr "فاصلهٔ نظرسنجی (ث):"
+
+#. key: prefs_helper_path
+msgid "Helper binary:"
+msgstr "فایل اجرایی کمکی:"
+
+#. key: meter_section
+msgid "Floating desktop meter"
+msgstr "سنجهٔ شناور روی دسکتاپ"
+
+#. key: meter_enable
+msgid "Show always-on-top meter on the desktop"
+msgstr "نمایش سنجهٔ همیشه‌بالا روی دسکتاپ"
+
+#. key: meter_desc
+msgid "Small transparent widget rendering full-size bars. Draggable into any corner; right-click to lock or hide."
+msgstr "ابزارک کوچک و شفافی که نوارها را در اندازهٔ کامل نمایش می‌دهد. می‌توان آن را به هر گوشه‌ای کشید؛ برای قفل یا پنهان‌سازی، راست‌کلیک کنید."
+
+#. key: meter_show_percentages
+msgid "Show numeric percentages on the floating meter"
+msgstr "نمایش درصدهای عددی روی سنجهٔ شناور"
+
+#. key: meter_show_percentages_subtitle
+msgid "Adds session and weekly percentages next to the bars on the floating desktop meter (must be enabled below). The tray tooltip always shows percentages."
+msgstr "درصدهای نشست و هفتگی را در کنار نوارها روی سنجهٔ شناور دسکتاپ اضافه می‌کند (باید در پایین فعال شود). راهنمای سینی همیشه درصدها را نشان می‌دهد."
+
+#. key: meter_opacity
+msgid "Opacity:"
+msgstr "کدری:"
+
+#. key: meter_width_px
+msgid "Width (px):"
+msgstr "عرض (پیکسل):"
+
+#. key: meter_width_hint
+msgid "(120–320)"
+msgstr "(۱۲۰–۳۲۰)"
+
+#. key: meter_lock
+msgid "Lock position"
+msgstr "قفل کردن موقعیت"
+
+#. key: meter_unlock
+msgid "Unlock"
+msgstr "بازکردن قفل"
+
+#. key: meter_hide
+msgid "Hide meter"
+msgstr "پنهان کردن سنجه"
+
+#. key: action_ok
+msgid "OK"
+msgstr "تأیید"
+
+#. key: action_cancel
+msgid "Cancel"
+msgstr "لغو"
+
+#. key: action_close
+msgid "Close"
+msgstr "بستن"
+
+#. key: action_open
+msgid "Open"
+msgstr "باز کردن"
+
+#. key: signin_dialog_body
+msgid "Your browser should have opened to claude.ai. Complete sign-in there, then return here. This dialog will close automatically."
+msgstr "مرورگر شما باید claude.ai را باز کرده باشد. ورود را در آنجا تکمیل کنید و سپس به اینجا بازگردید. این پنجره به‌طور خودکار بسته می‌شود."
+
+#. key: tooltip_lines
+msgid "ClaudeBar\nSession: %d%%\nWeekly: %d%%"
+msgstr "ClaudeBar\nنشست: %d%%\nهفتگی: %d%%"
+
+#. key: installer_welcome
+msgid "Welcome to the ClaudeBar Setup"
+msgstr "به نصب ClaudeBar خوش آمدید"
+
+#. key: installer_runtime_step
+msgid ".NET 8 Desktop Runtime (x64)"
+msgstr ".NET 8 Desktop Runtime (x64)"
