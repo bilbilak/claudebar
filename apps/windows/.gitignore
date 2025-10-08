@@ -1,0 +1,10 @@
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.DotSettings.user
+publish/
+
+# Generated at MSI build time by pandoc from /LICENSE.md
+Resources/LICENSE.rtf

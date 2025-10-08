@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="ar-SA" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="BrandName" Value="ClaudeBar" />
+  <String Id="MenuRefreshNow" Value="تحديث الآن" />
+  <String Id="MenuOpenUsagePage" Value="افتح claude.ai/settings/usage" />
+  <String Id="MenuSettings" Value="الإعدادات…" />
+  <String Id="MenuQuit" Value="إنهاء ClaudeBar" />
+  <String Id="MenuRefresh" Value="تحديث" />
+  <String Id="StatSession" Value="الجلسة الحالية" />
+  <String Id="StatSessionDash" Value="الجلسة الحالية: —" />
+  <String Id="StatSessionWithPct" Value="الجلسة الحالية: %d%%" />
+  <String Id="StatWeekly" Value="أسبوعي (جميع النماذج)" />
+  <String Id="StatWeeklyDash" Value="أسبوعي (جميع النماذج): —" />
+  <String Id="StatWeeklyWithPct" Value="أسبوعي (جميع النماذج): %d%%" />
+  <String Id="StatResets" Value="تتم إعادة التعيين %s" />
+  <String Id="TimeNow" Value="الآن" />
+  <String Id="TimeDash" Value="—" />
+  <String Id="TimeInMinutes" Value="خلال %d دقيقة" />
+  <String Id="TimeInHours" Value="خلال %d ساعة" />
+  <String Id="TimeInHoursMinutes" Value="خلال %d ساعة و%d دقيقة" />
+  <String Id="TimeInDays" Value="خلال %d يوم" />
+  <String Id="TimeInDaysHours" Value="خلال %d يوم و%d ساعة" />
+  <String Id="StatusOffline" Value="غير متصل — قد تكون آخر قيمة قديمة" />
+  <String Id="StatusRateLimited" Value="تم تقييد المعدل بواسطة Claude API" />
+  <String Id="StatusUnauthenticated" Value="غير مسجل الدخول — افتح الإعدادات لإضافة رمز" />
+  <String Id="AuthSignIn" Value="تسجيل الدخول باستخدام Claude" />
+  <String Id="AuthSignOut" Value="تسجيل الخروج" />
+  <String Id="AuthSignedInToken" Value="تم تسجيل الدخول (ينتهي الرمز بـ '…%s')" />
+  <String Id="AuthNotSignedIn" Value="غير مسجل الدخول" />
+  <String Id="AuthChecking" Value="جارٍ التحقق…" />
+  <String Id="AuthWaitingBrowser" Value="في انتظار تسجيل الدخول عبر المتصفح…" />
+  <String Id="AuthKeyringError" Value="خطأ في حلقة المفاتيح — راجع السجلات" />
+  <String Id="AuthSignInFailed" Value="فشل تسجيل الدخول" />
+  <String Id="AuthCouldNotStart" Value="تعذّر بدء تسجيل الدخول" />
+  <String Id="AuthCopyLink" Value="نسخ الرابط" />
+  <String Id="AuthLinkCopiedNotify" Value="تم نسخ رابط تسجيل الدخول إلى الحافظة" />
+  <String Id="PrefsAccount" Value="الحساب" />
+  <String Id="PrefsDisplay" Value="العرض" />
+  <String Id="PrefsAdvanced" Value="متقدم" />
+  <String Id="PrefsGeneral" Value="عام" />
+  <String Id="PrefsAuthentication" Value="المصادقة" />
+  <String Id="PrefsStatus" Value="الحالة" />
+  <String Id="PrefsTopBar" Value="الشريط العلوي" />
+  <String Id="PrefsTrayIcon" Value="أيقونة الشريط" />
+  <String Id="PrefsColorThresholds" Value="عتبات الألوان" />
+  <String Id="PrefsRefreshSection" Value="التحديث" />
+  <String Id="PrefsLabels" Value="التسميات:" />
+  <String Id="PrefsAccountSubtitle" Value="سجّل الدخول بحسابك في Claude لجلب استخدام خطة Max. تُخزَّن الرموز في GNOME Keyring عبر libsecret." />
+  <String Id="PrefsShowPercentages" Value="إظهار النسب المئوية الرقمية بجانب الأشرطة" />
+  <String Id="PrefsShowPercentagesSubtitle" Value="نسب مئوية صغيرة للجلسة والأسبوع، مرتّبة بجانب الأشرطة." />
+  <String Id="PrefsShowPercentagesBeside" Value="إظهار النسب المئوية الرقمية بجانب الأشرطة" />
+  <String Id="PrefsColorThresholdsDesc" Value="متى تتغير الأشرطة من الأخضر إلى البرتقالي ثم إلى الأحمر." />
+  <String Id="PrefsOrangeAt" Value="البرتقالي عند" />
+  <String Id="PrefsRedAt" Value="الأحمر عند" />
+  <String Id="PrefsOrangeAtPct" Value="البرتقالي عند (%)" />
+  <String Id="PrefsRedAtPct" Value="الأحمر عند (%)" />
+  <String Id="PrefsOrangeAtShort" Value="البرتقالي عند (%):" />
+  <String Id="PrefsRedAtShort" Value="الأحمر عند (%):" />
+  <String Id="PrefsPollIntervalSeconds" Value="فاصل الاستطلاع (بالثواني)" />
+  <String Id="PrefsPollIntervalShort" Value="فاصل الاستطلاع (ث):" />
+  <String Id="PrefsHelperPath" Value="ملف المساعد التنفيذي:" />
+  <String Id="MeterSection" Value="مقياس عائم على سطح المكتب" />
+  <String Id="MeterEnable" Value="إظهار مقياس فوق كل النوافذ على سطح المكتب" />
+  <String Id="MeterDesc" Value="أداة شفافة صغيرة تعرض أشرطة بحجم كامل. يمكن سحبها إلى أي ركن؛ انقر بزر الفأرة الأيمن للتثبيت أو الإخفاء." />
+  <String Id="MeterShowPercentages" Value="إظهار النسب المئوية الرقمية على المقياس العائم" />
+  <String Id="MeterShowPercentagesSubtitle" Value="يضيف النسب المئوية للجلسة والأسبوع بجوار الأشرطة على المقياس العائم على سطح المكتب (يجب تمكينه أدناه). تعرض تلميحة الشريط النسب المئوية دائمًا." />
+  <String Id="MeterOpacity" Value="الإعتام:" />
+  <String Id="MeterWidthPx" Value="العرض (بكسل):" />
+  <String Id="MeterWidthHint" Value="(120–320)" />
+  <String Id="MeterLock" Value="قفل الموضع" />
+  <String Id="MeterUnlock" Value="إلغاء القفل" />
+  <String Id="MeterHide" Value="إخفاء المقياس" />
+  <String Id="ActionOk" Value="موافق" />
+  <String Id="ActionCancel" Value="إلغاء" />
+  <String Id="ActionClose" Value="إغلاق" />
+  <String Id="ActionOpen" Value="فتح" />
+  <String Id="SigninDialogHeading" Value="تسجيل الدخول باستخدام Claude" />
+  <String Id="SigninDialogBody" Value="من المفترض أن يكون متصفحك قد فتح claude.ai. أكمل تسجيل الدخول هناك ثم عُد إلى هنا. سيُغلق مربع الحوار هذا تلقائيًا." />
+  <String Id="WindowPreferencesTitle" Value="ClaudeBar" />
+  <String Id="TooltipDefault" Value="ClaudeBar" />
+  <String Id="TooltipLines" Value="ClaudeBar
+الجلسة: %d%%
+أسبوعي: %d%%" />
+  <String Id="InstallerWelcome" Value="مرحبًا بك في إعداد ClaudeBar" />
+  <String Id="InstallerRuntimeStep" Value=".NET 8 Desktop Runtime (x64)" />
+  <String Id="InstallerAppStep" Value="ClaudeBar" />
+</WixLocalization>

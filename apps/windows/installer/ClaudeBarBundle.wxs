@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  WiX v4 Bundle (Burn) source for ClaudeBar.
+
+  Wraps the MSI with a chain that:
+    1. Detects whether .NET 8 Desktop Runtime (x64) is installed.
+    2. If not, downloads it from Microsoft (aka.ms permalink) at install
+       time and runs it silently. The runtime is NOT embedded in the .exe.
+    3. Then installs the ClaudeBar MSI.
+
+  Resulting artifact: a small bootstrapper .exe (~MSI size) that takes
+  care of the .NET dependency on first install, on machines that don't
+  already have it.
+
+  Build command (alongside the MSI build):
+      wix build `
+          -ext WixToolset.Bal.wixext `
+          -ext WixToolset.Util.wixext `
+          -loc installer\loc\en-us.wxl `
+          -loc installer\loc\fr-FR.wxl `
+          ... (all 18 .wxl files) `
+          -d Version=$version `
+          -d MsiSource=claudebar-windows-v$version.msi `
+          -o claudebar-windows-v$version.exe `
+          installer\ClaudeBarBundle.wxs
+
+  The bundle UpgradeCode is intentionally distinct from the MSI's so the
+  two are tracked as separate products by Windows. Do NOT change it.
+
+  Localization: user-visible strings come from installer/loc/<culture>.wxl
+  via !(loc.Id) references — the same shared .wxl files used by the MSI.
+-->
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:bal="http://wixtoolset.org/schemas/v4/wxs/bal"
+     xmlns:util="http://wixtoolset.org/schemas/v4/wxs/util">
+
+  <Bundle
+      Name="!(loc.BrandName)"
+      Manufacturer="Bilbilak"
+      Version="$(var.Version)"
+      UpgradeCode="D871DEE8-90A6-4486-A5CE-B436D892D779"
+      IconSourceFile="Resources\ClaudeBar.ico"
+      AboutUrl="https://github.com/bilbilak/claudebar"
+      HelpUrl="https://github.com/bilbilak/claudebar/issues">
+
+    <BootstrapperApplication>
+      <bal:WixStandardBootstrapperApplication
+          Theme="hyperlinkLicense"
+          ShowVersion="yes"
+          SuppressOptionsUI="yes"
+          LicenseUrl="https://github.com/bilbilak/claudebar/blob/main/LICENSE" />
+    </BootstrapperApplication>
+
+    <!--
+      Detect whether any .NET Desktop Runtime is registered by the
+      Microsoft installer. Burn's util:RegistrySearch in WiX 7 doesn't
+      accept Format="version", so we can't typed-compare against v8.0.0.
+      Instead we treat the presence of *any* WindowsDesktop runtime as
+      "good enough" — almost all users with .NET 9 also have 8 by side-
+      install, and if a user truly has only 9 the runtime installer
+      Microsoft serves at our DownloadUrl will install 8 alongside.
+      The Microsoft installer is idempotent on already-installed 8.x.
+    -->
+    <util:RegistrySearch
+        Id="DotNetDesktopRuntimeSearch"
+        Variable="DotNetDesktopRuntimeInstalled"
+        Root="HKLM"
+        Key="SOFTWARE\dotnet\Setup\InstalledVersions\x64\sharedfx\Microsoft.WindowsDesktop.App"
+        Value="Version"
+        Result="exists" />
+
+    <Chain>
+      <ExePackage
+          Id="DotNet8Desktop_x64"
+          SourceFile="windowsdesktop-runtime-8.0-win-x64.exe"
+          DisplayName="!(loc.InstallerRuntimeStep)"
+          Cache="remove"
+          PerMachine="yes"
+          Permanent="yes"
+          Vital="yes"
+          Compressed="no"
+          DownloadUrl="https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x64.exe"
+          InstallArguments="/install /quiet /norestart"
+          DetectCondition="DotNetDesktopRuntimeInstalled">
+        <ExitCode Value="0" Behavior="success" />
+        <ExitCode Value="1602" Behavior="error" />     <!-- user cancel -->
+        <ExitCode Value="1641" Behavior="forceReboot" />
+        <ExitCode Value="3010" Behavior="forceReboot" />
+      </ExePackage>
+
+      <MsiPackage
+          Id="ClaudeBarMsi"
+          SourceFile="$(var.MsiSource)"
+          DisplayName="!(loc.InstallerAppStep)"
+          Compressed="yes"
+          Vital="yes"
+          Visible="no" />
+    </Chain>
+  </Bundle>
+</Wix>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrandName" xml:space="preserve">
+    <value>ClaudeBar</value>
+    <comment>DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.</comment>
+  </data>
+  <data name="MenuRefreshNow" xml:space="preserve">
+    <value>지금 새로 고침</value>
+  </data>
+  <data name="MenuOpenUsagePage" xml:space="preserve">
+    <value>claude.ai/settings/usage 열기</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>설정…</value>
+  </data>
+  <data name="MenuQuit" xml:space="preserve">
+    <value>ClaudeBar 종료</value>
+  </data>
+  <data name="MenuRefresh" xml:space="preserve">
+    <value>새로 고침</value>
+  </data>
+  <data name="StatSession" xml:space="preserve">
+    <value>현재 세션</value>
+  </data>
+  <data name="StatSessionDash" xml:space="preserve">
+    <value>현재 세션: —</value>
+  </data>
+  <data name="StatSessionWithPct" xml:space="preserve">
+    <value>현재 세션: %d%%</value>
+  </data>
+  <data name="StatWeekly" xml:space="preserve">
+    <value>주간 (모든 모델)</value>
+  </data>
+  <data name="StatWeeklyDash" xml:space="preserve">
+    <value>주간 (모든 모델): —</value>
+  </data>
+  <data name="StatWeeklyWithPct" xml:space="preserve">
+    <value>주간 (모든 모델): %d%%</value>
+  </data>
+  <data name="StatResets" xml:space="preserve">
+    <value>%s 후 초기화</value>
+    <comment>%s is a time-relative string like 'in 5 min'.</comment>
+  </data>
+  <data name="TimeNow" xml:space="preserve">
+    <value>지금</value>
+  </data>
+  <data name="TimeDash" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="TimeInMinutes" xml:space="preserve">
+    <value>%d분 후</value>
+  </data>
+  <data name="TimeInHours" xml:space="preserve">
+    <value>%d시간 후</value>
+  </data>
+  <data name="TimeInHoursMinutes" xml:space="preserve">
+    <value>%d시간 %d분 후</value>
+  </data>
+  <data name="TimeInDays" xml:space="preserve">
+    <value>%d일 후</value>
+  </data>
+  <data name="TimeInDaysHours" xml:space="preserve">
+    <value>%d일 %d시간 후</value>
+  </data>
+  <data name="StatusOffline" xml:space="preserve">
+    <value>오프라인 — 마지막 값이 오래되었을 수 있습니다</value>
+  </data>
+  <data name="StatusRateLimited" xml:space="preserve">
+    <value>Claude API의 속도 제한에 도달했습니다</value>
+  </data>
+  <data name="StatusUnauthenticated" xml:space="preserve">
+    <value>로그인되어 있지 않습니다 — 설정을 열어 토큰을 추가하세요</value>
+  </data>
+  <data name="AuthSignIn" xml:space="preserve">
+    <value>Claude로 로그인</value>
+  </data>
+  <data name="AuthSignOut" xml:space="preserve">
+    <value>로그아웃</value>
+  </data>
+  <data name="AuthSignedInToken" xml:space="preserve">
+    <value>로그인됨 (토큰 끝자리 '…%s')</value>
+    <comment>%s is the last 6 chars of the access token.</comment>
+  </data>
+  <data name="AuthNotSignedIn" xml:space="preserve">
+    <value>로그인되어 있지 않음</value>
+  </data>
+  <data name="AuthChecking" xml:space="preserve">
+    <value>확인 중…</value>
+  </data>
+  <data name="AuthWaitingBrowser" xml:space="preserve">
+    <value>브라우저에서 로그인 대기 중…</value>
+  </data>
+  <data name="AuthKeyringError" xml:space="preserve">
+    <value>키링 오류 — 로그를 확인하세요</value>
+  </data>
+  <data name="AuthSignInFailed" xml:space="preserve">
+    <value>로그인에 실패했습니다</value>
+  </data>
+  <data name="AuthCouldNotStart" xml:space="preserve">
+    <value>로그인을 시작할 수 없습니다</value>
+  </data>
+  <data name="AuthCopyLink" xml:space="preserve">
+    <value>링크 복사</value>
+    <comment>Short button label — used both in prefs dialogs and as a system-notification action where supported.</comment>
+  </data>
+  <data name="AuthLinkCopiedNotify" xml:space="preserve">
+    <value>로그인 링크가 클립보드에 복사되었습니다</value>
+    <comment>Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.</comment>
+  </data>
+  <data name="PrefsAccount" xml:space="preserve">
+    <value>계정</value>
+  </data>
+  <data name="PrefsDisplay" xml:space="preserve">
+    <value>표시</value>
+  </data>
+  <data name="PrefsAdvanced" xml:space="preserve">
+    <value>고급</value>
+  </data>
+  <data name="PrefsGeneral" xml:space="preserve">
+    <value>일반</value>
+  </data>
+  <data name="PrefsAuthentication" xml:space="preserve">
+    <value>인증</value>
+  </data>
+  <data name="PrefsStatus" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="PrefsTopBar" xml:space="preserve">
+    <value>상단 표시줄</value>
+  </data>
+  <data name="PrefsTrayIcon" xml:space="preserve">
+    <value>트레이 아이콘</value>
+  </data>
+  <data name="PrefsColorThresholds" xml:space="preserve">
+    <value>색상 임계값</value>
+  </data>
+  <data name="PrefsRefreshSection" xml:space="preserve">
+    <value>새로 고침</value>
+  </data>
+  <data name="PrefsLabels" xml:space="preserve">
+    <value>레이블:</value>
+  </data>
+  <data name="PrefsAccountSubtitle" xml:space="preserve">
+    <value>Max 요금제 사용량을 가져오려면 Claude 계정으로 로그인하십시오. 토큰은 libsecret을 통해 GNOME Keyring에 저장됩니다.</value>
+  </data>
+  <data name="PrefsShowPercentages" xml:space="preserve">
+    <value>막대 옆에 숫자 백분율 표시</value>
+  </data>
+  <data name="PrefsShowPercentagesSubtitle" xml:space="preserve">
+    <value>막대 옆에 작은 세션 및 주간 백분율이 세로로 표시됩니다.</value>
+  </data>
+  <data name="PrefsShowPercentagesBeside" xml:space="preserve">
+    <value>막대 옆에 숫자 백분율 표시</value>
+  </data>
+  <data name="PrefsColorThresholdsDesc" xml:space="preserve">
+    <value>막대 색상이 녹색에서 주황색, 빨간색으로 바뀌는 시점입니다.</value>
+  </data>
+  <data name="PrefsOrangeAt" xml:space="preserve">
+    <value>주황색</value>
+  </data>
+  <data name="PrefsRedAt" xml:space="preserve">
+    <value>빨간색</value>
+  </data>
+  <data name="PrefsOrangeAtPct" xml:space="preserve">
+    <value>주황색 (%)</value>
+  </data>
+  <data name="PrefsRedAtPct" xml:space="preserve">
+    <value>빨간색 (%)</value>
+  </data>
+  <data name="PrefsOrangeAtShort" xml:space="preserve">
+    <value>주황색 (%):</value>
+  </data>
+  <data name="PrefsRedAtShort" xml:space="preserve">
+    <value>빨간색 (%):</value>
+  </data>
+  <data name="PrefsPollIntervalSeconds" xml:space="preserve">
+    <value>폴링 간격(초)</value>
+  </data>
+  <data name="PrefsPollIntervalShort" xml:space="preserve">
+    <value>폴링 간격(초):</value>
+  </data>
+  <data name="PrefsHelperPath" xml:space="preserve">
+    <value>도우미 바이너리:</value>
+  </data>
+  <data name="MeterSection" xml:space="preserve">
+    <value>데스크탑 부동 미터</value>
+  </data>
+  <data name="MeterEnable" xml:space="preserve">
+    <value>데스크탑에 항상 위에 표시되는 미터 표시</value>
+  </data>
+  <data name="MeterDesc" xml:space="preserve">
+    <value>전체 크기의 막대를 표시하는 작은 투명 위젯입니다. 원하는 모서리로 끌어다 놓을 수 있으며, 마우스 오른쪽 버튼을 클릭하여 잠그거나 숨길 수 있습니다.</value>
+  </data>
+  <data name="MeterShowPercentages" xml:space="preserve">
+    <value>부동 미터에 숫자 백분율 표시</value>
+  </data>
+  <data name="MeterShowPercentagesSubtitle" xml:space="preserve">
+    <value>부동 데스크탑 미터의 막대 옆에 세션 및 주간 백분율을 추가합니다(아래에서 활성화해야 함). 트레이 도구 설명에는 항상 백분율이 표시됩니다.</value>
+  </data>
+  <data name="MeterOpacity" xml:space="preserve">
+    <value>불투명도:</value>
+  </data>
+  <data name="MeterWidthPx" xml:space="preserve">
+    <value>너비(px):</value>
+  </data>
+  <data name="MeterWidthHint" xml:space="preserve">
+    <value>(120–320)</value>
+  </data>
+  <data name="MeterLock" xml:space="preserve">
+    <value>위치 잠금</value>
+  </data>
+  <data name="MeterUnlock" xml:space="preserve">
+    <value>잠금 해제</value>
+  </data>
+  <data name="MeterHide" xml:space="preserve">
+    <value>미터 숨기기</value>
+  </data>
+  <data name="ActionOk" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="ActionCancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="ActionClose" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="ActionOpen" xml:space="preserve">
+    <value>열기</value>
+  </data>
+  <data name="SigninDialogHeading" xml:space="preserve">
+    <value>Claude로 로그인</value>
+  </data>
+  <data name="SigninDialogBody" xml:space="preserve">
+    <value>브라우저가 claude.ai로 열렸을 것입니다. 그곳에서 로그인을 완료한 후 이 화면으로 돌아오십시오. 이 대화 상자는 자동으로 닫힙니다.</value>
+  </data>
+  <data name="WindowPreferencesTitle" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipDefault" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipLines" xml:space="preserve">
+    <value>ClaudeBar
+세션: %d%%
+주간: %d%%</value>
+  </data>
+  <data name="InstallerWelcome" xml:space="preserve">
+    <value>ClaudeBar 설치 프로그램에 오신 것을 환영합니다</value>
+  </data>
+  <data name="InstallerRuntimeStep" xml:space="preserve">
+    <value>.NET 8 Desktop Runtime (x64)</value>
+  </data>
+  <data name="InstallerAppStep" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+</root>

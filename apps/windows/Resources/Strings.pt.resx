@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrandName" xml:space="preserve">
+    <value>ClaudeBar</value>
+    <comment>DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.</comment>
+  </data>
+  <data name="MenuRefreshNow" xml:space="preserve">
+    <value>Atualizar agora</value>
+  </data>
+  <data name="MenuOpenUsagePage" xml:space="preserve">
+    <value>Abrir claude.ai/settings/usage</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>Definições…</value>
+  </data>
+  <data name="MenuQuit" xml:space="preserve">
+    <value>Sair do ClaudeBar</value>
+  </data>
+  <data name="MenuRefresh" xml:space="preserve">
+    <value>Atualizar</value>
+  </data>
+  <data name="StatSession" xml:space="preserve">
+    <value>Sessão atual</value>
+  </data>
+  <data name="StatSessionDash" xml:space="preserve">
+    <value>Sessão atual: —</value>
+  </data>
+  <data name="StatSessionWithPct" xml:space="preserve">
+    <value>Sessão atual: %d%%</value>
+  </data>
+  <data name="StatWeekly" xml:space="preserve">
+    <value>Semanal (todos os modelos)</value>
+  </data>
+  <data name="StatWeeklyDash" xml:space="preserve">
+    <value>Semanal (todos os modelos): —</value>
+  </data>
+  <data name="StatWeeklyWithPct" xml:space="preserve">
+    <value>Semanal (todos os modelos): %d%%</value>
+  </data>
+  <data name="StatResets" xml:space="preserve">
+    <value>Reinicia %s</value>
+    <comment>%s is a time-relative string like 'in 5 min'.</comment>
+  </data>
+  <data name="TimeNow" xml:space="preserve">
+    <value>agora</value>
+  </data>
+  <data name="TimeDash" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="TimeInMinutes" xml:space="preserve">
+    <value>em %d min</value>
+  </data>
+  <data name="TimeInHours" xml:space="preserve">
+    <value>em %d h</value>
+  </data>
+  <data name="TimeInHoursMinutes" xml:space="preserve">
+    <value>em %d h %d min</value>
+  </data>
+  <data name="TimeInDays" xml:space="preserve">
+    <value>em %d d</value>
+  </data>
+  <data name="TimeInDaysHours" xml:space="preserve">
+    <value>em %d d %d h</value>
+  </data>
+  <data name="StatusOffline" xml:space="preserve">
+    <value>Offline — o último valor pode estar desatualizado</value>
+  </data>
+  <data name="StatusRateLimited" xml:space="preserve">
+    <value>Limite de taxa atingido pela Claude API</value>
+  </data>
+  <data name="StatusUnauthenticated" xml:space="preserve">
+    <value>Sessão não iniciada — abra Definições para adicionar um token</value>
+  </data>
+  <data name="AuthSignIn" xml:space="preserve">
+    <value>Iniciar sessão com Claude</value>
+  </data>
+  <data name="AuthSignOut" xml:space="preserve">
+    <value>Terminar sessão</value>
+  </data>
+  <data name="AuthSignedInToken" xml:space="preserve">
+    <value>Sessão iniciada (o token termina em «…%s»)</value>
+    <comment>%s is the last 6 chars of the access token.</comment>
+  </data>
+  <data name="AuthNotSignedIn" xml:space="preserve">
+    <value>Sessão não iniciada</value>
+  </data>
+  <data name="AuthChecking" xml:space="preserve">
+    <value>A verificar…</value>
+  </data>
+  <data name="AuthWaitingBrowser" xml:space="preserve">
+    <value>À espera do início de sessão no navegador…</value>
+  </data>
+  <data name="AuthKeyringError" xml:space="preserve">
+    <value>Erro do porta-chaves — consulte os registos</value>
+  </data>
+  <data name="AuthSignInFailed" xml:space="preserve">
+    <value>Falha ao iniciar sessão</value>
+  </data>
+  <data name="AuthCouldNotStart" xml:space="preserve">
+    <value>Não foi possível iniciar a sessão</value>
+  </data>
+  <data name="AuthCopyLink" xml:space="preserve">
+    <value>Copiar ligação</value>
+    <comment>Short button label — used both in prefs dialogs and as a system-notification action where supported.</comment>
+  </data>
+  <data name="AuthLinkCopiedNotify" xml:space="preserve">
+    <value>Ligação de início de sessão copiada para a área de transferência</value>
+    <comment>Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.</comment>
+  </data>
+  <data name="PrefsAccount" xml:space="preserve">
+    <value>Conta</value>
+  </data>
+  <data name="PrefsDisplay" xml:space="preserve">
+    <value>Apresentação</value>
+  </data>
+  <data name="PrefsAdvanced" xml:space="preserve">
+    <value>Avançado</value>
+  </data>
+  <data name="PrefsGeneral" xml:space="preserve">
+    <value>Geral</value>
+  </data>
+  <data name="PrefsAuthentication" xml:space="preserve">
+    <value>Autenticação</value>
+  </data>
+  <data name="PrefsStatus" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="PrefsTopBar" xml:space="preserve">
+    <value>Barra superior</value>
+  </data>
+  <data name="PrefsTrayIcon" xml:space="preserve">
+    <value>Ícone da bandeja</value>
+  </data>
+  <data name="PrefsColorThresholds" xml:space="preserve">
+    <value>Limiares de cor</value>
+  </data>
+  <data name="PrefsRefreshSection" xml:space="preserve">
+    <value>Atualização</value>
+  </data>
+  <data name="PrefsLabels" xml:space="preserve">
+    <value>Etiquetas:</value>
+  </data>
+  <data name="PrefsAccountSubtitle" xml:space="preserve">
+    <value>Inicie sessão com a sua conta Claude para obter a utilização do plano Max. Os tokens são armazenados no GNOME Keyring através do libsecret.</value>
+  </data>
+  <data name="PrefsShowPercentages" xml:space="preserve">
+    <value>Mostrar percentagens numéricas ao lado das barras</value>
+  </data>
+  <data name="PrefsShowPercentagesSubtitle" xml:space="preserve">
+    <value>Pequenas percentagens da sessão e semanais, empilhadas ao lado das barras.</value>
+  </data>
+  <data name="PrefsShowPercentagesBeside" xml:space="preserve">
+    <value>Mostrar percentagens numéricas ao lado das barras</value>
+  </data>
+  <data name="PrefsColorThresholdsDesc" xml:space="preserve">
+    <value>Quando as barras passam de verde para laranja e depois para vermelho.</value>
+  </data>
+  <data name="PrefsOrangeAt" xml:space="preserve">
+    <value>Laranja em</value>
+  </data>
+  <data name="PrefsRedAt" xml:space="preserve">
+    <value>Vermelho em</value>
+  </data>
+  <data name="PrefsOrangeAtPct" xml:space="preserve">
+    <value>Laranja em (%)</value>
+  </data>
+  <data name="PrefsRedAtPct" xml:space="preserve">
+    <value>Vermelho em (%)</value>
+  </data>
+  <data name="PrefsOrangeAtShort" xml:space="preserve">
+    <value>Laranja em (%):</value>
+  </data>
+  <data name="PrefsRedAtShort" xml:space="preserve">
+    <value>Vermelho em (%):</value>
+  </data>
+  <data name="PrefsPollIntervalSeconds" xml:space="preserve">
+    <value>Intervalo de sondagem (segundos)</value>
+  </data>
+  <data name="PrefsPollIntervalShort" xml:space="preserve">
+    <value>Intervalo de sondagem (s):</value>
+  </data>
+  <data name="PrefsHelperPath" xml:space="preserve">
+    <value>Binário auxiliar:</value>
+  </data>
+  <data name="MeterSection" xml:space="preserve">
+    <value>Medidor flutuante no ambiente de trabalho</value>
+  </data>
+  <data name="MeterEnable" xml:space="preserve">
+    <value>Mostrar um medidor sempre visível no ambiente de trabalho</value>
+  </data>
+  <data name="MeterDesc" xml:space="preserve">
+    <value>Pequeno widget transparente que apresenta barras em tamanho real. Pode ser arrastado para qualquer canto; clique com o botão direito para bloquear ou ocultar.</value>
+  </data>
+  <data name="MeterShowPercentages" xml:space="preserve">
+    <value>Mostrar percentagens numéricas no medidor flutuante</value>
+  </data>
+  <data name="MeterShowPercentagesSubtitle" xml:space="preserve">
+    <value>Adiciona as percentagens de sessão e semanais ao lado das barras no medidor flutuante do ambiente de trabalho (deve estar ativado abaixo). A dica de ferramenta da bandeja mostra sempre as percentagens.</value>
+  </data>
+  <data name="MeterOpacity" xml:space="preserve">
+    <value>Opacidade:</value>
+  </data>
+  <data name="MeterWidthPx" xml:space="preserve">
+    <value>Largura (px):</value>
+  </data>
+  <data name="MeterWidthHint" xml:space="preserve">
+    <value>(120–320)</value>
+  </data>
+  <data name="MeterLock" xml:space="preserve">
+    <value>Bloquear posição</value>
+  </data>
+  <data name="MeterUnlock" xml:space="preserve">
+    <value>Desbloquear</value>
+  </data>
+  <data name="MeterHide" xml:space="preserve">
+    <value>Ocultar medidor</value>
+  </data>
+  <data name="ActionOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ActionCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="ActionClose" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="ActionOpen" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="SigninDialogHeading" xml:space="preserve">
+    <value>Iniciar sessão com Claude</value>
+  </data>
+  <data name="SigninDialogBody" xml:space="preserve">
+    <value>O seu navegador deverá ter aberto em claude.ai. Conclua o início de sessão aí e regresse a esta janela. Esta caixa de diálogo será fechada automaticamente.</value>
+  </data>
+  <data name="WindowPreferencesTitle" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipDefault" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipLines" xml:space="preserve">
+    <value>ClaudeBar
+Sessão: %d%%
+Semanal: %d%%</value>
+  </data>
+  <data name="InstallerWelcome" xml:space="preserve">
+    <value>Bem-vindo à configuração do ClaudeBar</value>
+  </data>
+  <data name="InstallerRuntimeStep" xml:space="preserve">
+    <value>.NET 8 Desktop Runtime (x64)</value>
+  </data>
+  <data name="InstallerAppStep" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+</root>

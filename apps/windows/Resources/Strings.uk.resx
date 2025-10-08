@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrandName" xml:space="preserve">
+    <value>ClaudeBar</value>
+    <comment>DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.</comment>
+  </data>
+  <data name="MenuRefreshNow" xml:space="preserve">
+    <value>Оновити зараз</value>
+  </data>
+  <data name="MenuOpenUsagePage" xml:space="preserve">
+    <value>Відкрити claude.ai/settings/usage</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>Налаштування…</value>
+  </data>
+  <data name="MenuQuit" xml:space="preserve">
+    <value>Вийти з ClaudeBar</value>
+  </data>
+  <data name="MenuRefresh" xml:space="preserve">
+    <value>Оновити</value>
+  </data>
+  <data name="StatSession" xml:space="preserve">
+    <value>Поточна сесія</value>
+  </data>
+  <data name="StatSessionDash" xml:space="preserve">
+    <value>Поточна сесія: —</value>
+  </data>
+  <data name="StatSessionWithPct" xml:space="preserve">
+    <value>Поточна сесія: %d%%</value>
+  </data>
+  <data name="StatWeekly" xml:space="preserve">
+    <value>За тиждень (усі моделі)</value>
+  </data>
+  <data name="StatWeeklyDash" xml:space="preserve">
+    <value>За тиждень (усі моделі): —</value>
+  </data>
+  <data name="StatWeeklyWithPct" xml:space="preserve">
+    <value>За тиждень (усі моделі): %d%%</value>
+  </data>
+  <data name="StatResets" xml:space="preserve">
+    <value>Скидання %s</value>
+    <comment>%s is a time-relative string like 'in 5 min'.</comment>
+  </data>
+  <data name="TimeNow" xml:space="preserve">
+    <value>зараз</value>
+  </data>
+  <data name="TimeDash" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="TimeInMinutes" xml:space="preserve">
+    <value>через %d хв</value>
+  </data>
+  <data name="TimeInHours" xml:space="preserve">
+    <value>через %d год</value>
+  </data>
+  <data name="TimeInHoursMinutes" xml:space="preserve">
+    <value>через %d год %d хв</value>
+  </data>
+  <data name="TimeInDays" xml:space="preserve">
+    <value>через %d дн</value>
+  </data>
+  <data name="TimeInDaysHours" xml:space="preserve">
+    <value>через %d дн %d год</value>
+  </data>
+  <data name="StatusOffline" xml:space="preserve">
+    <value>Немає з'єднання — останнє значення може бути застарілим</value>
+  </data>
+  <data name="StatusRateLimited" xml:space="preserve">
+    <value>Перевищено ліміт запитів Claude API</value>
+  </data>
+  <data name="StatusUnauthenticated" xml:space="preserve">
+    <value>Не виконано вхід — відкрийте Налаштування, щоб додати токен</value>
+  </data>
+  <data name="AuthSignIn" xml:space="preserve">
+    <value>Увійти через Claude</value>
+  </data>
+  <data name="AuthSignOut" xml:space="preserve">
+    <value>Вийти</value>
+  </data>
+  <data name="AuthSignedInToken" xml:space="preserve">
+    <value>Виконано вхід (токен закінчується на «…%s»)</value>
+    <comment>%s is the last 6 chars of the access token.</comment>
+  </data>
+  <data name="AuthNotSignedIn" xml:space="preserve">
+    <value>Не виконано вхід</value>
+  </data>
+  <data name="AuthChecking" xml:space="preserve">
+    <value>Перевірка…</value>
+  </data>
+  <data name="AuthWaitingBrowser" xml:space="preserve">
+    <value>Очікування входу в браузері…</value>
+  </data>
+  <data name="AuthKeyringError" xml:space="preserve">
+    <value>Помилка сховища ключів — див. журнали</value>
+  </data>
+  <data name="AuthSignInFailed" xml:space="preserve">
+    <value>Не вдалося увійти</value>
+  </data>
+  <data name="AuthCouldNotStart" xml:space="preserve">
+    <value>Не вдалося розпочати вхід</value>
+  </data>
+  <data name="AuthCopyLink" xml:space="preserve">
+    <value>Копіювати посилання</value>
+    <comment>Short button label — used both in prefs dialogs and as a system-notification action where supported.</comment>
+  </data>
+  <data name="AuthLinkCopiedNotify" xml:space="preserve">
+    <value>Посилання для входу скопійовано в буфер обміну</value>
+    <comment>Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.</comment>
+  </data>
+  <data name="PrefsAccount" xml:space="preserve">
+    <value>Обліковий запис</value>
+  </data>
+  <data name="PrefsDisplay" xml:space="preserve">
+    <value>Відображення</value>
+  </data>
+  <data name="PrefsAdvanced" xml:space="preserve">
+    <value>Додатково</value>
+  </data>
+  <data name="PrefsGeneral" xml:space="preserve">
+    <value>Загальні</value>
+  </data>
+  <data name="PrefsAuthentication" xml:space="preserve">
+    <value>Автентифікація</value>
+  </data>
+  <data name="PrefsStatus" xml:space="preserve">
+    <value>Стан</value>
+  </data>
+  <data name="PrefsTopBar" xml:space="preserve">
+    <value>Верхня панель</value>
+  </data>
+  <data name="PrefsTrayIcon" xml:space="preserve">
+    <value>Піктограма в треї</value>
+  </data>
+  <data name="PrefsColorThresholds" xml:space="preserve">
+    <value>Кольорові пороги</value>
+  </data>
+  <data name="PrefsRefreshSection" xml:space="preserve">
+    <value>Оновлення</value>
+  </data>
+  <data name="PrefsLabels" xml:space="preserve">
+    <value>Підписи:</value>
+  </data>
+  <data name="PrefsAccountSubtitle" xml:space="preserve">
+    <value>Увійдіть зі своїм обліковим записом Claude, щоб отримати дані про використання тарифу Max. Токени зберігаються в GNOME Keyring через libsecret.</value>
+  </data>
+  <data name="PrefsShowPercentages" xml:space="preserve">
+    <value>Показувати числові відсотки поруч зі смугами</value>
+  </data>
+  <data name="PrefsShowPercentagesSubtitle" xml:space="preserve">
+    <value>Невеликі відсотки сесії та тижня, розташовані поруч зі смугами.</value>
+  </data>
+  <data name="PrefsShowPercentagesBeside" xml:space="preserve">
+    <value>Показувати числові відсотки поруч зі смугами</value>
+  </data>
+  <data name="PrefsColorThresholdsDesc" xml:space="preserve">
+    <value>Коли смуги змінюють колір із зеленого на помаранчевий, а потім на червоний.</value>
+  </data>
+  <data name="PrefsOrangeAt" xml:space="preserve">
+    <value>Помаранчевий при</value>
+  </data>
+  <data name="PrefsRedAt" xml:space="preserve">
+    <value>Червоний при</value>
+  </data>
+  <data name="PrefsOrangeAtPct" xml:space="preserve">
+    <value>Помаранчевий при (%)</value>
+  </data>
+  <data name="PrefsRedAtPct" xml:space="preserve">
+    <value>Червоний при (%)</value>
+  </data>
+  <data name="PrefsOrangeAtShort" xml:space="preserve">
+    <value>Помаранчевий при (%):</value>
+  </data>
+  <data name="PrefsRedAtShort" xml:space="preserve">
+    <value>Червоний при (%):</value>
+  </data>
+  <data name="PrefsPollIntervalSeconds" xml:space="preserve">
+    <value>Інтервал опитування (секунди)</value>
+  </data>
+  <data name="PrefsPollIntervalShort" xml:space="preserve">
+    <value>Інтервал опитування (с):</value>
+  </data>
+  <data name="PrefsHelperPath" xml:space="preserve">
+    <value>Допоміжний бінарний файл:</value>
+  </data>
+  <data name="MeterSection" xml:space="preserve">
+    <value>Плаваючий індикатор на робочому столі</value>
+  </data>
+  <data name="MeterEnable" xml:space="preserve">
+    <value>Показувати індикатор поверх усіх вікон на робочому столі</value>
+  </data>
+  <data name="MeterDesc" xml:space="preserve">
+    <value>Невеликий прозорий віджет із повнорозмірними смугами. Перетягується в будь-який кут; клацніть правою кнопкою, щоб закріпити або приховати.</value>
+  </data>
+  <data name="MeterShowPercentages" xml:space="preserve">
+    <value>Показувати числові відсотки на плаваючому індикаторі</value>
+  </data>
+  <data name="MeterShowPercentagesSubtitle" xml:space="preserve">
+    <value>Додає відсотки сесії та тижня поруч зі смугами на плаваючому індикаторі робочого стола (має бути ввімкнено нижче). Підказка в треї завжди показує відсотки.</value>
+  </data>
+  <data name="MeterOpacity" xml:space="preserve">
+    <value>Непрозорість:</value>
+  </data>
+  <data name="MeterWidthPx" xml:space="preserve">
+    <value>Ширина (пікс.):</value>
+  </data>
+  <data name="MeterWidthHint" xml:space="preserve">
+    <value>(120–320)</value>
+  </data>
+  <data name="MeterLock" xml:space="preserve">
+    <value>Зафіксувати положення</value>
+  </data>
+  <data name="MeterUnlock" xml:space="preserve">
+    <value>Розблокувати</value>
+  </data>
+  <data name="MeterHide" xml:space="preserve">
+    <value>Сховати індикатор</value>
+  </data>
+  <data name="ActionOk" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="ActionCancel" xml:space="preserve">
+    <value>Скасувати</value>
+  </data>
+  <data name="ActionClose" xml:space="preserve">
+    <value>Закрити</value>
+  </data>
+  <data name="ActionOpen" xml:space="preserve">
+    <value>Відкрити</value>
+  </data>
+  <data name="SigninDialogHeading" xml:space="preserve">
+    <value>Увійти через Claude</value>
+  </data>
+  <data name="SigninDialogBody" xml:space="preserve">
+    <value>Ваш браузер мав відкрити claude.ai. Завершіть вхід там і поверніться сюди. Це діалогове вікно закриється автоматично.</value>
+  </data>
+  <data name="WindowPreferencesTitle" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipDefault" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipLines" xml:space="preserve">
+    <value>ClaudeBar
+Сесія: %d%%
+За тиждень: %d%%</value>
+  </data>
+  <data name="InstallerWelcome" xml:space="preserve">
+    <value>Ласкаво просимо до встановлення ClaudeBar</value>
+  </data>
+  <data name="InstallerRuntimeStep" xml:space="preserve">
+    <value>.NET 8 Desktop Runtime (x64)</value>
+  </data>
+  <data name="InstallerAppStep" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+</root>

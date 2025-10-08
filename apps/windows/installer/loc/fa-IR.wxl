@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="fa-IR" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="BrandName" Value="ClaudeBar" />
+  <String Id="MenuRefreshNow" Value="هم‌اکنون به‌روزرسانی کنید" />
+  <String Id="MenuOpenUsagePage" Value="باز کردن claude.ai/settings/usage" />
+  <String Id="MenuSettings" Value="تنظیمات…" />
+  <String Id="MenuQuit" Value="خروج از ClaudeBar" />
+  <String Id="MenuRefresh" Value="به‌روزرسانی" />
+  <String Id="StatSession" Value="نشست کنونی" />
+  <String Id="StatSessionDash" Value="نشست کنونی: —" />
+  <String Id="StatSessionWithPct" Value="نشست کنونی: %d%%" />
+  <String Id="StatWeekly" Value="هفتگی (همهٔ مدل‌ها)" />
+  <String Id="StatWeeklyDash" Value="هفتگی (همهٔ مدل‌ها): —" />
+  <String Id="StatWeeklyWithPct" Value="هفتگی (همهٔ مدل‌ها): %d%%" />
+  <String Id="StatResets" Value="بازنشانی %s" />
+  <String Id="TimeNow" Value="اکنون" />
+  <String Id="TimeDash" Value="—" />
+  <String Id="TimeInMinutes" Value="تا %d دقیقه دیگر" />
+  <String Id="TimeInHours" Value="تا %d ساعت دیگر" />
+  <String Id="TimeInHoursMinutes" Value="تا %d ساعت و %d دقیقه دیگر" />
+  <String Id="TimeInDays" Value="تا %d روز دیگر" />
+  <String Id="TimeInDaysHours" Value="تا %d روز و %d ساعت دیگر" />
+  <String Id="StatusOffline" Value="آفلاین — آخرین مقدار ممکن است قدیمی باشد" />
+  <String Id="StatusRateLimited" Value="محدودیت نرخ توسط Claude API اعمال شد" />
+  <String Id="StatusUnauthenticated" Value="وارد نشده‌اید — برای افزودن توکن، تنظیمات را باز کنید" />
+  <String Id="AuthSignIn" Value="ورود با Claude" />
+  <String Id="AuthSignOut" Value="خروج" />
+  <String Id="AuthSignedInToken" Value="وارد شدید (انتهای توکن: «…%s»)" />
+  <String Id="AuthNotSignedIn" Value="وارد نشده‌اید" />
+  <String Id="AuthChecking" Value="در حال بررسی…" />
+  <String Id="AuthWaitingBrowser" Value="در انتظار ورود از طریق مرورگر…" />
+  <String Id="AuthKeyringError" Value="خطای حلقه‌کلید — به گزارش‌ها مراجعه کنید" />
+  <String Id="AuthSignInFailed" Value="ورود ناموفق بود" />
+  <String Id="AuthCouldNotStart" Value="نمی‌توان فرایند ورود را آغاز کرد" />
+  <String Id="AuthCopyLink" Value="کپی پیوند" />
+  <String Id="AuthLinkCopiedNotify" Value="پیوند ورود در کلیپ‌بورد کپی شد" />
+  <String Id="PrefsAccount" Value="حساب" />
+  <String Id="PrefsDisplay" Value="نمایش" />
+  <String Id="PrefsAdvanced" Value="پیشرفته" />
+  <String Id="PrefsGeneral" Value="عمومی" />
+  <String Id="PrefsAuthentication" Value="احراز هویت" />
+  <String Id="PrefsStatus" Value="وضعیت" />
+  <String Id="PrefsTopBar" Value="نوار بالا" />
+  <String Id="PrefsTrayIcon" Value="نماد سینی" />
+  <String Id="PrefsColorThresholds" Value="آستانه‌های رنگ" />
+  <String Id="PrefsRefreshSection" Value="به‌روزرسانی" />
+  <String Id="PrefsLabels" Value="برچسب‌ها:" />
+  <String Id="PrefsAccountSubtitle" Value="با حساب Claude خود وارد شوید تا میزان استفاده از طرح Max دریافت شود. توکن‌ها از طریق libsecret در GNOME Keyring ذخیره می‌شوند." />
+  <String Id="PrefsShowPercentages" Value="نمایش درصدهای عددی کنار نوارها" />
+  <String Id="PrefsShowPercentagesSubtitle" Value="درصدهای کوچک نشست و هفتگی، در کنار نوارها روی هم چیده می‌شوند." />
+  <String Id="PrefsShowPercentagesBeside" Value="نمایش درصدهای عددی کنار نوارها" />
+  <String Id="PrefsColorThresholdsDesc" Value="زمانی که رنگ نوارها از سبز به نارنجی و سپس قرمز تغییر می‌کند." />
+  <String Id="PrefsOrangeAt" Value="نارنجی در" />
+  <String Id="PrefsRedAt" Value="قرمز در" />
+  <String Id="PrefsOrangeAtPct" Value="نارنجی در (%)" />
+  <String Id="PrefsRedAtPct" Value="قرمز در (%)" />
+  <String Id="PrefsOrangeAtShort" Value="نارنجی در (%):" />
+  <String Id="PrefsRedAtShort" Value="قرمز در (%):" />
+  <String Id="PrefsPollIntervalSeconds" Value="فاصلهٔ نظرسنجی (ثانیه)" />
+  <String Id="PrefsPollIntervalShort" Value="فاصلهٔ نظرسنجی (ث):" />
+  <String Id="PrefsHelperPath" Value="فایل اجرایی کمکی:" />
+  <String Id="MeterSection" Value="سنجهٔ شناور روی دسکتاپ" />
+  <String Id="MeterEnable" Value="نمایش سنجهٔ همیشه‌بالا روی دسکتاپ" />
+  <String Id="MeterDesc" Value="ابزارک کوچک و شفافی که نوارها را در اندازهٔ کامل نمایش می‌دهد. می‌توان آن را به هر گوشه‌ای کشید؛ برای قفل یا پنهان‌سازی، راست‌کلیک کنید." />
+  <String Id="MeterShowPercentages" Value="نمایش درصدهای عددی روی سنجهٔ شناور" />
+  <String Id="MeterShowPercentagesSubtitle" Value="درصدهای نشست و هفتگی را در کنار نوارها روی سنجهٔ شناور دسکتاپ اضافه می‌کند (باید در پایین فعال شود). راهنمای سینی همیشه درصدها را نشان می‌دهد." />
+  <String Id="MeterOpacity" Value="کدری:" />
+  <String Id="MeterWidthPx" Value="عرض (پیکسل):" />
+  <String Id="MeterWidthHint" Value="(۱۲۰–۳۲۰)" />
+  <String Id="MeterLock" Value="قفل کردن موقعیت" />
+  <String Id="MeterUnlock" Value="بازکردن قفل" />
+  <String Id="MeterHide" Value="پنهان کردن سنجه" />
+  <String Id="ActionOk" Value="تأیید" />
+  <String Id="ActionCancel" Value="لغو" />
+  <String Id="ActionClose" Value="بستن" />
+  <String Id="ActionOpen" Value="باز کردن" />
+  <String Id="SigninDialogHeading" Value="ورود با Claude" />
+  <String Id="SigninDialogBody" Value="مرورگر شما باید claude.ai را باز کرده باشد. ورود را در آنجا تکمیل کنید و سپس به اینجا بازگردید. این پنجره به‌طور خودکار بسته می‌شود." />
+  <String Id="WindowPreferencesTitle" Value="ClaudeBar" />
+  <String Id="TooltipDefault" Value="ClaudeBar" />
+  <String Id="TooltipLines" Value="ClaudeBar
+نشست: %d%%
+هفتگی: %d%%" />
+  <String Id="InstallerWelcome" Value="به نصب ClaudeBar خوش آمدید" />
+  <String Id="InstallerRuntimeStep" Value=".NET 8 Desktop Runtime (x64)" />
+  <String Id="InstallerAppStep" Value="ClaudeBar" />
+</WixLocalization>

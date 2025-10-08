@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-US" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="BrandName" Value="ClaudeBar" />
+  <String Id="MenuRefreshNow" Value="Refresh now" />
+  <String Id="MenuOpenUsagePage" Value="Open claude.ai/settings/usage" />
+  <String Id="MenuSettings" Value="Settings…" />
+  <String Id="MenuQuit" Value="Quit ClaudeBar" />
+  <String Id="MenuRefresh" Value="Refresh" />
+  <String Id="StatSession" Value="Current session" />
+  <String Id="StatSessionDash" Value="Current session: —" />
+  <String Id="StatSessionWithPct" Value="Current session: %d%%" />
+  <String Id="StatWeekly" Value="Weekly (all models)" />
+  <String Id="StatWeeklyDash" Value="Weekly (all models): —" />
+  <String Id="StatWeeklyWithPct" Value="Weekly (all models): %d%%" />
+  <String Id="StatResets" Value="Resets %s" />
+  <String Id="TimeNow" Value="now" />
+  <String Id="TimeDash" Value="—" />
+  <String Id="TimeInMinutes" Value="in %d min" />
+  <String Id="TimeInHours" Value="in %dh" />
+  <String Id="TimeInHoursMinutes" Value="in %dh %dm" />
+  <String Id="TimeInDays" Value="in %dd" />
+  <String Id="TimeInDaysHours" Value="in %dd %dh" />
+  <String Id="StatusOffline" Value="Offline — last value may be stale" />
+  <String Id="StatusRateLimited" Value="Rate limited by Claude API" />
+  <String Id="StatusUnauthenticated" Value="Not signed in — open Settings to add a token" />
+  <String Id="AuthSignIn" Value="Sign in with Claude" />
+  <String Id="AuthSignOut" Value="Sign out" />
+  <String Id="AuthSignedInToken" Value="Signed in (token ends '…%s')" />
+  <String Id="AuthNotSignedIn" Value="Not signed in" />
+  <String Id="AuthChecking" Value="Checking…" />
+  <String Id="AuthWaitingBrowser" Value="Waiting for browser sign-in…" />
+  <String Id="AuthKeyringError" Value="Keyring error — see logs" />
+  <String Id="AuthSignInFailed" Value="Sign-in failed" />
+  <String Id="AuthCouldNotStart" Value="Could not start sign-in" />
+  <String Id="AuthCopyLink" Value="Copy link" />
+  <String Id="AuthLinkCopiedNotify" Value="Sign-in link copied to clipboard" />
+  <String Id="PrefsAccount" Value="Account" />
+  <String Id="PrefsDisplay" Value="Display" />
+  <String Id="PrefsAdvanced" Value="Advanced" />
+  <String Id="PrefsGeneral" Value="General" />
+  <String Id="PrefsAuthentication" Value="Authentication" />
+  <String Id="PrefsStatus" Value="Status" />
+  <String Id="PrefsTopBar" Value="Top bar" />
+  <String Id="PrefsTrayIcon" Value="Tray icon" />
+  <String Id="PrefsColorThresholds" Value="Color thresholds" />
+  <String Id="PrefsRefreshSection" Value="Refresh" />
+  <String Id="PrefsLabels" Value="Labels:" />
+  <String Id="PrefsAccountSubtitle" Value="Sign in with your Claude account to fetch Max plan usage. Tokens are stored in GNOME Keyring via libsecret." />
+  <String Id="PrefsShowPercentages" Value="Show numeric percentages next to bars" />
+  <String Id="PrefsShowPercentagesSubtitle" Value="Small session and weekly percentages, stacked beside the bars." />
+  <String Id="PrefsShowPercentagesBeside" Value="Show numeric percentages beside the bars" />
+  <String Id="PrefsColorThresholdsDesc" Value="When bars switch from green to orange to red." />
+  <String Id="PrefsOrangeAt" Value="Orange at" />
+  <String Id="PrefsRedAt" Value="Red at" />
+  <String Id="PrefsOrangeAtPct" Value="Orange at (%)" />
+  <String Id="PrefsRedAtPct" Value="Red at (%)" />
+  <String Id="PrefsOrangeAtShort" Value="Orange at (%):" />
+  <String Id="PrefsRedAtShort" Value="Red at (%):" />
+  <String Id="PrefsPollIntervalSeconds" Value="Poll interval (seconds)" />
+  <String Id="PrefsPollIntervalShort" Value="Poll interval (s):" />
+  <String Id="PrefsHelperPath" Value="Helper binary:" />
+  <String Id="MeterSection" Value="Floating desktop meter" />
+  <String Id="MeterEnable" Value="Show always-on-top meter on the desktop" />
+  <String Id="MeterDesc" Value="Small transparent widget rendering full-size bars. Draggable into any corner; right-click to lock or hide." />
+  <String Id="MeterShowPercentages" Value="Show numeric percentages on the floating meter" />
+  <String Id="MeterShowPercentagesSubtitle" Value="Adds session and weekly percentages next to the bars on the floating desktop meter (must be enabled below). The tray tooltip always shows percentages." />
+  <String Id="MeterOpacity" Value="Opacity:" />
+  <String Id="MeterWidthPx" Value="Width (px):" />
+  <String Id="MeterWidthHint" Value="(120–320)" />
+  <String Id="MeterLock" Value="Lock position" />
+  <String Id="MeterUnlock" Value="Unlock" />
+  <String Id="MeterHide" Value="Hide meter" />
+  <String Id="ActionOk" Value="OK" />
+  <String Id="ActionCancel" Value="Cancel" />
+  <String Id="ActionClose" Value="Close" />
+  <String Id="ActionOpen" Value="Open" />
+  <String Id="SigninDialogHeading" Value="Sign in with Claude" />
+  <String Id="SigninDialogBody" Value="Your browser should have opened to claude.ai. Complete sign-in there, then return here. This dialog will close automatically." />
+  <String Id="WindowPreferencesTitle" Value="ClaudeBar" />
+  <String Id="TooltipDefault" Value="ClaudeBar" />
+  <String Id="TooltipLines" Value="ClaudeBar
+Session: %d%%
+Weekly: %d%%" />
+  <String Id="InstallerWelcome" Value="Welcome to the ClaudeBar Setup" />
+  <String Id="InstallerRuntimeStep" Value=".NET 8 Desktop Runtime (x64)" />
+  <String Id="InstallerAppStep" Value="ClaudeBar" />
+</WixLocalization>

@@ -1,0 +1,140 @@
+<Window x:Class="ClaudeBar.UI.PreferencesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:res="clr-namespace:ClaudeBar.Resources"
+        Title="{x:Static res:Strings.WindowPreferencesTitle}"
+        Icon="pack://application:,,,/Resources/ClaudeBar.ico"
+        Height="560" Width="580"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        ShowInTaskbar="True"
+        Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"
+        UseLayoutRounding="True">
+    <Grid Margin="12">
+        <TabControl>
+            <!-- Account -->
+            <TabItem Header="{x:Static res:Strings.PrefsAccount}">
+                <Grid Margin="16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Text="{x:Static res:Strings.PrefsAuthentication}" FontWeight="Bold" FontSize="14"/>
+                    <TextBlock Grid.Row="1" Margin="0,4,0,12" TextWrapping="Wrap"
+                               Foreground="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"
+                               Text="{x:Static res:Strings.PrefsAccountSubtitle}"/>
+
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,0,8">
+                        <TextBlock Text="{x:Static res:Strings.PrefsStatus}" Margin="0,0,6,0" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="StatusText" Text="{x:Static res:Strings.AuthChecking}" VerticalAlignment="Center"
+                                   Foreground="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,0,0,8">
+                        <Button x:Name="SignInButton" Content="{x:Static res:Strings.AuthSignIn}" Padding="12,6"
+                                Click="SignInButton_Click"/>
+                        <Button x:Name="SignOutButton" Content="{x:Static res:Strings.AuthSignOut}" Padding="12,6" Margin="8,0,0,0"
+                                Visibility="Collapsed" Click="SignOutButton_Click"/>
+                        <Button x:Name="CopyLinkButton" Content="{x:Static res:Strings.AuthCopyLink}" Padding="12,6" Margin="8,0,0,0"
+                                Visibility="Collapsed" Click="CopyLinkButton_Click"/>
+                        <Button x:Name="CancelButton" Content="{x:Static res:Strings.ActionCancel}" Padding="12,6" Margin="8,0,0,0"
+                                Visibility="Collapsed" Click="CancelButton_Click"/>
+                    </StackPanel>
+
+                    <TextBlock x:Name="BusyText" Grid.Row="4" Margin="0,4,0,4"
+                               Text="{x:Static res:Strings.AuthWaitingBrowser}"
+                               Visibility="Collapsed"
+                               Foreground="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+
+                    <TextBlock x:Name="ErrorText" Grid.Row="5" Margin="0,4,0,0" TextWrapping="Wrap"
+                               Foreground="#c0392b" Visibility="Collapsed"/>
+                </Grid>
+            </TabItem>
+
+            <!-- Display -->
+            <TabItem Header="{x:Static res:Strings.PrefsDisplay}">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel Margin="16">
+                        <TextBlock Text="{x:Static res:Strings.PrefsTrayIcon}" FontWeight="Bold" FontSize="14"/>
+                        <CheckBox x:Name="ShowPercentagesCheck" Margin="0,8,0,0"
+                                  Content="{x:Static res:Strings.MeterShowPercentages}"
+                                  Checked="ShowPercentagesCheck_Changed" Unchecked="ShowPercentagesCheck_Changed"/>
+                        <TextBlock Margin="0,4,0,12" TextWrapping="Wrap"
+                                   Foreground="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"
+                                   Text="{x:Static res:Strings.MeterShowPercentagesSubtitle}"/>
+
+                        <TextBlock Text="{x:Static res:Strings.PrefsColorThresholds}" FontWeight="Bold" FontSize="14" Margin="0,12,0,0"/>
+                        <TextBlock Margin="0,4,0,8" TextWrapping="Wrap"
+                                   Foreground="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"
+                                   Text="{x:Static res:Strings.PrefsColorThresholdsDesc}"/>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                            <TextBlock Text="{x:Static res:Strings.PrefsOrangeAtShort}" Width="140" VerticalAlignment="Center"/>
+                            <TextBox x:Name="WarnThresholdBox" Width="80" TextAlignment="Right"
+                                     PreviewTextInput="NumericInput_Preview" LostFocus="WarnThresholdBox_LostFocus"/>
+                            <TextBlock Text="%" Margin="4,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                            <TextBlock Text="{x:Static res:Strings.PrefsRedAtShort}" Width="140" VerticalAlignment="Center"/>
+                            <TextBox x:Name="CriticalThresholdBox" Width="80" TextAlignment="Right"
+                                     PreviewTextInput="NumericInput_Preview" LostFocus="CriticalThresholdBox_LostFocus"/>
+                            <TextBlock Text="%" Margin="4,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <TextBlock Text="{x:Static res:Strings.MeterSection}" FontWeight="Bold" FontSize="14" Margin="0,20,0,0"/>
+                        <CheckBox x:Name="FloatingMeterCheck" Margin="0,8,0,0"
+                                  Content="{x:Static res:Strings.MeterEnable}"
+                                  Checked="FloatingMeterCheck_Changed" Unchecked="FloatingMeterCheck_Changed"/>
+                        <TextBlock Margin="0,4,0,8" TextWrapping="Wrap"
+                                   Foreground="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"
+                                   Text="{x:Static res:Strings.MeterDesc}"/>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                            <TextBlock Text="{x:Static res:Strings.MeterOpacity}" Width="140" VerticalAlignment="Center"/>
+                            <Slider x:Name="OpacitySlider" Width="200" Minimum="40" Maximum="100"
+                                    TickFrequency="10" IsSnapToTickEnabled="False"
+                                    ValueChanged="OpacitySlider_ValueChanged"/>
+                            <TextBlock x:Name="OpacityLabel" Text="92%" Margin="8,0,0,0" VerticalAlignment="Center" Width="44"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                            <TextBlock Text="{x:Static res:Strings.MeterWidthPx}" Width="140" VerticalAlignment="Center"/>
+                            <TextBox x:Name="MeterWidthBox" Width="80" TextAlignment="Right"
+                                     PreviewTextInput="NumericInput_Preview" LostFocus="MeterWidthBox_LostFocus"/>
+                            <TextBlock Text="{x:Static res:Strings.MeterWidthHint}" Margin="8,0,0,0" VerticalAlignment="Center"
+                                       Foreground="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+
+            <!-- Advanced -->
+            <TabItem Header="{x:Static res:Strings.PrefsAdvanced}">
+                <Grid Margin="16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Text="{x:Static res:Strings.PrefsRefreshSection}" FontWeight="Bold" FontSize="14"/>
+                    <TextBlock Grid.Row="1" Margin="0,4,0,12" TextWrapping="Wrap"
+                               Foreground="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"
+                               Text="{x:Static res:Strings.PrefsPollIntervalSeconds}"/>
+
+                    <StackPanel Grid.Row="2" Orientation="Horizontal">
+                        <TextBlock Text="{x:Static res:Strings.PrefsPollIntervalShort}" Width="140" VerticalAlignment="Center"/>
+                        <TextBox x:Name="PollIntervalBox" Width="100" TextAlignment="Right"
+                                 PreviewTextInput="NumericInput_Preview" LostFocus="PollIntervalBox_LostFocus"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

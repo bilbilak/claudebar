@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrandName" xml:space="preserve">
+    <value>ClaudeBar</value>
+    <comment>DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.</comment>
+  </data>
+  <data name="MenuRefreshNow" xml:space="preserve">
+    <value>Nu vernieuwen</value>
+  </data>
+  <data name="MenuOpenUsagePage" xml:space="preserve">
+    <value>claude.ai/settings/usage openen</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>Instellingen…</value>
+  </data>
+  <data name="MenuQuit" xml:space="preserve">
+    <value>ClaudeBar afsluiten</value>
+  </data>
+  <data name="MenuRefresh" xml:space="preserve">
+    <value>Vernieuwen</value>
+  </data>
+  <data name="StatSession" xml:space="preserve">
+    <value>Huidige sessie</value>
+  </data>
+  <data name="StatSessionDash" xml:space="preserve">
+    <value>Huidige sessie: —</value>
+  </data>
+  <data name="StatSessionWithPct" xml:space="preserve">
+    <value>Huidige sessie: %d%%</value>
+  </data>
+  <data name="StatWeekly" xml:space="preserve">
+    <value>Wekelijks (alle modellen)</value>
+  </data>
+  <data name="StatWeeklyDash" xml:space="preserve">
+    <value>Wekelijks (alle modellen): —</value>
+  </data>
+  <data name="StatWeeklyWithPct" xml:space="preserve">
+    <value>Wekelijks (alle modellen): %d%%</value>
+  </data>
+  <data name="StatResets" xml:space="preserve">
+    <value>Reset %s</value>
+    <comment>%s is a time-relative string like 'in 5 min'.</comment>
+  </data>
+  <data name="TimeNow" xml:space="preserve">
+    <value>nu</value>
+  </data>
+  <data name="TimeDash" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="TimeInMinutes" xml:space="preserve">
+    <value>over %d min</value>
+  </data>
+  <data name="TimeInHours" xml:space="preserve">
+    <value>over %d u</value>
+  </data>
+  <data name="TimeInHoursMinutes" xml:space="preserve">
+    <value>over %d u %d min</value>
+  </data>
+  <data name="TimeInDays" xml:space="preserve">
+    <value>over %d d</value>
+  </data>
+  <data name="TimeInDaysHours" xml:space="preserve">
+    <value>over %d d %d u</value>
+  </data>
+  <data name="StatusOffline" xml:space="preserve">
+    <value>Offline — laatste waarde kan verouderd zijn</value>
+  </data>
+  <data name="StatusRateLimited" xml:space="preserve">
+    <value>Snelheidslimiet bereikt bij Claude API</value>
+  </data>
+  <data name="StatusUnauthenticated" xml:space="preserve">
+    <value>Niet aangemeld — open Instellingen om een token toe te voegen</value>
+  </data>
+  <data name="AuthSignIn" xml:space="preserve">
+    <value>Aanmelden met Claude</value>
+  </data>
+  <data name="AuthSignOut" xml:space="preserve">
+    <value>Afmelden</value>
+  </data>
+  <data name="AuthSignedInToken" xml:space="preserve">
+    <value>Aangemeld (token eindigt op '…%s')</value>
+    <comment>%s is the last 6 chars of the access token.</comment>
+  </data>
+  <data name="AuthNotSignedIn" xml:space="preserve">
+    <value>Niet aangemeld</value>
+  </data>
+  <data name="AuthChecking" xml:space="preserve">
+    <value>Controleren…</value>
+  </data>
+  <data name="AuthWaitingBrowser" xml:space="preserve">
+    <value>Wachten op aanmelding via browser…</value>
+  </data>
+  <data name="AuthKeyringError" xml:space="preserve">
+    <value>Sleutelringfout — zie logboek</value>
+  </data>
+  <data name="AuthSignInFailed" xml:space="preserve">
+    <value>Aanmelden mislukt</value>
+  </data>
+  <data name="AuthCouldNotStart" xml:space="preserve">
+    <value>Aanmelden kon niet worden gestart</value>
+  </data>
+  <data name="AuthCopyLink" xml:space="preserve">
+    <value>Link kopiëren</value>
+    <comment>Short button label — used both in prefs dialogs and as a system-notification action where supported.</comment>
+  </data>
+  <data name="AuthLinkCopiedNotify" xml:space="preserve">
+    <value>Aanmeldlink gekopieerd naar het klembord</value>
+    <comment>Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.</comment>
+  </data>
+  <data name="PrefsAccount" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="PrefsDisplay" xml:space="preserve">
+    <value>Weergave</value>
+  </data>
+  <data name="PrefsAdvanced" xml:space="preserve">
+    <value>Geavanceerd</value>
+  </data>
+  <data name="PrefsGeneral" xml:space="preserve">
+    <value>Algemeen</value>
+  </data>
+  <data name="PrefsAuthentication" xml:space="preserve">
+    <value>Verificatie</value>
+  </data>
+  <data name="PrefsStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="PrefsTopBar" xml:space="preserve">
+    <value>Bovenbalk</value>
+  </data>
+  <data name="PrefsTrayIcon" xml:space="preserve">
+    <value>Systeemvakpictogram</value>
+  </data>
+  <data name="PrefsColorThresholds" xml:space="preserve">
+    <value>Kleurdrempels</value>
+  </data>
+  <data name="PrefsRefreshSection" xml:space="preserve">
+    <value>Vernieuwen</value>
+  </data>
+  <data name="PrefsLabels" xml:space="preserve">
+    <value>Labels:</value>
+  </data>
+  <data name="PrefsAccountSubtitle" xml:space="preserve">
+    <value>Meld u aan met uw Claude-account om het verbruik van het Max-abonnement op te halen. Tokens worden opgeslagen in GNOME Keyring via libsecret.</value>
+  </data>
+  <data name="PrefsShowPercentages" xml:space="preserve">
+    <value>Numerieke percentages naast de balken tonen</value>
+  </data>
+  <data name="PrefsShowPercentagesSubtitle" xml:space="preserve">
+    <value>Kleine sessie- en weekpercentages, gestapeld naast de balken.</value>
+  </data>
+  <data name="PrefsShowPercentagesBeside" xml:space="preserve">
+    <value>Numerieke percentages naast de balken tonen</value>
+  </data>
+  <data name="PrefsColorThresholdsDesc" xml:space="preserve">
+    <value>Wanneer balken van groen naar oranje en vervolgens naar rood overgaan.</value>
+  </data>
+  <data name="PrefsOrangeAt" xml:space="preserve">
+    <value>Oranje bij</value>
+  </data>
+  <data name="PrefsRedAt" xml:space="preserve">
+    <value>Rood bij</value>
+  </data>
+  <data name="PrefsOrangeAtPct" xml:space="preserve">
+    <value>Oranje bij (%)</value>
+  </data>
+  <data name="PrefsRedAtPct" xml:space="preserve">
+    <value>Rood bij (%)</value>
+  </data>
+  <data name="PrefsOrangeAtShort" xml:space="preserve">
+    <value>Oranje bij (%):</value>
+  </data>
+  <data name="PrefsRedAtShort" xml:space="preserve">
+    <value>Rood bij (%):</value>
+  </data>
+  <data name="PrefsPollIntervalSeconds" xml:space="preserve">
+    <value>Pollinginterval (seconden)</value>
+  </data>
+  <data name="PrefsPollIntervalShort" xml:space="preserve">
+    <value>Pollinginterval (s):</value>
+  </data>
+  <data name="PrefsHelperPath" xml:space="preserve">
+    <value>Helperbinary:</value>
+  </data>
+  <data name="MeterSection" xml:space="preserve">
+    <value>Zwevende bureaubladmeter</value>
+  </data>
+  <data name="MeterEnable" xml:space="preserve">
+    <value>Toon altijd-bovenop meter op het bureaublad</value>
+  </data>
+  <data name="MeterDesc" xml:space="preserve">
+    <value>Klein transparant widget dat balken op volledige grootte weergeeft. Versleepbaar naar elke hoek; klik met de rechtermuisknop om te vergrendelen of te verbergen.</value>
+  </data>
+  <data name="MeterShowPercentages" xml:space="preserve">
+    <value>Numerieke percentages op de zwevende meter tonen</value>
+  </data>
+  <data name="MeterShowPercentagesSubtitle" xml:space="preserve">
+    <value>Voegt sessie- en weekpercentages toe naast de balken op de zwevende bureaubladmeter (moet hieronder ingeschakeld zijn). De tooltip in het systeemvak toont altijd percentages.</value>
+  </data>
+  <data name="MeterOpacity" xml:space="preserve">
+    <value>Dekking:</value>
+  </data>
+  <data name="MeterWidthPx" xml:space="preserve">
+    <value>Breedte (px):</value>
+  </data>
+  <data name="MeterWidthHint" xml:space="preserve">
+    <value>(120–320)</value>
+  </data>
+  <data name="MeterLock" xml:space="preserve">
+    <value>Positie vergrendelen</value>
+  </data>
+  <data name="MeterUnlock" xml:space="preserve">
+    <value>Ontgrendelen</value>
+  </data>
+  <data name="MeterHide" xml:space="preserve">
+    <value>Meter verbergen</value>
+  </data>
+  <data name="ActionOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ActionCancel" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="ActionClose" xml:space="preserve">
+    <value>Sluiten</value>
+  </data>
+  <data name="ActionOpen" xml:space="preserve">
+    <value>Openen</value>
+  </data>
+  <data name="SigninDialogHeading" xml:space="preserve">
+    <value>Aanmelden met Claude</value>
+  </data>
+  <data name="SigninDialogBody" xml:space="preserve">
+    <value>Uw browser zou claude.ai geopend moeten hebben. Voltooi daar de aanmelding en kom dan hier terug. Dit dialoogvenster wordt automatisch gesloten.</value>
+  </data>
+  <data name="WindowPreferencesTitle" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipDefault" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipLines" xml:space="preserve">
+    <value>ClaudeBar
+Sessie: %d%%
+Wekelijks: %d%%</value>
+  </data>
+  <data name="InstallerWelcome" xml:space="preserve">
+    <value>Welkom bij de installatie van ClaudeBar</value>
+  </data>
+  <data name="InstallerRuntimeStep" xml:space="preserve">
+    <value>.NET 8 Desktop Runtime (x64)</value>
+  </data>
+  <data name="InstallerAppStep" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+</root>

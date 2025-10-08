@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrandName" xml:space="preserve">
+    <value>ClaudeBar</value>
+    <comment>DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.</comment>
+  </data>
+  <data name="MenuRefreshNow" xml:space="preserve">
+    <value>تحديث الآن</value>
+  </data>
+  <data name="MenuOpenUsagePage" xml:space="preserve">
+    <value>افتح claude.ai/settings/usage</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>الإعدادات…</value>
+  </data>
+  <data name="MenuQuit" xml:space="preserve">
+    <value>إنهاء ClaudeBar</value>
+  </data>
+  <data name="MenuRefresh" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+  <data name="StatSession" xml:space="preserve">
+    <value>الجلسة الحالية</value>
+  </data>
+  <data name="StatSessionDash" xml:space="preserve">
+    <value>الجلسة الحالية: —</value>
+  </data>
+  <data name="StatSessionWithPct" xml:space="preserve">
+    <value>الجلسة الحالية: %d%%</value>
+  </data>
+  <data name="StatWeekly" xml:space="preserve">
+    <value>أسبوعي (جميع النماذج)</value>
+  </data>
+  <data name="StatWeeklyDash" xml:space="preserve">
+    <value>أسبوعي (جميع النماذج): —</value>
+  </data>
+  <data name="StatWeeklyWithPct" xml:space="preserve">
+    <value>أسبوعي (جميع النماذج): %d%%</value>
+  </data>
+  <data name="StatResets" xml:space="preserve">
+    <value>تتم إعادة التعيين %s</value>
+    <comment>%s is a time-relative string like 'in 5 min'.</comment>
+  </data>
+  <data name="TimeNow" xml:space="preserve">
+    <value>الآن</value>
+  </data>
+  <data name="TimeDash" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="TimeInMinutes" xml:space="preserve">
+    <value>خلال %d دقيقة</value>
+  </data>
+  <data name="TimeInHours" xml:space="preserve">
+    <value>خلال %d ساعة</value>
+  </data>
+  <data name="TimeInHoursMinutes" xml:space="preserve">
+    <value>خلال %d ساعة و%d دقيقة</value>
+  </data>
+  <data name="TimeInDays" xml:space="preserve">
+    <value>خلال %d يوم</value>
+  </data>
+  <data name="TimeInDaysHours" xml:space="preserve">
+    <value>خلال %d يوم و%d ساعة</value>
+  </data>
+  <data name="StatusOffline" xml:space="preserve">
+    <value>غير متصل — قد تكون آخر قيمة قديمة</value>
+  </data>
+  <data name="StatusRateLimited" xml:space="preserve">
+    <value>تم تقييد المعدل بواسطة Claude API</value>
+  </data>
+  <data name="StatusUnauthenticated" xml:space="preserve">
+    <value>غير مسجل الدخول — افتح الإعدادات لإضافة رمز</value>
+  </data>
+  <data name="AuthSignIn" xml:space="preserve">
+    <value>تسجيل الدخول باستخدام Claude</value>
+  </data>
+  <data name="AuthSignOut" xml:space="preserve">
+    <value>تسجيل الخروج</value>
+  </data>
+  <data name="AuthSignedInToken" xml:space="preserve">
+    <value>تم تسجيل الدخول (ينتهي الرمز بـ '…%s')</value>
+    <comment>%s is the last 6 chars of the access token.</comment>
+  </data>
+  <data name="AuthNotSignedIn" xml:space="preserve">
+    <value>غير مسجل الدخول</value>
+  </data>
+  <data name="AuthChecking" xml:space="preserve">
+    <value>جارٍ التحقق…</value>
+  </data>
+  <data name="AuthWaitingBrowser" xml:space="preserve">
+    <value>في انتظار تسجيل الدخول عبر المتصفح…</value>
+  </data>
+  <data name="AuthKeyringError" xml:space="preserve">
+    <value>خطأ في حلقة المفاتيح — راجع السجلات</value>
+  </data>
+  <data name="AuthSignInFailed" xml:space="preserve">
+    <value>فشل تسجيل الدخول</value>
+  </data>
+  <data name="AuthCouldNotStart" xml:space="preserve">
+    <value>تعذّر بدء تسجيل الدخول</value>
+  </data>
+  <data name="AuthCopyLink" xml:space="preserve">
+    <value>نسخ الرابط</value>
+    <comment>Short button label — used both in prefs dialogs and as a system-notification action where supported.</comment>
+  </data>
+  <data name="AuthLinkCopiedNotify" xml:space="preserve">
+    <value>تم نسخ رابط تسجيل الدخول إلى الحافظة</value>
+    <comment>Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.</comment>
+  </data>
+  <data name="PrefsAccount" xml:space="preserve">
+    <value>الحساب</value>
+  </data>
+  <data name="PrefsDisplay" xml:space="preserve">
+    <value>العرض</value>
+  </data>
+  <data name="PrefsAdvanced" xml:space="preserve">
+    <value>متقدم</value>
+  </data>
+  <data name="PrefsGeneral" xml:space="preserve">
+    <value>عام</value>
+  </data>
+  <data name="PrefsAuthentication" xml:space="preserve">
+    <value>المصادقة</value>
+  </data>
+  <data name="PrefsStatus" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="PrefsTopBar" xml:space="preserve">
+    <value>الشريط العلوي</value>
+  </data>
+  <data name="PrefsTrayIcon" xml:space="preserve">
+    <value>أيقونة الشريط</value>
+  </data>
+  <data name="PrefsColorThresholds" xml:space="preserve">
+    <value>عتبات الألوان</value>
+  </data>
+  <data name="PrefsRefreshSection" xml:space="preserve">
+    <value>التحديث</value>
+  </data>
+  <data name="PrefsLabels" xml:space="preserve">
+    <value>التسميات:</value>
+  </data>
+  <data name="PrefsAccountSubtitle" xml:space="preserve">
+    <value>سجّل الدخول بحسابك في Claude لجلب استخدام خطة Max. تُخزَّن الرموز في GNOME Keyring عبر libsecret.</value>
+  </data>
+  <data name="PrefsShowPercentages" xml:space="preserve">
+    <value>إظهار النسب المئوية الرقمية بجانب الأشرطة</value>
+  </data>
+  <data name="PrefsShowPercentagesSubtitle" xml:space="preserve">
+    <value>نسب مئوية صغيرة للجلسة والأسبوع، مرتّبة بجانب الأشرطة.</value>
+  </data>
+  <data name="PrefsShowPercentagesBeside" xml:space="preserve">
+    <value>إظهار النسب المئوية الرقمية بجانب الأشرطة</value>
+  </data>
+  <data name="PrefsColorThresholdsDesc" xml:space="preserve">
+    <value>متى تتغير الأشرطة من الأخضر إلى البرتقالي ثم إلى الأحمر.</value>
+  </data>
+  <data name="PrefsOrangeAt" xml:space="preserve">
+    <value>البرتقالي عند</value>
+  </data>
+  <data name="PrefsRedAt" xml:space="preserve">
+    <value>الأحمر عند</value>
+  </data>
+  <data name="PrefsOrangeAtPct" xml:space="preserve">
+    <value>البرتقالي عند (%)</value>
+  </data>
+  <data name="PrefsRedAtPct" xml:space="preserve">
+    <value>الأحمر عند (%)</value>
+  </data>
+  <data name="PrefsOrangeAtShort" xml:space="preserve">
+    <value>البرتقالي عند (%):</value>
+  </data>
+  <data name="PrefsRedAtShort" xml:space="preserve">
+    <value>الأحمر عند (%):</value>
+  </data>
+  <data name="PrefsPollIntervalSeconds" xml:space="preserve">
+    <value>فاصل الاستطلاع (بالثواني)</value>
+  </data>
+  <data name="PrefsPollIntervalShort" xml:space="preserve">
+    <value>فاصل الاستطلاع (ث):</value>
+  </data>
+  <data name="PrefsHelperPath" xml:space="preserve">
+    <value>ملف المساعد التنفيذي:</value>
+  </data>
+  <data name="MeterSection" xml:space="preserve">
+    <value>مقياس عائم على سطح المكتب</value>
+  </data>
+  <data name="MeterEnable" xml:space="preserve">
+    <value>إظهار مقياس فوق كل النوافذ على سطح المكتب</value>
+  </data>
+  <data name="MeterDesc" xml:space="preserve">
+    <value>أداة شفافة صغيرة تعرض أشرطة بحجم كامل. يمكن سحبها إلى أي ركن؛ انقر بزر الفأرة الأيمن للتثبيت أو الإخفاء.</value>
+  </data>
+  <data name="MeterShowPercentages" xml:space="preserve">
+    <value>إظهار النسب المئوية الرقمية على المقياس العائم</value>
+  </data>
+  <data name="MeterShowPercentagesSubtitle" xml:space="preserve">
+    <value>يضيف النسب المئوية للجلسة والأسبوع بجوار الأشرطة على المقياس العائم على سطح المكتب (يجب تمكينه أدناه). تعرض تلميحة الشريط النسب المئوية دائمًا.</value>
+  </data>
+  <data name="MeterOpacity" xml:space="preserve">
+    <value>الإعتام:</value>
+  </data>
+  <data name="MeterWidthPx" xml:space="preserve">
+    <value>العرض (بكسل):</value>
+  </data>
+  <data name="MeterWidthHint" xml:space="preserve">
+    <value>(120–320)</value>
+  </data>
+  <data name="MeterLock" xml:space="preserve">
+    <value>قفل الموضع</value>
+  </data>
+  <data name="MeterUnlock" xml:space="preserve">
+    <value>إلغاء القفل</value>
+  </data>
+  <data name="MeterHide" xml:space="preserve">
+    <value>إخفاء المقياس</value>
+  </data>
+  <data name="ActionOk" xml:space="preserve">
+    <value>موافق</value>
+  </data>
+  <data name="ActionCancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="ActionClose" xml:space="preserve">
+    <value>إغلاق</value>
+  </data>
+  <data name="ActionOpen" xml:space="preserve">
+    <value>فتح</value>
+  </data>
+  <data name="SigninDialogHeading" xml:space="preserve">
+    <value>تسجيل الدخول باستخدام Claude</value>
+  </data>
+  <data name="SigninDialogBody" xml:space="preserve">
+    <value>من المفترض أن يكون متصفحك قد فتح claude.ai. أكمل تسجيل الدخول هناك ثم عُد إلى هنا. سيُغلق مربع الحوار هذا تلقائيًا.</value>
+  </data>
+  <data name="WindowPreferencesTitle" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipDefault" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipLines" xml:space="preserve">
+    <value>ClaudeBar
+الجلسة: %d%%
+أسبوعي: %d%%</value>
+  </data>
+  <data name="InstallerWelcome" xml:space="preserve">
+    <value>مرحبًا بك في إعداد ClaudeBar</value>
+  </data>
+  <data name="InstallerRuntimeStep" xml:space="preserve">
+    <value>.NET 8 Desktop Runtime (x64)</value>
+  </data>
+  <data name="InstallerAppStep" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+</root>

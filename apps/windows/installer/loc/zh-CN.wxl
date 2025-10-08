@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="zh-CN" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="BrandName" Value="ClaudeBar" />
+  <String Id="MenuRefreshNow" Value="立即刷新" />
+  <String Id="MenuOpenUsagePage" Value="打开 claude.ai/settings/usage" />
+  <String Id="MenuSettings" Value="设置…" />
+  <String Id="MenuQuit" Value="退出 ClaudeBar" />
+  <String Id="MenuRefresh" Value="刷新" />
+  <String Id="StatSession" Value="当前会话" />
+  <String Id="StatSessionDash" Value="当前会话:—" />
+  <String Id="StatSessionWithPct" Value="当前会话:%d%%" />
+  <String Id="StatWeekly" Value="每周(所有模型)" />
+  <String Id="StatWeeklyDash" Value="每周(所有模型):—" />
+  <String Id="StatWeeklyWithPct" Value="每周(所有模型):%d%%" />
+  <String Id="StatResets" Value="%s 后重置" />
+  <String Id="TimeNow" Value="现在" />
+  <String Id="TimeDash" Value="—" />
+  <String Id="TimeInMinutes" Value="%d 分钟后" />
+  <String Id="TimeInHours" Value="%d 小时后" />
+  <String Id="TimeInHoursMinutes" Value="%d 小时 %d 分钟后" />
+  <String Id="TimeInDays" Value="%d 天后" />
+  <String Id="TimeInDaysHours" Value="%d 天 %d 小时后" />
+  <String Id="StatusOffline" Value="离线 — 上次的值可能已过期" />
+  <String Id="StatusRateLimited" Value="已达到 Claude API 速率限制" />
+  <String Id="StatusUnauthenticated" Value="未登录 — 打开“设置”以添加令牌" />
+  <String Id="AuthSignIn" Value="使用 Claude 登录" />
+  <String Id="AuthSignOut" Value="退出登录" />
+  <String Id="AuthSignedInToken" Value="已登录(令牌以“…%s”结尾)" />
+  <String Id="AuthNotSignedIn" Value="未登录" />
+  <String Id="AuthChecking" Value="正在检查…" />
+  <String Id="AuthWaitingBrowser" Value="等待在浏览器中登录…" />
+  <String Id="AuthKeyringError" Value="密钥环错误 — 请查看日志" />
+  <String Id="AuthSignInFailed" Value="登录失败" />
+  <String Id="AuthCouldNotStart" Value="无法启动登录" />
+  <String Id="AuthCopyLink" Value="复制链接" />
+  <String Id="AuthLinkCopiedNotify" Value="登录链接已复制到剪贴板" />
+  <String Id="PrefsAccount" Value="账户" />
+  <String Id="PrefsDisplay" Value="显示" />
+  <String Id="PrefsAdvanced" Value="高级" />
+  <String Id="PrefsGeneral" Value="通用" />
+  <String Id="PrefsAuthentication" Value="身份验证" />
+  <String Id="PrefsStatus" Value="状态" />
+  <String Id="PrefsTopBar" Value="顶部栏" />
+  <String Id="PrefsTrayIcon" Value="托盘图标" />
+  <String Id="PrefsColorThresholds" Value="颜色阈值" />
+  <String Id="PrefsRefreshSection" Value="刷新" />
+  <String Id="PrefsLabels" Value="标签:" />
+  <String Id="PrefsAccountSubtitle" Value="使用您的 Claude 账户登录,以获取 Max 套餐用量。令牌通过 libsecret 存储在 GNOME Keyring 中。" />
+  <String Id="PrefsShowPercentages" Value="在条形旁显示数字百分比" />
+  <String Id="PrefsShowPercentagesSubtitle" Value="在条形旁堆叠显示小号的会话和每周百分比。" />
+  <String Id="PrefsShowPercentagesBeside" Value="在条形旁显示数字百分比" />
+  <String Id="PrefsColorThresholdsDesc" Value="条形从绿色变为橙色再变为红色的时机。" />
+  <String Id="PrefsOrangeAt" Value="橙色阈值" />
+  <String Id="PrefsRedAt" Value="红色阈值" />
+  <String Id="PrefsOrangeAtPct" Value="橙色阈值 (%)" />
+  <String Id="PrefsRedAtPct" Value="红色阈值 (%)" />
+  <String Id="PrefsOrangeAtShort" Value="橙色阈值 (%):" />
+  <String Id="PrefsRedAtShort" Value="红色阈值 (%):" />
+  <String Id="PrefsPollIntervalSeconds" Value="轮询间隔(秒)" />
+  <String Id="PrefsPollIntervalShort" Value="轮询间隔(秒):" />
+  <String Id="PrefsHelperPath" Value="辅助二进制文件:" />
+  <String Id="MeterSection" Value="桌面浮动计量器" />
+  <String Id="MeterEnable" Value="在桌面上显示置顶计量器" />
+  <String Id="MeterDesc" Value="小型透明小部件,显示完整尺寸的条形。可拖动到任意角落;右键单击可锁定或隐藏。" />
+  <String Id="MeterShowPercentages" Value="在浮动计量器上显示数字百分比" />
+  <String Id="MeterShowPercentagesSubtitle" Value="在桌面浮动计量器的条形旁添加会话和每周百分比(必须在下方启用)。托盘提示始终显示百分比。" />
+  <String Id="MeterOpacity" Value="不透明度:" />
+  <String Id="MeterWidthPx" Value="宽度(像素):" />
+  <String Id="MeterWidthHint" Value="(120–320)" />
+  <String Id="MeterLock" Value="锁定位置" />
+  <String Id="MeterUnlock" Value="解锁" />
+  <String Id="MeterHide" Value="隐藏计量器" />
+  <String Id="ActionOk" Value="确定" />
+  <String Id="ActionCancel" Value="取消" />
+  <String Id="ActionClose" Value="关闭" />
+  <String Id="ActionOpen" Value="打开" />
+  <String Id="SigninDialogHeading" Value="使用 Claude 登录" />
+  <String Id="SigninDialogBody" Value="您的浏览器应已打开 claude.ai。请在那里完成登录,然后返回此处。此对话框将自动关闭。" />
+  <String Id="WindowPreferencesTitle" Value="ClaudeBar" />
+  <String Id="TooltipDefault" Value="ClaudeBar" />
+  <String Id="TooltipLines" Value="ClaudeBar
+会话:%d%%
+每周:%d%%" />
+  <String Id="InstallerWelcome" Value="欢迎使用 ClaudeBar 安装程序" />
+  <String Id="InstallerRuntimeStep" Value=".NET 8 Desktop Runtime (x64)" />
+  <String Id="InstallerAppStep" Value="ClaudeBar" />
+</WixLocalization>

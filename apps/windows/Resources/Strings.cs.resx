@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrandName" xml:space="preserve">
+    <value>ClaudeBar</value>
+    <comment>DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.</comment>
+  </data>
+  <data name="MenuRefreshNow" xml:space="preserve">
+    <value>Aktualizovat nyní</value>
+  </data>
+  <data name="MenuOpenUsagePage" xml:space="preserve">
+    <value>Otevřít claude.ai/settings/usage</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>Nastavení…</value>
+  </data>
+  <data name="MenuQuit" xml:space="preserve">
+    <value>Ukončit ClaudeBar</value>
+  </data>
+  <data name="MenuRefresh" xml:space="preserve">
+    <value>Aktualizovat</value>
+  </data>
+  <data name="StatSession" xml:space="preserve">
+    <value>Aktuální relace</value>
+  </data>
+  <data name="StatSessionDash" xml:space="preserve">
+    <value>Aktuální relace: —</value>
+  </data>
+  <data name="StatSessionWithPct" xml:space="preserve">
+    <value>Aktuální relace: %d%%</value>
+  </data>
+  <data name="StatWeekly" xml:space="preserve">
+    <value>Týdně (všechny modely)</value>
+  </data>
+  <data name="StatWeeklyDash" xml:space="preserve">
+    <value>Týdně (všechny modely): —</value>
+  </data>
+  <data name="StatWeeklyWithPct" xml:space="preserve">
+    <value>Týdně (všechny modely): %d%%</value>
+  </data>
+  <data name="StatResets" xml:space="preserve">
+    <value>Obnoví se %s</value>
+    <comment>%s is a time-relative string like 'in 5 min'.</comment>
+  </data>
+  <data name="TimeNow" xml:space="preserve">
+    <value>nyní</value>
+  </data>
+  <data name="TimeDash" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="TimeInMinutes" xml:space="preserve">
+    <value>za %d min</value>
+  </data>
+  <data name="TimeInHours" xml:space="preserve">
+    <value>za %d h</value>
+  </data>
+  <data name="TimeInHoursMinutes" xml:space="preserve">
+    <value>za %d h %d min</value>
+  </data>
+  <data name="TimeInDays" xml:space="preserve">
+    <value>za %d d</value>
+  </data>
+  <data name="TimeInDaysHours" xml:space="preserve">
+    <value>za %d d %d h</value>
+  </data>
+  <data name="StatusOffline" xml:space="preserve">
+    <value>Offline — poslední hodnota může být zastaralá</value>
+  </data>
+  <data name="StatusRateLimited" xml:space="preserve">
+    <value>Omezeno rychlostním limitem Claude API</value>
+  </data>
+  <data name="StatusUnauthenticated" xml:space="preserve">
+    <value>Nepřihlášeno — otevřete Nastavení a přidejte token</value>
+  </data>
+  <data name="AuthSignIn" xml:space="preserve">
+    <value>Přihlásit se přes Claude</value>
+  </data>
+  <data name="AuthSignOut" xml:space="preserve">
+    <value>Odhlásit se</value>
+  </data>
+  <data name="AuthSignedInToken" xml:space="preserve">
+    <value>Přihlášeno (token končí na '…%s')</value>
+    <comment>%s is the last 6 chars of the access token.</comment>
+  </data>
+  <data name="AuthNotSignedIn" xml:space="preserve">
+    <value>Nepřihlášeno</value>
+  </data>
+  <data name="AuthChecking" xml:space="preserve">
+    <value>Ověřuje se…</value>
+  </data>
+  <data name="AuthWaitingBrowser" xml:space="preserve">
+    <value>Čeká se na přihlášení v prohlížeči…</value>
+  </data>
+  <data name="AuthKeyringError" xml:space="preserve">
+    <value>Chyba klíčenky — viz protokoly</value>
+  </data>
+  <data name="AuthSignInFailed" xml:space="preserve">
+    <value>Přihlášení se nezdařilo</value>
+  </data>
+  <data name="AuthCouldNotStart" xml:space="preserve">
+    <value>Přihlašování nelze spustit</value>
+  </data>
+  <data name="AuthCopyLink" xml:space="preserve">
+    <value>Kopírovat odkaz</value>
+    <comment>Short button label — used both in prefs dialogs and as a system-notification action where supported.</comment>
+  </data>
+  <data name="AuthLinkCopiedNotify" xml:space="preserve">
+    <value>Přihlašovací odkaz zkopírován do schránky</value>
+    <comment>Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.</comment>
+  </data>
+  <data name="PrefsAccount" xml:space="preserve">
+    <value>Účet</value>
+  </data>
+  <data name="PrefsDisplay" xml:space="preserve">
+    <value>Zobrazení</value>
+  </data>
+  <data name="PrefsAdvanced" xml:space="preserve">
+    <value>Pokročilé</value>
+  </data>
+  <data name="PrefsGeneral" xml:space="preserve">
+    <value>Obecné</value>
+  </data>
+  <data name="PrefsAuthentication" xml:space="preserve">
+    <value>Ověřování</value>
+  </data>
+  <data name="PrefsStatus" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="PrefsTopBar" xml:space="preserve">
+    <value>Horní lišta</value>
+  </data>
+  <data name="PrefsTrayIcon" xml:space="preserve">
+    <value>Ikona v oznamovací oblasti</value>
+  </data>
+  <data name="PrefsColorThresholds" xml:space="preserve">
+    <value>Barevné prahy</value>
+  </data>
+  <data name="PrefsRefreshSection" xml:space="preserve">
+    <value>Aktualizace</value>
+  </data>
+  <data name="PrefsLabels" xml:space="preserve">
+    <value>Popisky:</value>
+  </data>
+  <data name="PrefsAccountSubtitle" xml:space="preserve">
+    <value>Přihlaste se svým účtem Claude, abyste získali přehled o využití plánu Max. Tokeny se ukládají do GNOME Keyring prostřednictvím knihovny libsecret.</value>
+  </data>
+  <data name="PrefsShowPercentages" xml:space="preserve">
+    <value>Zobrazit číselné procentní hodnoty vedle pruhů</value>
+  </data>
+  <data name="PrefsShowPercentagesSubtitle" xml:space="preserve">
+    <value>Malé procentní hodnoty relace a týdne naskládané vedle pruhů.</value>
+  </data>
+  <data name="PrefsShowPercentagesBeside" xml:space="preserve">
+    <value>Zobrazit číselné procentní hodnoty vedle pruhů</value>
+  </data>
+  <data name="PrefsColorThresholdsDesc" xml:space="preserve">
+    <value>Kdy pruhy přejdou ze zelené přes oranžovou až na červenou.</value>
+  </data>
+  <data name="PrefsOrangeAt" xml:space="preserve">
+    <value>Oranžová při</value>
+  </data>
+  <data name="PrefsRedAt" xml:space="preserve">
+    <value>Červená při</value>
+  </data>
+  <data name="PrefsOrangeAtPct" xml:space="preserve">
+    <value>Oranžová při (%)</value>
+  </data>
+  <data name="PrefsRedAtPct" xml:space="preserve">
+    <value>Červená při (%)</value>
+  </data>
+  <data name="PrefsOrangeAtShort" xml:space="preserve">
+    <value>Oranžová při (%):</value>
+  </data>
+  <data name="PrefsRedAtShort" xml:space="preserve">
+    <value>Červená při (%):</value>
+  </data>
+  <data name="PrefsPollIntervalSeconds" xml:space="preserve">
+    <value>Interval dotazování (sekundy)</value>
+  </data>
+  <data name="PrefsPollIntervalShort" xml:space="preserve">
+    <value>Interval dotazování (s):</value>
+  </data>
+  <data name="PrefsHelperPath" xml:space="preserve">
+    <value>Pomocný binární soubor:</value>
+  </data>
+  <data name="MeterSection" xml:space="preserve">
+    <value>Plovoucí měřič na ploše</value>
+  </data>
+  <data name="MeterEnable" xml:space="preserve">
+    <value>Zobrazit měřič vždy navrchu na ploše</value>
+  </data>
+  <data name="MeterDesc" xml:space="preserve">
+    <value>Malý průhledný widget zobrazující pruhy v plné velikosti. Lze jej přetáhnout do libovolného rohu; kliknutím pravým tlačítkem jej uzamknete nebo skryjete.</value>
+  </data>
+  <data name="MeterShowPercentages" xml:space="preserve">
+    <value>Zobrazit číselné procentní hodnoty na plovoucím měřiči</value>
+  </data>
+  <data name="MeterShowPercentagesSubtitle" xml:space="preserve">
+    <value>Přidá procentní hodnoty relace a týdne vedle pruhů na plovoucím měřiči na ploše (musí být povoleno níže). Popisek v oznamovací oblasti zobrazuje procenta vždy.</value>
+  </data>
+  <data name="MeterOpacity" xml:space="preserve">
+    <value>Krytí:</value>
+  </data>
+  <data name="MeterWidthPx" xml:space="preserve">
+    <value>Šířka (px):</value>
+  </data>
+  <data name="MeterWidthHint" xml:space="preserve">
+    <value>(120–320)</value>
+  </data>
+  <data name="MeterLock" xml:space="preserve">
+    <value>Uzamknout polohu</value>
+  </data>
+  <data name="MeterUnlock" xml:space="preserve">
+    <value>Odemknout</value>
+  </data>
+  <data name="MeterHide" xml:space="preserve">
+    <value>Skrýt měřič</value>
+  </data>
+  <data name="ActionOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ActionCancel" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+  <data name="ActionClose" xml:space="preserve">
+    <value>Zavřít</value>
+  </data>
+  <data name="ActionOpen" xml:space="preserve">
+    <value>Otevřít</value>
+  </data>
+  <data name="SigninDialogHeading" xml:space="preserve">
+    <value>Přihlásit se přes Claude</value>
+  </data>
+  <data name="SigninDialogBody" xml:space="preserve">
+    <value>Váš prohlížeč by se měl otevřít na claude.ai. Dokončete tam přihlášení a poté se vraťte sem. Toto dialogové okno se automaticky zavře.</value>
+  </data>
+  <data name="WindowPreferencesTitle" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipDefault" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipLines" xml:space="preserve">
+    <value>ClaudeBar
+Relace: %d%%
+Týdně: %d%%</value>
+  </data>
+  <data name="InstallerWelcome" xml:space="preserve">
+    <value>Vítejte v instalaci ClaudeBar</value>
+  </data>
+  <data name="InstallerRuntimeStep" xml:space="preserve">
+    <value>.NET 8 Desktop Runtime (x64)</value>
+  </data>
+  <data name="InstallerAppStep" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+</root>

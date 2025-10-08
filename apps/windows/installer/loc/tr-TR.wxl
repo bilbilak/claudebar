@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="tr-TR" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="BrandName" Value="ClaudeBar" />
+  <String Id="MenuRefreshNow" Value="Şimdi yenile" />
+  <String Id="MenuOpenUsagePage" Value="claude.ai/settings/usage adresini aç" />
+  <String Id="MenuSettings" Value="Ayarlar…" />
+  <String Id="MenuQuit" Value="ClaudeBar'dan çık" />
+  <String Id="MenuRefresh" Value="Yenile" />
+  <String Id="StatSession" Value="Geçerli oturum" />
+  <String Id="StatSessionDash" Value="Geçerli oturum: —" />
+  <String Id="StatSessionWithPct" Value="Geçerli oturum: %d%%" />
+  <String Id="StatWeekly" Value="Haftalık (tüm modeller)" />
+  <String Id="StatWeeklyDash" Value="Haftalık (tüm modeller): —" />
+  <String Id="StatWeeklyWithPct" Value="Haftalık (tüm modeller): %d%%" />
+  <String Id="StatResets" Value="Sıfırlanır %s" />
+  <String Id="TimeNow" Value="şimdi" />
+  <String Id="TimeDash" Value="—" />
+  <String Id="TimeInMinutes" Value="%d dk içinde" />
+  <String Id="TimeInHours" Value="%d sa içinde" />
+  <String Id="TimeInHoursMinutes" Value="%d sa %d dk içinde" />
+  <String Id="TimeInDays" Value="%d g içinde" />
+  <String Id="TimeInDaysHours" Value="%d g %d sa içinde" />
+  <String Id="StatusOffline" Value="Çevrimdışı — son değer güncel olmayabilir" />
+  <String Id="StatusRateLimited" Value="Claude API tarafından hız sınırı uygulandı" />
+  <String Id="StatusUnauthenticated" Value="Oturum açılmadı — token eklemek için Ayarlar'ı açın" />
+  <String Id="AuthSignIn" Value="Claude ile oturum aç" />
+  <String Id="AuthSignOut" Value="Oturumu kapat" />
+  <String Id="AuthSignedInToken" Value="Oturum açık (token şununla bitiyor: '…%s')" />
+  <String Id="AuthNotSignedIn" Value="Oturum açık değil" />
+  <String Id="AuthChecking" Value="Kontrol ediliyor…" />
+  <String Id="AuthWaitingBrowser" Value="Tarayıcıda oturum açılması bekleniyor…" />
+  <String Id="AuthKeyringError" Value="Anahtarlık hatası — günlüklere bakın" />
+  <String Id="AuthSignInFailed" Value="Oturum açma başarısız" />
+  <String Id="AuthCouldNotStart" Value="Oturum açma başlatılamadı" />
+  <String Id="AuthCopyLink" Value="Bağlantıyı kopyala" />
+  <String Id="AuthLinkCopiedNotify" Value="Oturum açma bağlantısı panoya kopyalandı" />
+  <String Id="PrefsAccount" Value="Hesap" />
+  <String Id="PrefsDisplay" Value="Görüntü" />
+  <String Id="PrefsAdvanced" Value="Gelişmiş" />
+  <String Id="PrefsGeneral" Value="Genel" />
+  <String Id="PrefsAuthentication" Value="Kimlik doğrulama" />
+  <String Id="PrefsStatus" Value="Durum" />
+  <String Id="PrefsTopBar" Value="Üst çubuk" />
+  <String Id="PrefsTrayIcon" Value="Sistem tepsisi simgesi" />
+  <String Id="PrefsColorThresholds" Value="Renk eşikleri" />
+  <String Id="PrefsRefreshSection" Value="Yenileme" />
+  <String Id="PrefsLabels" Value="Etiketler:" />
+  <String Id="PrefsAccountSubtitle" Value="Max planı kullanımını almak için Claude hesabınızla oturum açın. Belirteçler libsecret aracılığıyla GNOME Keyring içinde saklanır." />
+  <String Id="PrefsShowPercentages" Value="Çubukların yanında sayısal yüzdeleri göster" />
+  <String Id="PrefsShowPercentagesSubtitle" Value="Çubukların yanında üst üste dizilmiş küçük oturum ve haftalık yüzdeler." />
+  <String Id="PrefsShowPercentagesBeside" Value="Çubukların yanında sayısal yüzdeleri göster" />
+  <String Id="PrefsColorThresholdsDesc" Value="Çubukların yeşilden turuncuya ve kırmızıya geçtiği eşikler." />
+  <String Id="PrefsOrangeAt" Value="Turuncu eşiği" />
+  <String Id="PrefsRedAt" Value="Kırmızı eşiği" />
+  <String Id="PrefsOrangeAtPct" Value="Turuncu eşiği (%)" />
+  <String Id="PrefsRedAtPct" Value="Kırmızı eşiği (%)" />
+  <String Id="PrefsOrangeAtShort" Value="Turuncu eşiği (%):" />
+  <String Id="PrefsRedAtShort" Value="Kırmızı eşiği (%):" />
+  <String Id="PrefsPollIntervalSeconds" Value="Yoklama aralığı (saniye)" />
+  <String Id="PrefsPollIntervalShort" Value="Yoklama aralığı (sn):" />
+  <String Id="PrefsHelperPath" Value="Yardımcı ikili dosya:" />
+  <String Id="MeterSection" Value="Yüzen masaüstü göstergesi" />
+  <String Id="MeterEnable" Value="Masaüstünde her zaman üstte göstergeyi göster" />
+  <String Id="MeterDesc" Value="Tam boyutlu çubuklar gösteren küçük şeffaf bir araç. İstediğiniz köşeye sürüklenebilir; kilitlemek veya gizlemek için sağ tıklayın." />
+  <String Id="MeterShowPercentages" Value="Yüzen göstergede sayısal yüzdeleri göster" />
+  <String Id="MeterShowPercentagesSubtitle" Value="Yüzen masaüstü göstergesindeki çubukların yanına oturum ve haftalık yüzdeleri ekler (aşağıdan etkinleştirilmelidir). Sistem tepsisindeki ipucu her zaman yüzdeleri gösterir." />
+  <String Id="MeterOpacity" Value="Opaklık:" />
+  <String Id="MeterWidthPx" Value="Genişlik (px):" />
+  <String Id="MeterWidthHint" Value="(120–320)" />
+  <String Id="MeterLock" Value="Konumu kilitle" />
+  <String Id="MeterUnlock" Value="Kilidi aç" />
+  <String Id="MeterHide" Value="Göstergeyi gizle" />
+  <String Id="ActionOk" Value="Tamam" />
+  <String Id="ActionCancel" Value="İptal" />
+  <String Id="ActionClose" Value="Kapat" />
+  <String Id="ActionOpen" Value="Aç" />
+  <String Id="SigninDialogHeading" Value="Claude ile oturum aç" />
+  <String Id="SigninDialogBody" Value="Tarayıcınız claude.ai adresini açmış olmalı. Oturum açmayı orada tamamlayın ve buraya geri dönün. Bu iletişim kutusu otomatik olarak kapanacak." />
+  <String Id="WindowPreferencesTitle" Value="ClaudeBar" />
+  <String Id="TooltipDefault" Value="ClaudeBar" />
+  <String Id="TooltipLines" Value="ClaudeBar
+Oturum: %d%%
+Haftalık: %d%%" />
+  <String Id="InstallerWelcome" Value="ClaudeBar Kurulumuna Hoş Geldiniz" />
+  <String Id="InstallerRuntimeStep" Value=".NET 8 Desktop Runtime (x64)" />
+  <String Id="InstallerAppStep" Value="ClaudeBar" />
+</WixLocalization>

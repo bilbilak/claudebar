@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="fr-FR" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="BrandName" Value="ClaudeBar" />
+  <String Id="MenuRefreshNow" Value="Actualiser maintenant" />
+  <String Id="MenuOpenUsagePage" Value="Ouvrir claude.ai/settings/usage" />
+  <String Id="MenuSettings" Value="Paramètres…" />
+  <String Id="MenuQuit" Value="Quitter ClaudeBar" />
+  <String Id="MenuRefresh" Value="Actualiser" />
+  <String Id="StatSession" Value="Session en cours" />
+  <String Id="StatSessionDash" Value="Session en cours : —" />
+  <String Id="StatSessionWithPct" Value="Session en cours : %d%%" />
+  <String Id="StatWeekly" Value="Hebdomadaire (tous les modèles)" />
+  <String Id="StatWeeklyDash" Value="Hebdomadaire (tous les modèles) : —" />
+  <String Id="StatWeeklyWithPct" Value="Hebdomadaire (tous les modèles) : %d%%" />
+  <String Id="StatResets" Value="Réinitialisation %s" />
+  <String Id="TimeNow" Value="maintenant" />
+  <String Id="TimeDash" Value="—" />
+  <String Id="TimeInMinutes" Value="dans %d min" />
+  <String Id="TimeInHours" Value="dans %d h" />
+  <String Id="TimeInHoursMinutes" Value="dans %d h %d min" />
+  <String Id="TimeInDays" Value="dans %d j" />
+  <String Id="TimeInDaysHours" Value="dans %d j %d h" />
+  <String Id="StatusOffline" Value="Hors ligne — la dernière valeur peut être obsolète" />
+  <String Id="StatusRateLimited" Value="Limite de débit imposée par Claude API" />
+  <String Id="StatusUnauthenticated" Value="Non connecté — ouvrez les Paramètres pour ajouter un jeton" />
+  <String Id="AuthSignIn" Value="Se connecter avec Claude" />
+  <String Id="AuthSignOut" Value="Se déconnecter" />
+  <String Id="AuthSignedInToken" Value="Connecté (le jeton se termine par « …%s »)" />
+  <String Id="AuthNotSignedIn" Value="Non connecté" />
+  <String Id="AuthChecking" Value="Vérification…" />
+  <String Id="AuthWaitingBrowser" Value="En attente de la connexion via le navigateur…" />
+  <String Id="AuthKeyringError" Value="Erreur du trousseau — consultez les journaux" />
+  <String Id="AuthSignInFailed" Value="Échec de la connexion" />
+  <String Id="AuthCouldNotStart" Value="Impossible de démarrer la connexion" />
+  <String Id="AuthCopyLink" Value="Copier le lien" />
+  <String Id="AuthLinkCopiedNotify" Value="Lien de connexion copié dans le presse-papiers" />
+  <String Id="PrefsAccount" Value="Compte" />
+  <String Id="PrefsDisplay" Value="Affichage" />
+  <String Id="PrefsAdvanced" Value="Avancé" />
+  <String Id="PrefsGeneral" Value="Général" />
+  <String Id="PrefsAuthentication" Value="Authentification" />
+  <String Id="PrefsStatus" Value="État" />
+  <String Id="PrefsTopBar" Value="Barre supérieure" />
+  <String Id="PrefsTrayIcon" Value="Icône de la barre d'état" />
+  <String Id="PrefsColorThresholds" Value="Seuils de couleur" />
+  <String Id="PrefsRefreshSection" Value="Actualisation" />
+  <String Id="PrefsLabels" Value="Étiquettes :" />
+  <String Id="PrefsAccountSubtitle" Value="Connectez-vous avec votre compte Claude pour récupérer l'utilisation du plan Max. Les jetons sont stockés dans GNOME Keyring via libsecret." />
+  <String Id="PrefsShowPercentages" Value="Afficher les pourcentages numériques à côté des barres" />
+  <String Id="PrefsShowPercentagesSubtitle" Value="Petits pourcentages de session et hebdomadaires, empilés à côté des barres." />
+  <String Id="PrefsShowPercentagesBeside" Value="Afficher les pourcentages numériques à côté des barres" />
+  <String Id="PrefsColorThresholdsDesc" Value="Quand les barres passent du vert à l'orange puis au rouge." />
+  <String Id="PrefsOrangeAt" Value="Orange à" />
+  <String Id="PrefsRedAt" Value="Rouge à" />
+  <String Id="PrefsOrangeAtPct" Value="Orange à (%)" />
+  <String Id="PrefsRedAtPct" Value="Rouge à (%)" />
+  <String Id="PrefsOrangeAtShort" Value="Orange à (%) :" />
+  <String Id="PrefsRedAtShort" Value="Rouge à (%) :" />
+  <String Id="PrefsPollIntervalSeconds" Value="Intervalle d'interrogation (secondes)" />
+  <String Id="PrefsPollIntervalShort" Value="Intervalle d'interrogation (s) :" />
+  <String Id="PrefsHelperPath" Value="Binaire d'assistance :" />
+  <String Id="MeterSection" Value="Compteur flottant sur le bureau" />
+  <String Id="MeterEnable" Value="Afficher un compteur toujours visible sur le bureau" />
+  <String Id="MeterDesc" Value="Petit widget transparent affichant des barres en taille réelle. Déplaçable dans n'importe quel coin ; clic droit pour le verrouiller ou le masquer." />
+  <String Id="MeterShowPercentages" Value="Afficher les pourcentages numériques sur le compteur flottant" />
+  <String Id="MeterShowPercentagesSubtitle" Value="Ajoute les pourcentages de session et hebdomadaires à côté des barres sur le compteur flottant du bureau (doit être activé ci-dessous). L'info-bulle de la barre d'état affiche toujours les pourcentages." />
+  <String Id="MeterOpacity" Value="Opacité :" />
+  <String Id="MeterWidthPx" Value="Largeur (px) :" />
+  <String Id="MeterWidthHint" Value="(120–320)" />
+  <String Id="MeterLock" Value="Verrouiller la position" />
+  <String Id="MeterUnlock" Value="Déverrouiller" />
+  <String Id="MeterHide" Value="Masquer le compteur" />
+  <String Id="ActionOk" Value="OK" />
+  <String Id="ActionCancel" Value="Annuler" />
+  <String Id="ActionClose" Value="Fermer" />
+  <String Id="ActionOpen" Value="Ouvrir" />
+  <String Id="SigninDialogHeading" Value="Se connecter avec Claude" />
+  <String Id="SigninDialogBody" Value="Votre navigateur devrait s'être ouvert sur claude.ai. Terminez la connexion là-bas, puis revenez ici. Cette boîte de dialogue se fermera automatiquement." />
+  <String Id="WindowPreferencesTitle" Value="ClaudeBar" />
+  <String Id="TooltipDefault" Value="ClaudeBar" />
+  <String Id="TooltipLines" Value="ClaudeBar
+Session : %d%%
+Hebdomadaire : %d%%" />
+  <String Id="InstallerWelcome" Value="Bienvenue dans l'installation de ClaudeBar" />
+  <String Id="InstallerRuntimeStep" Value=".NET 8 Desktop Runtime (x64)" />
+  <String Id="InstallerAppStep" Value="ClaudeBar" />
+</WixLocalization>

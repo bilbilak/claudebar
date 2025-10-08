@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="cs-CZ" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="BrandName" Value="ClaudeBar" />
+  <String Id="MenuRefreshNow" Value="Aktualizovat nyní" />
+  <String Id="MenuOpenUsagePage" Value="Otevřít claude.ai/settings/usage" />
+  <String Id="MenuSettings" Value="Nastavení…" />
+  <String Id="MenuQuit" Value="Ukončit ClaudeBar" />
+  <String Id="MenuRefresh" Value="Aktualizovat" />
+  <String Id="StatSession" Value="Aktuální relace" />
+  <String Id="StatSessionDash" Value="Aktuální relace: —" />
+  <String Id="StatSessionWithPct" Value="Aktuální relace: %d%%" />
+  <String Id="StatWeekly" Value="Týdně (všechny modely)" />
+  <String Id="StatWeeklyDash" Value="Týdně (všechny modely): —" />
+  <String Id="StatWeeklyWithPct" Value="Týdně (všechny modely): %d%%" />
+  <String Id="StatResets" Value="Obnoví se %s" />
+  <String Id="TimeNow" Value="nyní" />
+  <String Id="TimeDash" Value="—" />
+  <String Id="TimeInMinutes" Value="za %d min" />
+  <String Id="TimeInHours" Value="za %d h" />
+  <String Id="TimeInHoursMinutes" Value="za %d h %d min" />
+  <String Id="TimeInDays" Value="za %d d" />
+  <String Id="TimeInDaysHours" Value="za %d d %d h" />
+  <String Id="StatusOffline" Value="Offline — poslední hodnota může být zastaralá" />
+  <String Id="StatusRateLimited" Value="Omezeno rychlostním limitem Claude API" />
+  <String Id="StatusUnauthenticated" Value="Nepřihlášeno — otevřete Nastavení a přidejte token" />
+  <String Id="AuthSignIn" Value="Přihlásit se přes Claude" />
+  <String Id="AuthSignOut" Value="Odhlásit se" />
+  <String Id="AuthSignedInToken" Value="Přihlášeno (token končí na '…%s')" />
+  <String Id="AuthNotSignedIn" Value="Nepřihlášeno" />
+  <String Id="AuthChecking" Value="Ověřuje se…" />
+  <String Id="AuthWaitingBrowser" Value="Čeká se na přihlášení v prohlížeči…" />
+  <String Id="AuthKeyringError" Value="Chyba klíčenky — viz protokoly" />
+  <String Id="AuthSignInFailed" Value="Přihlášení se nezdařilo" />
+  <String Id="AuthCouldNotStart" Value="Přihlašování nelze spustit" />
+  <String Id="AuthCopyLink" Value="Kopírovat odkaz" />
+  <String Id="AuthLinkCopiedNotify" Value="Přihlašovací odkaz zkopírován do schránky" />
+  <String Id="PrefsAccount" Value="Účet" />
+  <String Id="PrefsDisplay" Value="Zobrazení" />
+  <String Id="PrefsAdvanced" Value="Pokročilé" />
+  <String Id="PrefsGeneral" Value="Obecné" />
+  <String Id="PrefsAuthentication" Value="Ověřování" />
+  <String Id="PrefsStatus" Value="Stav" />
+  <String Id="PrefsTopBar" Value="Horní lišta" />
+  <String Id="PrefsTrayIcon" Value="Ikona v oznamovací oblasti" />
+  <String Id="PrefsColorThresholds" Value="Barevné prahy" />
+  <String Id="PrefsRefreshSection" Value="Aktualizace" />
+  <String Id="PrefsLabels" Value="Popisky:" />
+  <String Id="PrefsAccountSubtitle" Value="Přihlaste se svým účtem Claude, abyste získali přehled o využití plánu Max. Tokeny se ukládají do GNOME Keyring prostřednictvím knihovny libsecret." />
+  <String Id="PrefsShowPercentages" Value="Zobrazit číselné procentní hodnoty vedle pruhů" />
+  <String Id="PrefsShowPercentagesSubtitle" Value="Malé procentní hodnoty relace a týdne naskládané vedle pruhů." />
+  <String Id="PrefsShowPercentagesBeside" Value="Zobrazit číselné procentní hodnoty vedle pruhů" />
+  <String Id="PrefsColorThresholdsDesc" Value="Kdy pruhy přejdou ze zelené přes oranžovou až na červenou." />
+  <String Id="PrefsOrangeAt" Value="Oranžová při" />
+  <String Id="PrefsRedAt" Value="Červená při" />
+  <String Id="PrefsOrangeAtPct" Value="Oranžová při (%)" />
+  <String Id="PrefsRedAtPct" Value="Červená při (%)" />
+  <String Id="PrefsOrangeAtShort" Value="Oranžová při (%):" />
+  <String Id="PrefsRedAtShort" Value="Červená při (%):" />
+  <String Id="PrefsPollIntervalSeconds" Value="Interval dotazování (sekundy)" />
+  <String Id="PrefsPollIntervalShort" Value="Interval dotazování (s):" />
+  <String Id="PrefsHelperPath" Value="Pomocný binární soubor:" />
+  <String Id="MeterSection" Value="Plovoucí měřič na ploše" />
+  <String Id="MeterEnable" Value="Zobrazit měřič vždy navrchu na ploše" />
+  <String Id="MeterDesc" Value="Malý průhledný widget zobrazující pruhy v plné velikosti. Lze jej přetáhnout do libovolného rohu; kliknutím pravým tlačítkem jej uzamknete nebo skryjete." />
+  <String Id="MeterShowPercentages" Value="Zobrazit číselné procentní hodnoty na plovoucím měřiči" />
+  <String Id="MeterShowPercentagesSubtitle" Value="Přidá procentní hodnoty relace a týdne vedle pruhů na plovoucím měřiči na ploše (musí být povoleno níže). Popisek v oznamovací oblasti zobrazuje procenta vždy." />
+  <String Id="MeterOpacity" Value="Krytí:" />
+  <String Id="MeterWidthPx" Value="Šířka (px):" />
+  <String Id="MeterWidthHint" Value="(120–320)" />
+  <String Id="MeterLock" Value="Uzamknout polohu" />
+  <String Id="MeterUnlock" Value="Odemknout" />
+  <String Id="MeterHide" Value="Skrýt měřič" />
+  <String Id="ActionOk" Value="OK" />
+  <String Id="ActionCancel" Value="Zrušit" />
+  <String Id="ActionClose" Value="Zavřít" />
+  <String Id="ActionOpen" Value="Otevřít" />
+  <String Id="SigninDialogHeading" Value="Přihlásit se přes Claude" />
+  <String Id="SigninDialogBody" Value="Váš prohlížeč by se měl otevřít na claude.ai. Dokončete tam přihlášení a poté se vraťte sem. Toto dialogové okno se automaticky zavře." />
+  <String Id="WindowPreferencesTitle" Value="ClaudeBar" />
+  <String Id="TooltipDefault" Value="ClaudeBar" />
+  <String Id="TooltipLines" Value="ClaudeBar
+Relace: %d%%
+Týdně: %d%%" />
+  <String Id="InstallerWelcome" Value="Vítejte v instalaci ClaudeBar" />
+  <String Id="InstallerRuntimeStep" Value=".NET 8 Desktop Runtime (x64)" />
+  <String Id="InstallerAppStep" Value="ClaudeBar" />
+</WixLocalization>

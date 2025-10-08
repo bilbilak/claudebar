@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  WiX v4 source for the ClaudeBar MSI installer.
+
+  The UpgradeCode is stable across every released version so that newer
+  installs upgrade in place. Do NOT change it.
+
+  Version is supplied at build time via `wix build -d Version=...`.
+
+  Built with the WixUI extension so the user sees the standard install
+  wizard (welcome → install dir → install → finish) instead of a silent
+  install. Build command must include:
+      -ext WixToolset.UI.wixext
+
+  Localization: user-visible strings come from installer/loc/<culture>.wxl
+  via !(loc.Id) references. The build pulls every available .wxl with
+  multiple -loc flags so a single multilingual MSI is produced. Technical
+  identifiers (UpgradeCode, file Ids, registry keys, paths) stay hardcoded
+  here — only display text is localized.
+-->
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
+  <Package
+      Name="!(loc.BrandName)"
+      Manufacturer="Bilbilak"
+      Version="$(var.Version)"
+      UpgradeCode="6B816C56-1A28-4592-AB15-FD2BA2184F27"
+      Scope="perMachine"
+      Compressed="yes">
+
+    <!--
+      SummaryInformation.Description is metadata embedded in the MSI's
+      summary stream — it shows up under Explorer Properties > Details
+      for the .msi file itself, not in any install-time dialog. Keep it
+      in English as a stable technical descriptor.
+    -->
+    <SummaryInformation Description="ClaudeBar — Claude.ai session and weekly usage in the Windows system tray." />
+
+    <!--
+      DowngradeErrorMessage has no matching key in i18n/strings.yaml (it's an
+      edge-case installer dialog rather than tray-app UI), so it stays in
+      English here. If you ever need to localize it, add a new YAML entry
+      such as `installer_downgrade_blocked` and replace with !(loc.…).
+    -->
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+
+    <MediaTemplate EmbedCab="yes" />
+
+    <!-- Icon used by the Add/Remove Programs entry and by the Start Menu shortcut. -->
+    <Icon Id="ClaudeBar.ico" SourceFile="Resources\ClaudeBar.ico" />
+    <Property Id="ARPPRODUCTICON" Value="ClaudeBar.ico" />
+
+    <!-- Standard install wizard (welcome → license → install dir → install → finish). -->
+    <ui:WixUI Id="WixUI_InstallDir" InstallDirectory="INSTALLDIR" />
+    <UIRef Id="WixUI_ErrorProgressText" />
+    <WixVariable Id="WixUILicenseRtf" Value="Resources\LICENSE.rtf" />
+
+    <!-- Install to %ProgramFiles%\Bilbilak\ClaudeBar -->
+    <StandardDirectory Id="ProgramFiles6432Folder">
+      <Directory Id="CompanyDir" Name="Bilbilak">
+        <Directory Id="INSTALLDIR" Name="ClaudeBar" />
+      </Directory>
+    </StandardDirectory>
+
+    <!-- Start Menu folder -->
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="AppMenuDir" Name="ClaudeBar" />
+    </StandardDirectory>
+
+    <Feature Id="Main" Title="!(loc.InstallerAppStep)" Level="1" ConfigurableDirectory="INSTALLDIR">
+      <Component Id="MainExe" Directory="INSTALLDIR">
+        <File Id="ClaudeBarExe" Source="publish\ClaudeBar.exe" KeyPath="yes" />
+      </Component>
+
+      <Component Id="AppShortcut" Directory="AppMenuDir">
+        <!--
+          The Shortcut.Description appears as the tooltip when the user
+          hovers the Start Menu entry. YAML has no per-language tagline,
+          so we leave it in English here — only the Name (the brand
+          itself) is pulled from .wxl.
+        -->
+        <Shortcut
+            Id="StartMenuShortcut"
+            Name="!(loc.BrandName)"
+            Description="Claude.ai session and weekly usage in the system tray"
+            Target="[#ClaudeBarExe]"
+            WorkingDirectory="INSTALLDIR"
+            Icon="ClaudeBar.ico" />
+        <RemoveFolder Id="RemoveAppMenuDir" On="uninstall" />
+        <RegistryValue
+            Root="HKCU"
+            Key="Software\Bilbilak\ClaudeBar"
+            Name="installed"
+            Type="integer"
+            Value="1"
+            KeyPath="yes" />
+      </Component>
+
+      <!-- Auto-start at user login -->
+      <Component Id="AutoStart" Directory="INSTALLDIR">
+        <RegistryValue
+            Root="HKCU"
+            Key="Software\Microsoft\Windows\CurrentVersion\Run"
+            Name="ClaudeBar"
+            Type="string"
+            Value="[#ClaudeBarExe]"
+            KeyPath="yes" />
+      </Component>
+    </Feature>
+  </Package>
+</Wix>

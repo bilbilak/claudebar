@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrandName" xml:space="preserve">
+    <value>ClaudeBar</value>
+    <comment>DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.</comment>
+  </data>
+  <data name="MenuRefreshNow" xml:space="preserve">
+    <value>今すぐ更新</value>
+  </data>
+  <data name="MenuOpenUsagePage" xml:space="preserve">
+    <value>claude.ai/settings/usage を開く</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>設定…</value>
+  </data>
+  <data name="MenuQuit" xml:space="preserve">
+    <value>ClaudeBar を終了</value>
+  </data>
+  <data name="MenuRefresh" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="StatSession" xml:space="preserve">
+    <value>現在のセッション</value>
+  </data>
+  <data name="StatSessionDash" xml:space="preserve">
+    <value>現在のセッション: —</value>
+  </data>
+  <data name="StatSessionWithPct" xml:space="preserve">
+    <value>現在のセッション: %d%%</value>
+  </data>
+  <data name="StatWeekly" xml:space="preserve">
+    <value>週間(全モデル)</value>
+  </data>
+  <data name="StatWeeklyDash" xml:space="preserve">
+    <value>週間(全モデル): —</value>
+  </data>
+  <data name="StatWeeklyWithPct" xml:space="preserve">
+    <value>週間(全モデル): %d%%</value>
+  </data>
+  <data name="StatResets" xml:space="preserve">
+    <value>%s にリセット</value>
+    <comment>%s is a time-relative string like 'in 5 min'.</comment>
+  </data>
+  <data name="TimeNow" xml:space="preserve">
+    <value>今</value>
+  </data>
+  <data name="TimeDash" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="TimeInMinutes" xml:space="preserve">
+    <value>%d 分後</value>
+  </data>
+  <data name="TimeInHours" xml:space="preserve">
+    <value>%d 時間後</value>
+  </data>
+  <data name="TimeInHoursMinutes" xml:space="preserve">
+    <value>%d 時間 %d 分後</value>
+  </data>
+  <data name="TimeInDays" xml:space="preserve">
+    <value>%d 日後</value>
+  </data>
+  <data name="TimeInDaysHours" xml:space="preserve">
+    <value>%d 日 %d 時間後</value>
+  </data>
+  <data name="StatusOffline" xml:space="preserve">
+    <value>オフライン — 最後の値は古い可能性があります</value>
+  </data>
+  <data name="StatusRateLimited" xml:space="preserve">
+    <value>Claude API のレート制限に達しました</value>
+  </data>
+  <data name="StatusUnauthenticated" xml:space="preserve">
+    <value>サインインしていません — 設定を開いてトークンを追加してください</value>
+  </data>
+  <data name="AuthSignIn" xml:space="preserve">
+    <value>Claude でサインイン</value>
+  </data>
+  <data name="AuthSignOut" xml:space="preserve">
+    <value>サインアウト</value>
+  </data>
+  <data name="AuthSignedInToken" xml:space="preserve">
+    <value>サインイン済み(トークン末尾「…%s」)</value>
+    <comment>%s is the last 6 chars of the access token.</comment>
+  </data>
+  <data name="AuthNotSignedIn" xml:space="preserve">
+    <value>サインインしていません</value>
+  </data>
+  <data name="AuthChecking" xml:space="preserve">
+    <value>確認中…</value>
+  </data>
+  <data name="AuthWaitingBrowser" xml:space="preserve">
+    <value>ブラウザでのサインインを待っています…</value>
+  </data>
+  <data name="AuthKeyringError" xml:space="preserve">
+    <value>キーリングのエラー — ログを参照してください</value>
+  </data>
+  <data name="AuthSignInFailed" xml:space="preserve">
+    <value>サインインに失敗しました</value>
+  </data>
+  <data name="AuthCouldNotStart" xml:space="preserve">
+    <value>サインインを開始できませんでした</value>
+  </data>
+  <data name="AuthCopyLink" xml:space="preserve">
+    <value>リンクをコピー</value>
+    <comment>Short button label — used both in prefs dialogs and as a system-notification action where supported.</comment>
+  </data>
+  <data name="AuthLinkCopiedNotify" xml:space="preserve">
+    <value>サインインリンクをクリップボードにコピーしました</value>
+    <comment>Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.</comment>
+  </data>
+  <data name="PrefsAccount" xml:space="preserve">
+    <value>アカウント</value>
+  </data>
+  <data name="PrefsDisplay" xml:space="preserve">
+    <value>表示</value>
+  </data>
+  <data name="PrefsAdvanced" xml:space="preserve">
+    <value>詳細</value>
+  </data>
+  <data name="PrefsGeneral" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="PrefsAuthentication" xml:space="preserve">
+    <value>認証</value>
+  </data>
+  <data name="PrefsStatus" xml:space="preserve">
+    <value>ステータス</value>
+  </data>
+  <data name="PrefsTopBar" xml:space="preserve">
+    <value>上部バー</value>
+  </data>
+  <data name="PrefsTrayIcon" xml:space="preserve">
+    <value>トレイアイコン</value>
+  </data>
+  <data name="PrefsColorThresholds" xml:space="preserve">
+    <value>色のしきい値</value>
+  </data>
+  <data name="PrefsRefreshSection" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="PrefsLabels" xml:space="preserve">
+    <value>ラベル:</value>
+  </data>
+  <data name="PrefsAccountSubtitle" xml:space="preserve">
+    <value>Max プランの使用状況を取得するには、Claude アカウントでサインインしてください。トークンは libsecret 経由で GNOME Keyring に保存されます。</value>
+  </data>
+  <data name="PrefsShowPercentages" xml:space="preserve">
+    <value>バーの横に数値のパーセンテージを表示</value>
+  </data>
+  <data name="PrefsShowPercentagesSubtitle" xml:space="preserve">
+    <value>セッションと週間の小さなパーセンテージをバーの横に縦に並べて表示します。</value>
+  </data>
+  <data name="PrefsShowPercentagesBeside" xml:space="preserve">
+    <value>バーの横に数値のパーセンテージを表示</value>
+  </data>
+  <data name="PrefsColorThresholdsDesc" xml:space="preserve">
+    <value>バーが緑からオレンジ、そして赤に切り替わるタイミング。</value>
+  </data>
+  <data name="PrefsOrangeAt" xml:space="preserve">
+    <value>オレンジ</value>
+  </data>
+  <data name="PrefsRedAt" xml:space="preserve">
+    <value>レッド</value>
+  </data>
+  <data name="PrefsOrangeAtPct" xml:space="preserve">
+    <value>オレンジ (%)</value>
+  </data>
+  <data name="PrefsRedAtPct" xml:space="preserve">
+    <value>レッド (%)</value>
+  </data>
+  <data name="PrefsOrangeAtShort" xml:space="preserve">
+    <value>オレンジ (%):</value>
+  </data>
+  <data name="PrefsRedAtShort" xml:space="preserve">
+    <value>レッド (%):</value>
+  </data>
+  <data name="PrefsPollIntervalSeconds" xml:space="preserve">
+    <value>ポーリング間隔(秒)</value>
+  </data>
+  <data name="PrefsPollIntervalShort" xml:space="preserve">
+    <value>ポーリング間隔(秒):</value>
+  </data>
+  <data name="PrefsHelperPath" xml:space="preserve">
+    <value>ヘルパーバイナリ:</value>
+  </data>
+  <data name="MeterSection" xml:space="preserve">
+    <value>デスクトップのフローティングメーター</value>
+  </data>
+  <data name="MeterEnable" xml:space="preserve">
+    <value>デスクトップに常に最前面のメーターを表示</value>
+  </data>
+  <data name="MeterDesc" xml:space="preserve">
+    <value>フルサイズのバーを表示する小さな透明ウィジェット。任意の隅にドラッグでき、右クリックで固定または非表示にできます。</value>
+  </data>
+  <data name="MeterShowPercentages" xml:space="preserve">
+    <value>フローティングメーターに数値のパーセンテージを表示</value>
+  </data>
+  <data name="MeterShowPercentagesSubtitle" xml:space="preserve">
+    <value>デスクトップのフローティングメーターのバーの横にセッションと週間のパーセンテージを追加します(下で有効にする必要があります)。トレイのツールチップには常にパーセンテージが表示されます。</value>
+  </data>
+  <data name="MeterOpacity" xml:space="preserve">
+    <value>不透明度:</value>
+  </data>
+  <data name="MeterWidthPx" xml:space="preserve">
+    <value>幅(px):</value>
+  </data>
+  <data name="MeterWidthHint" xml:space="preserve">
+    <value>(120–320)</value>
+  </data>
+  <data name="MeterLock" xml:space="preserve">
+    <value>位置をロック</value>
+  </data>
+  <data name="MeterUnlock" xml:space="preserve">
+    <value>ロック解除</value>
+  </data>
+  <data name="MeterHide" xml:space="preserve">
+    <value>メーターを非表示</value>
+  </data>
+  <data name="ActionOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ActionCancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="ActionClose" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="ActionOpen" xml:space="preserve">
+    <value>開く</value>
+  </data>
+  <data name="SigninDialogHeading" xml:space="preserve">
+    <value>Claude でサインイン</value>
+  </data>
+  <data name="SigninDialogBody" xml:space="preserve">
+    <value>ブラウザで claude.ai が開いているはずです。そちらでサインインを完了し、こちらに戻ってください。このダイアログは自動的に閉じます。</value>
+  </data>
+  <data name="WindowPreferencesTitle" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipDefault" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipLines" xml:space="preserve">
+    <value>ClaudeBar
+セッション: %d%%
+週間: %d%%</value>
+  </data>
+  <data name="InstallerWelcome" xml:space="preserve">
+    <value>ClaudeBar セットアップへようこそ</value>
+  </data>
+  <data name="InstallerRuntimeStep" xml:space="preserve">
+    <value>.NET 8 Desktop Runtime (x64)</value>
+  </data>
+  <data name="InstallerAppStep" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+</root>

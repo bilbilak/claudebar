@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="ja-JP" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="BrandName" Value="ClaudeBar" />
+  <String Id="MenuRefreshNow" Value="今すぐ更新" />
+  <String Id="MenuOpenUsagePage" Value="claude.ai/settings/usage を開く" />
+  <String Id="MenuSettings" Value="設定…" />
+  <String Id="MenuQuit" Value="ClaudeBar を終了" />
+  <String Id="MenuRefresh" Value="更新" />
+  <String Id="StatSession" Value="現在のセッション" />
+  <String Id="StatSessionDash" Value="現在のセッション: —" />
+  <String Id="StatSessionWithPct" Value="現在のセッション: %d%%" />
+  <String Id="StatWeekly" Value="週間(全モデル)" />
+  <String Id="StatWeeklyDash" Value="週間(全モデル): —" />
+  <String Id="StatWeeklyWithPct" Value="週間(全モデル): %d%%" />
+  <String Id="StatResets" Value="%s にリセット" />
+  <String Id="TimeNow" Value="今" />
+  <String Id="TimeDash" Value="—" />
+  <String Id="TimeInMinutes" Value="%d 分後" />
+  <String Id="TimeInHours" Value="%d 時間後" />
+  <String Id="TimeInHoursMinutes" Value="%d 時間 %d 分後" />
+  <String Id="TimeInDays" Value="%d 日後" />
+  <String Id="TimeInDaysHours" Value="%d 日 %d 時間後" />
+  <String Id="StatusOffline" Value="オフライン — 最後の値は古い可能性があります" />
+  <String Id="StatusRateLimited" Value="Claude API のレート制限に達しました" />
+  <String Id="StatusUnauthenticated" Value="サインインしていません — 設定を開いてトークンを追加してください" />
+  <String Id="AuthSignIn" Value="Claude でサインイン" />
+  <String Id="AuthSignOut" Value="サインアウト" />
+  <String Id="AuthSignedInToken" Value="サインイン済み(トークン末尾「…%s」)" />
+  <String Id="AuthNotSignedIn" Value="サインインしていません" />
+  <String Id="AuthChecking" Value="確認中…" />
+  <String Id="AuthWaitingBrowser" Value="ブラウザでのサインインを待っています…" />
+  <String Id="AuthKeyringError" Value="キーリングのエラー — ログを参照してください" />
+  <String Id="AuthSignInFailed" Value="サインインに失敗しました" />
+  <String Id="AuthCouldNotStart" Value="サインインを開始できませんでした" />
+  <String Id="AuthCopyLink" Value="リンクをコピー" />
+  <String Id="AuthLinkCopiedNotify" Value="サインインリンクをクリップボードにコピーしました" />
+  <String Id="PrefsAccount" Value="アカウント" />
+  <String Id="PrefsDisplay" Value="表示" />
+  <String Id="PrefsAdvanced" Value="詳細" />
+  <String Id="PrefsGeneral" Value="一般" />
+  <String Id="PrefsAuthentication" Value="認証" />
+  <String Id="PrefsStatus" Value="ステータス" />
+  <String Id="PrefsTopBar" Value="上部バー" />
+  <String Id="PrefsTrayIcon" Value="トレイアイコン" />
+  <String Id="PrefsColorThresholds" Value="色のしきい値" />
+  <String Id="PrefsRefreshSection" Value="更新" />
+  <String Id="PrefsLabels" Value="ラベル:" />
+  <String Id="PrefsAccountSubtitle" Value="Max プランの使用状況を取得するには、Claude アカウントでサインインしてください。トークンは libsecret 経由で GNOME Keyring に保存されます。" />
+  <String Id="PrefsShowPercentages" Value="バーの横に数値のパーセンテージを表示" />
+  <String Id="PrefsShowPercentagesSubtitle" Value="セッションと週間の小さなパーセンテージをバーの横に縦に並べて表示します。" />
+  <String Id="PrefsShowPercentagesBeside" Value="バーの横に数値のパーセンテージを表示" />
+  <String Id="PrefsColorThresholdsDesc" Value="バーが緑からオレンジ、そして赤に切り替わるタイミング。" />
+  <String Id="PrefsOrangeAt" Value="オレンジ" />
+  <String Id="PrefsRedAt" Value="レッド" />
+  <String Id="PrefsOrangeAtPct" Value="オレンジ (%)" />
+  <String Id="PrefsRedAtPct" Value="レッド (%)" />
+  <String Id="PrefsOrangeAtShort" Value="オレンジ (%):" />
+  <String Id="PrefsRedAtShort" Value="レッド (%):" />
+  <String Id="PrefsPollIntervalSeconds" Value="ポーリング間隔(秒)" />
+  <String Id="PrefsPollIntervalShort" Value="ポーリング間隔(秒):" />
+  <String Id="PrefsHelperPath" Value="ヘルパーバイナリ:" />
+  <String Id="MeterSection" Value="デスクトップのフローティングメーター" />
+  <String Id="MeterEnable" Value="デスクトップに常に最前面のメーターを表示" />
+  <String Id="MeterDesc" Value="フルサイズのバーを表示する小さな透明ウィジェット。任意の隅にドラッグでき、右クリックで固定または非表示にできます。" />
+  <String Id="MeterShowPercentages" Value="フローティングメーターに数値のパーセンテージを表示" />
+  <String Id="MeterShowPercentagesSubtitle" Value="デスクトップのフローティングメーターのバーの横にセッションと週間のパーセンテージを追加します(下で有効にする必要があります)。トレイのツールチップには常にパーセンテージが表示されます。" />
+  <String Id="MeterOpacity" Value="不透明度:" />
+  <String Id="MeterWidthPx" Value="幅(px):" />
+  <String Id="MeterWidthHint" Value="(120–320)" />
+  <String Id="MeterLock" Value="位置をロック" />
+  <String Id="MeterUnlock" Value="ロック解除" />
+  <String Id="MeterHide" Value="メーターを非表示" />
+  <String Id="ActionOk" Value="OK" />
+  <String Id="ActionCancel" Value="キャンセル" />
+  <String Id="ActionClose" Value="閉じる" />
+  <String Id="ActionOpen" Value="開く" />
+  <String Id="SigninDialogHeading" Value="Claude でサインイン" />
+  <String Id="SigninDialogBody" Value="ブラウザで claude.ai が開いているはずです。そちらでサインインを完了し、こちらに戻ってください。このダイアログは自動的に閉じます。" />
+  <String Id="WindowPreferencesTitle" Value="ClaudeBar" />
+  <String Id="TooltipDefault" Value="ClaudeBar" />
+  <String Id="TooltipLines" Value="ClaudeBar
+セッション: %d%%
+週間: %d%%" />
+  <String Id="InstallerWelcome" Value="ClaudeBar セットアップへようこそ" />
+  <String Id="InstallerRuntimeStep" Value=".NET 8 Desktop Runtime (x64)" />
+  <String Id="InstallerAppStep" Value="ClaudeBar" />
+</WixLocalization>

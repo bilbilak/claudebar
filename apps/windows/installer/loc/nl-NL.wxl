@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="nl-NL" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="BrandName" Value="ClaudeBar" />
+  <String Id="MenuRefreshNow" Value="Nu vernieuwen" />
+  <String Id="MenuOpenUsagePage" Value="claude.ai/settings/usage openen" />
+  <String Id="MenuSettings" Value="Instellingen…" />
+  <String Id="MenuQuit" Value="ClaudeBar afsluiten" />
+  <String Id="MenuRefresh" Value="Vernieuwen" />
+  <String Id="StatSession" Value="Huidige sessie" />
+  <String Id="StatSessionDash" Value="Huidige sessie: —" />
+  <String Id="StatSessionWithPct" Value="Huidige sessie: %d%%" />
+  <String Id="StatWeekly" Value="Wekelijks (alle modellen)" />
+  <String Id="StatWeeklyDash" Value="Wekelijks (alle modellen): —" />
+  <String Id="StatWeeklyWithPct" Value="Wekelijks (alle modellen): %d%%" />
+  <String Id="StatResets" Value="Reset %s" />
+  <String Id="TimeNow" Value="nu" />
+  <String Id="TimeDash" Value="—" />
+  <String Id="TimeInMinutes" Value="over %d min" />
+  <String Id="TimeInHours" Value="over %d u" />
+  <String Id="TimeInHoursMinutes" Value="over %d u %d min" />
+  <String Id="TimeInDays" Value="over %d d" />
+  <String Id="TimeInDaysHours" Value="over %d d %d u" />
+  <String Id="StatusOffline" Value="Offline — laatste waarde kan verouderd zijn" />
+  <String Id="StatusRateLimited" Value="Snelheidslimiet bereikt bij Claude API" />
+  <String Id="StatusUnauthenticated" Value="Niet aangemeld — open Instellingen om een token toe te voegen" />
+  <String Id="AuthSignIn" Value="Aanmelden met Claude" />
+  <String Id="AuthSignOut" Value="Afmelden" />
+  <String Id="AuthSignedInToken" Value="Aangemeld (token eindigt op '…%s')" />
+  <String Id="AuthNotSignedIn" Value="Niet aangemeld" />
+  <String Id="AuthChecking" Value="Controleren…" />
+  <String Id="AuthWaitingBrowser" Value="Wachten op aanmelding via browser…" />
+  <String Id="AuthKeyringError" Value="Sleutelringfout — zie logboek" />
+  <String Id="AuthSignInFailed" Value="Aanmelden mislukt" />
+  <String Id="AuthCouldNotStart" Value="Aanmelden kon niet worden gestart" />
+  <String Id="AuthCopyLink" Value="Link kopiëren" />
+  <String Id="AuthLinkCopiedNotify" Value="Aanmeldlink gekopieerd naar het klembord" />
+  <String Id="PrefsAccount" Value="Account" />
+  <String Id="PrefsDisplay" Value="Weergave" />
+  <String Id="PrefsAdvanced" Value="Geavanceerd" />
+  <String Id="PrefsGeneral" Value="Algemeen" />
+  <String Id="PrefsAuthentication" Value="Verificatie" />
+  <String Id="PrefsStatus" Value="Status" />
+  <String Id="PrefsTopBar" Value="Bovenbalk" />
+  <String Id="PrefsTrayIcon" Value="Systeemvakpictogram" />
+  <String Id="PrefsColorThresholds" Value="Kleurdrempels" />
+  <String Id="PrefsRefreshSection" Value="Vernieuwen" />
+  <String Id="PrefsLabels" Value="Labels:" />
+  <String Id="PrefsAccountSubtitle" Value="Meld u aan met uw Claude-account om het verbruik van het Max-abonnement op te halen. Tokens worden opgeslagen in GNOME Keyring via libsecret." />
+  <String Id="PrefsShowPercentages" Value="Numerieke percentages naast de balken tonen" />
+  <String Id="PrefsShowPercentagesSubtitle" Value="Kleine sessie- en weekpercentages, gestapeld naast de balken." />
+  <String Id="PrefsShowPercentagesBeside" Value="Numerieke percentages naast de balken tonen" />
+  <String Id="PrefsColorThresholdsDesc" Value="Wanneer balken van groen naar oranje en vervolgens naar rood overgaan." />
+  <String Id="PrefsOrangeAt" Value="Oranje bij" />
+  <String Id="PrefsRedAt" Value="Rood bij" />
+  <String Id="PrefsOrangeAtPct" Value="Oranje bij (%)" />
+  <String Id="PrefsRedAtPct" Value="Rood bij (%)" />
+  <String Id="PrefsOrangeAtShort" Value="Oranje bij (%):" />
+  <String Id="PrefsRedAtShort" Value="Rood bij (%):" />
+  <String Id="PrefsPollIntervalSeconds" Value="Pollinginterval (seconden)" />
+  <String Id="PrefsPollIntervalShort" Value="Pollinginterval (s):" />
+  <String Id="PrefsHelperPath" Value="Helperbinary:" />
+  <String Id="MeterSection" Value="Zwevende bureaubladmeter" />
+  <String Id="MeterEnable" Value="Toon altijd-bovenop meter op het bureaublad" />
+  <String Id="MeterDesc" Value="Klein transparant widget dat balken op volledige grootte weergeeft. Versleepbaar naar elke hoek; klik met de rechtermuisknop om te vergrendelen of te verbergen." />
+  <String Id="MeterShowPercentages" Value="Numerieke percentages op de zwevende meter tonen" />
+  <String Id="MeterShowPercentagesSubtitle" Value="Voegt sessie- en weekpercentages toe naast de balken op de zwevende bureaubladmeter (moet hieronder ingeschakeld zijn). De tooltip in het systeemvak toont altijd percentages." />
+  <String Id="MeterOpacity" Value="Dekking:" />
+  <String Id="MeterWidthPx" Value="Breedte (px):" />
+  <String Id="MeterWidthHint" Value="(120–320)" />
+  <String Id="MeterLock" Value="Positie vergrendelen" />
+  <String Id="MeterUnlock" Value="Ontgrendelen" />
+  <String Id="MeterHide" Value="Meter verbergen" />
+  <String Id="ActionOk" Value="OK" />
+  <String Id="ActionCancel" Value="Annuleren" />
+  <String Id="ActionClose" Value="Sluiten" />
+  <String Id="ActionOpen" Value="Openen" />
+  <String Id="SigninDialogHeading" Value="Aanmelden met Claude" />
+  <String Id="SigninDialogBody" Value="Uw browser zou claude.ai geopend moeten hebben. Voltooi daar de aanmelding en kom dan hier terug. Dit dialoogvenster wordt automatisch gesloten." />
+  <String Id="WindowPreferencesTitle" Value="ClaudeBar" />
+  <String Id="TooltipDefault" Value="ClaudeBar" />
+  <String Id="TooltipLines" Value="ClaudeBar
+Sessie: %d%%
+Wekelijks: %d%%" />
+  <String Id="InstallerWelcome" Value="Welkom bij de installatie van ClaudeBar" />
+  <String Id="InstallerRuntimeStep" Value=".NET 8 Desktop Runtime (x64)" />
+  <String Id="InstallerAppStep" Value="ClaudeBar" />
+</WixLocalization>

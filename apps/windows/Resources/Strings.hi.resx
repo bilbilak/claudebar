@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrandName" xml:space="preserve">
+    <value>ClaudeBar</value>
+    <comment>DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.</comment>
+  </data>
+  <data name="MenuRefreshNow" xml:space="preserve">
+    <value>अभी ताज़ा करें</value>
+  </data>
+  <data name="MenuOpenUsagePage" xml:space="preserve">
+    <value>claude.ai/settings/usage खोलें</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>सेटिंग्स…</value>
+  </data>
+  <data name="MenuQuit" xml:space="preserve">
+    <value>ClaudeBar से बाहर निकलें</value>
+  </data>
+  <data name="MenuRefresh" xml:space="preserve">
+    <value>ताज़ा करें</value>
+  </data>
+  <data name="StatSession" xml:space="preserve">
+    <value>वर्तमान सत्र</value>
+  </data>
+  <data name="StatSessionDash" xml:space="preserve">
+    <value>वर्तमान सत्र: —</value>
+  </data>
+  <data name="StatSessionWithPct" xml:space="preserve">
+    <value>वर्तमान सत्र: %d%%</value>
+  </data>
+  <data name="StatWeekly" xml:space="preserve">
+    <value>साप्ताहिक (सभी मॉडल)</value>
+  </data>
+  <data name="StatWeeklyDash" xml:space="preserve">
+    <value>साप्ताहिक (सभी मॉडल): —</value>
+  </data>
+  <data name="StatWeeklyWithPct" xml:space="preserve">
+    <value>साप्ताहिक (सभी मॉडल): %d%%</value>
+  </data>
+  <data name="StatResets" xml:space="preserve">
+    <value>%s रीसेट होगा</value>
+    <comment>%s is a time-relative string like 'in 5 min'.</comment>
+  </data>
+  <data name="TimeNow" xml:space="preserve">
+    <value>अभी</value>
+  </data>
+  <data name="TimeDash" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="TimeInMinutes" xml:space="preserve">
+    <value>%d मिनट में</value>
+  </data>
+  <data name="TimeInHours" xml:space="preserve">
+    <value>%d घंटे में</value>
+  </data>
+  <data name="TimeInHoursMinutes" xml:space="preserve">
+    <value>%d घंटे %d मिनट में</value>
+  </data>
+  <data name="TimeInDays" xml:space="preserve">
+    <value>%d दिन में</value>
+  </data>
+  <data name="TimeInDaysHours" xml:space="preserve">
+    <value>%d दिन %d घंटे में</value>
+  </data>
+  <data name="StatusOffline" xml:space="preserve">
+    <value>ऑफ़लाइन — अंतिम मान पुराना हो सकता है</value>
+  </data>
+  <data name="StatusRateLimited" xml:space="preserve">
+    <value>Claude API द्वारा दर सीमा लागू</value>
+  </data>
+  <data name="StatusUnauthenticated" xml:space="preserve">
+    <value>साइन इन नहीं हैं — टोकन जोड़ने के लिए सेटिंग्स खोलें</value>
+  </data>
+  <data name="AuthSignIn" xml:space="preserve">
+    <value>Claude से साइन इन करें</value>
+  </data>
+  <data name="AuthSignOut" xml:space="preserve">
+    <value>साइन आउट</value>
+  </data>
+  <data name="AuthSignedInToken" xml:space="preserve">
+    <value>साइन इन (टोकन का अंत '…%s')</value>
+    <comment>%s is the last 6 chars of the access token.</comment>
+  </data>
+  <data name="AuthNotSignedIn" xml:space="preserve">
+    <value>साइन इन नहीं</value>
+  </data>
+  <data name="AuthChecking" xml:space="preserve">
+    <value>जाँच रहे हैं…</value>
+  </data>
+  <data name="AuthWaitingBrowser" xml:space="preserve">
+    <value>ब्राउज़र साइन-इन की प्रतीक्षा है…</value>
+  </data>
+  <data name="AuthKeyringError" xml:space="preserve">
+    <value>कीरिंग त्रुटि — लॉग देखें</value>
+  </data>
+  <data name="AuthSignInFailed" xml:space="preserve">
+    <value>साइन-इन विफल</value>
+  </data>
+  <data name="AuthCouldNotStart" xml:space="preserve">
+    <value>साइन-इन प्रारंभ नहीं हो सका</value>
+  </data>
+  <data name="AuthCopyLink" xml:space="preserve">
+    <value>लिंक कॉपी करें</value>
+    <comment>Short button label — used both in prefs dialogs and as a system-notification action where supported.</comment>
+  </data>
+  <data name="AuthLinkCopiedNotify" xml:space="preserve">
+    <value>साइन-इन लिंक क्लिपबोर्ड पर कॉपी किया गया</value>
+    <comment>Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.</comment>
+  </data>
+  <data name="PrefsAccount" xml:space="preserve">
+    <value>खाता</value>
+  </data>
+  <data name="PrefsDisplay" xml:space="preserve">
+    <value>प्रदर्शन</value>
+  </data>
+  <data name="PrefsAdvanced" xml:space="preserve">
+    <value>उन्नत</value>
+  </data>
+  <data name="PrefsGeneral" xml:space="preserve">
+    <value>सामान्य</value>
+  </data>
+  <data name="PrefsAuthentication" xml:space="preserve">
+    <value>प्रमाणीकरण</value>
+  </data>
+  <data name="PrefsStatus" xml:space="preserve">
+    <value>स्थिति</value>
+  </data>
+  <data name="PrefsTopBar" xml:space="preserve">
+    <value>शीर्ष बार</value>
+  </data>
+  <data name="PrefsTrayIcon" xml:space="preserve">
+    <value>ट्रे आइकन</value>
+  </data>
+  <data name="PrefsColorThresholds" xml:space="preserve">
+    <value>रंग सीमाएँ</value>
+  </data>
+  <data name="PrefsRefreshSection" xml:space="preserve">
+    <value>ताज़ा करें</value>
+  </data>
+  <data name="PrefsLabels" xml:space="preserve">
+    <value>लेबल:</value>
+  </data>
+  <data name="PrefsAccountSubtitle" xml:space="preserve">
+    <value>Max प्लान का उपयोग प्राप्त करने के लिए अपने Claude खाते से साइन इन करें। टोकन libsecret के माध्यम से GNOME Keyring में संग्रहीत होते हैं।</value>
+  </data>
+  <data name="PrefsShowPercentages" xml:space="preserve">
+    <value>बार के बगल में संख्यात्मक प्रतिशत दिखाएँ</value>
+  </data>
+  <data name="PrefsShowPercentagesSubtitle" xml:space="preserve">
+    <value>बार के बगल में लंबवत रूप से छोटे सत्र और साप्ताहिक प्रतिशत।</value>
+  </data>
+  <data name="PrefsShowPercentagesBeside" xml:space="preserve">
+    <value>बार के बगल में संख्यात्मक प्रतिशत दिखाएँ</value>
+  </data>
+  <data name="PrefsColorThresholdsDesc" xml:space="preserve">
+    <value>जब बार हरे से नारंगी और फिर लाल हो जाते हैं।</value>
+  </data>
+  <data name="PrefsOrangeAt" xml:space="preserve">
+    <value>नारंगी पर</value>
+  </data>
+  <data name="PrefsRedAt" xml:space="preserve">
+    <value>लाल पर</value>
+  </data>
+  <data name="PrefsOrangeAtPct" xml:space="preserve">
+    <value>नारंगी पर (%)</value>
+  </data>
+  <data name="PrefsRedAtPct" xml:space="preserve">
+    <value>लाल पर (%)</value>
+  </data>
+  <data name="PrefsOrangeAtShort" xml:space="preserve">
+    <value>नारंगी पर (%):</value>
+  </data>
+  <data name="PrefsRedAtShort" xml:space="preserve">
+    <value>लाल पर (%):</value>
+  </data>
+  <data name="PrefsPollIntervalSeconds" xml:space="preserve">
+    <value>पोल अंतराल (सेकंड)</value>
+  </data>
+  <data name="PrefsPollIntervalShort" xml:space="preserve">
+    <value>पोल अंतराल (से.):</value>
+  </data>
+  <data name="PrefsHelperPath" xml:space="preserve">
+    <value>हेल्पर बाइनरी:</value>
+  </data>
+  <data name="MeterSection" xml:space="preserve">
+    <value>डेस्कटॉप पर तैरता मीटर</value>
+  </data>
+  <data name="MeterEnable" xml:space="preserve">
+    <value>डेस्कटॉप पर हमेशा-शीर्ष पर मीटर दिखाएँ</value>
+  </data>
+  <data name="MeterDesc" xml:space="preserve">
+    <value>पूर्ण आकार के बार दिखाने वाला छोटा पारदर्शी विजेट। किसी भी कोने में खींचा जा सकता है; लॉक करने या छिपाने के लिए दायाँ-क्लिक करें।</value>
+  </data>
+  <data name="MeterShowPercentages" xml:space="preserve">
+    <value>तैरते मीटर पर संख्यात्मक प्रतिशत दिखाएँ</value>
+  </data>
+  <data name="MeterShowPercentagesSubtitle" xml:space="preserve">
+    <value>तैरते डेस्कटॉप मीटर पर बार के बगल में सत्र और साप्ताहिक प्रतिशत जोड़ता है (नीचे सक्षम होना चाहिए)। ट्रे टूलटिप हमेशा प्रतिशत दिखाता है।</value>
+  </data>
+  <data name="MeterOpacity" xml:space="preserve">
+    <value>अपारदर्शिता:</value>
+  </data>
+  <data name="MeterWidthPx" xml:space="preserve">
+    <value>चौड़ाई (पिक्सेल):</value>
+  </data>
+  <data name="MeterWidthHint" xml:space="preserve">
+    <value>(120–320)</value>
+  </data>
+  <data name="MeterLock" xml:space="preserve">
+    <value>स्थिति लॉक करें</value>
+  </data>
+  <data name="MeterUnlock" xml:space="preserve">
+    <value>अनलॉक</value>
+  </data>
+  <data name="MeterHide" xml:space="preserve">
+    <value>मीटर छिपाएँ</value>
+  </data>
+  <data name="ActionOk" xml:space="preserve">
+    <value>ठीक है</value>
+  </data>
+  <data name="ActionCancel" xml:space="preserve">
+    <value>रद्द करें</value>
+  </data>
+  <data name="ActionClose" xml:space="preserve">
+    <value>बंद करें</value>
+  </data>
+  <data name="ActionOpen" xml:space="preserve">
+    <value>खोलें</value>
+  </data>
+  <data name="SigninDialogHeading" xml:space="preserve">
+    <value>Claude से साइन इन करें</value>
+  </data>
+  <data name="SigninDialogBody" xml:space="preserve">
+    <value>आपका ब्राउज़र claude.ai पर खुल गया होगा। वहाँ साइन-इन पूरा करें, फिर यहाँ लौटें। यह संवाद स्वतः बंद हो जाएगा।</value>
+  </data>
+  <data name="WindowPreferencesTitle" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipDefault" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipLines" xml:space="preserve">
+    <value>ClaudeBar
+सत्र: %d%%
+साप्ताहिक: %d%%</value>
+  </data>
+  <data name="InstallerWelcome" xml:space="preserve">
+    <value>ClaudeBar सेटअप में आपका स्वागत है</value>
+  </data>
+  <data name="InstallerRuntimeStep" xml:space="preserve">
+    <value>.NET 8 Desktop Runtime (x64)</value>
+  </data>
+  <data name="InstallerAppStep" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+</root>

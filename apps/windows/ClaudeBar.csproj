@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Resources\ClaudeBar.ico</ApplicationIcon>
+    <AssemblyName>ClaudeBar</AssemblyName>
+    <RootNamespace>ClaudeBar</RootNamespace>
+    <Version>0.0.0</Version>
+    <FileVersion>0.0.0.0</FileVersion>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <Company>Bilbilak</Company>
+    <Authors>Bilbilak</Authors>
+    <Product>ClaudeBar</Product>
+    <Description>Shows Claude.ai subscription session and weekly usage in the Windows system tray. Part of claudebar.</Description>
+    <Copyright>Copyright © 2025–2026 Bilbilak. Released under the GNU GPL v3.</Copyright>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/bilbilak/claudebar</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bilbilak/claudebar.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <!--
+      Default (neutral) language baked into the main assembly. Satellite
+      assemblies for fr/de/es/… are generated automatically from the
+      culture-suffixed .resx files declared below and end up at
+      bin/$(Configuration)/<culture>/ClaudeBar.resources.dll.
+    -->
+    <NeutralResourcesLanguage>en</NeutralResourcesLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>false</SelfContained>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="H.NotifyIcon.Wpf" Version="2.0.131" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\ClaudeBar.ico" />
+  </ItemGroup>
+
+  <!--
+    Localized resource files. Resources/Strings.resx and Resources/Strings.<culture>.resx
+    are picked up automatically by the .NET SDK's default EmbeddedResource glob
+    (EnableDefaultEmbeddedResourceItems=true), so no explicit <EmbeddedResource>
+    entries are needed. The default Strings.resx is embedded under the logical
+    name ClaudeBar.Resources.Strings — the manifest base name that
+    Resources/Strings.cs constructs its ResourceManager from. Each
+    Strings.<culture>.resx is auto-recognised as a culture variant (because of
+    the dotted-culture filename) and compiled into a satellite assembly
+    bin/<config>/<culture>/ClaudeBar.resources.dll.
+
+    We deliberately don't set a Generator on the .resx files: Strings.cs is
+    hand-written so `dotnet build` works on Linux/CI without the WPF/T4 ResX
+    code generator. Re-run `python3 scripts/regenerate-translations.py windows`
+    after editing i18n/strings.yaml to regenerate the .resx files.
+  -->
+
+</Project>

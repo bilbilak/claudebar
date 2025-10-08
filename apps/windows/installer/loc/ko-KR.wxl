@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="ko-KR" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="BrandName" Value="ClaudeBar" />
+  <String Id="MenuRefreshNow" Value="지금 새로 고침" />
+  <String Id="MenuOpenUsagePage" Value="claude.ai/settings/usage 열기" />
+  <String Id="MenuSettings" Value="설정…" />
+  <String Id="MenuQuit" Value="ClaudeBar 종료" />
+  <String Id="MenuRefresh" Value="새로 고침" />
+  <String Id="StatSession" Value="현재 세션" />
+  <String Id="StatSessionDash" Value="현재 세션: —" />
+  <String Id="StatSessionWithPct" Value="현재 세션: %d%%" />
+  <String Id="StatWeekly" Value="주간 (모든 모델)" />
+  <String Id="StatWeeklyDash" Value="주간 (모든 모델): —" />
+  <String Id="StatWeeklyWithPct" Value="주간 (모든 모델): %d%%" />
+  <String Id="StatResets" Value="%s 후 초기화" />
+  <String Id="TimeNow" Value="지금" />
+  <String Id="TimeDash" Value="—" />
+  <String Id="TimeInMinutes" Value="%d분 후" />
+  <String Id="TimeInHours" Value="%d시간 후" />
+  <String Id="TimeInHoursMinutes" Value="%d시간 %d분 후" />
+  <String Id="TimeInDays" Value="%d일 후" />
+  <String Id="TimeInDaysHours" Value="%d일 %d시간 후" />
+  <String Id="StatusOffline" Value="오프라인 — 마지막 값이 오래되었을 수 있습니다" />
+  <String Id="StatusRateLimited" Value="Claude API의 속도 제한에 도달했습니다" />
+  <String Id="StatusUnauthenticated" Value="로그인되어 있지 않습니다 — 설정을 열어 토큰을 추가하세요" />
+  <String Id="AuthSignIn" Value="Claude로 로그인" />
+  <String Id="AuthSignOut" Value="로그아웃" />
+  <String Id="AuthSignedInToken" Value="로그인됨 (토큰 끝자리 '…%s')" />
+  <String Id="AuthNotSignedIn" Value="로그인되어 있지 않음" />
+  <String Id="AuthChecking" Value="확인 중…" />
+  <String Id="AuthWaitingBrowser" Value="브라우저에서 로그인 대기 중…" />
+  <String Id="AuthKeyringError" Value="키링 오류 — 로그를 확인하세요" />
+  <String Id="AuthSignInFailed" Value="로그인에 실패했습니다" />
+  <String Id="AuthCouldNotStart" Value="로그인을 시작할 수 없습니다" />
+  <String Id="AuthCopyLink" Value="링크 복사" />
+  <String Id="AuthLinkCopiedNotify" Value="로그인 링크가 클립보드에 복사되었습니다" />
+  <String Id="PrefsAccount" Value="계정" />
+  <String Id="PrefsDisplay" Value="표시" />
+  <String Id="PrefsAdvanced" Value="고급" />
+  <String Id="PrefsGeneral" Value="일반" />
+  <String Id="PrefsAuthentication" Value="인증" />
+  <String Id="PrefsStatus" Value="상태" />
+  <String Id="PrefsTopBar" Value="상단 표시줄" />
+  <String Id="PrefsTrayIcon" Value="트레이 아이콘" />
+  <String Id="PrefsColorThresholds" Value="색상 임계값" />
+  <String Id="PrefsRefreshSection" Value="새로 고침" />
+  <String Id="PrefsLabels" Value="레이블:" />
+  <String Id="PrefsAccountSubtitle" Value="Max 요금제 사용량을 가져오려면 Claude 계정으로 로그인하십시오. 토큰은 libsecret을 통해 GNOME Keyring에 저장됩니다." />
+  <String Id="PrefsShowPercentages" Value="막대 옆에 숫자 백분율 표시" />
+  <String Id="PrefsShowPercentagesSubtitle" Value="막대 옆에 작은 세션 및 주간 백분율이 세로로 표시됩니다." />
+  <String Id="PrefsShowPercentagesBeside" Value="막대 옆에 숫자 백분율 표시" />
+  <String Id="PrefsColorThresholdsDesc" Value="막대 색상이 녹색에서 주황색, 빨간색으로 바뀌는 시점입니다." />
+  <String Id="PrefsOrangeAt" Value="주황색" />
+  <String Id="PrefsRedAt" Value="빨간색" />
+  <String Id="PrefsOrangeAtPct" Value="주황색 (%)" />
+  <String Id="PrefsRedAtPct" Value="빨간색 (%)" />
+  <String Id="PrefsOrangeAtShort" Value="주황색 (%):" />
+  <String Id="PrefsRedAtShort" Value="빨간색 (%):" />
+  <String Id="PrefsPollIntervalSeconds" Value="폴링 간격(초)" />
+  <String Id="PrefsPollIntervalShort" Value="폴링 간격(초):" />
+  <String Id="PrefsHelperPath" Value="도우미 바이너리:" />
+  <String Id="MeterSection" Value="데스크탑 부동 미터" />
+  <String Id="MeterEnable" Value="데스크탑에 항상 위에 표시되는 미터 표시" />
+  <String Id="MeterDesc" Value="전체 크기의 막대를 표시하는 작은 투명 위젯입니다. 원하는 모서리로 끌어다 놓을 수 있으며, 마우스 오른쪽 버튼을 클릭하여 잠그거나 숨길 수 있습니다." />
+  <String Id="MeterShowPercentages" Value="부동 미터에 숫자 백분율 표시" />
+  <String Id="MeterShowPercentagesSubtitle" Value="부동 데스크탑 미터의 막대 옆에 세션 및 주간 백분율을 추가합니다(아래에서 활성화해야 함). 트레이 도구 설명에는 항상 백분율이 표시됩니다." />
+  <String Id="MeterOpacity" Value="불투명도:" />
+  <String Id="MeterWidthPx" Value="너비(px):" />
+  <String Id="MeterWidthHint" Value="(120–320)" />
+  <String Id="MeterLock" Value="위치 잠금" />
+  <String Id="MeterUnlock" Value="잠금 해제" />
+  <String Id="MeterHide" Value="미터 숨기기" />
+  <String Id="ActionOk" Value="확인" />
+  <String Id="ActionCancel" Value="취소" />
+  <String Id="ActionClose" Value="닫기" />
+  <String Id="ActionOpen" Value="열기" />
+  <String Id="SigninDialogHeading" Value="Claude로 로그인" />
+  <String Id="SigninDialogBody" Value="브라우저가 claude.ai로 열렸을 것입니다. 그곳에서 로그인을 완료한 후 이 화면으로 돌아오십시오. 이 대화 상자는 자동으로 닫힙니다." />
+  <String Id="WindowPreferencesTitle" Value="ClaudeBar" />
+  <String Id="TooltipDefault" Value="ClaudeBar" />
+  <String Id="TooltipLines" Value="ClaudeBar
+세션: %d%%
+주간: %d%%" />
+  <String Id="InstallerWelcome" Value="ClaudeBar 설치 프로그램에 오신 것을 환영합니다" />
+  <String Id="InstallerRuntimeStep" Value=".NET 8 Desktop Runtime (x64)" />
+  <String Id="InstallerAppStep" Value="ClaudeBar" />
+</WixLocalization>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrandName" xml:space="preserve">
+    <value>ClaudeBar</value>
+    <comment>DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.</comment>
+  </data>
+  <data name="MenuRefreshNow" xml:space="preserve">
+    <value>Şimdi yenile</value>
+  </data>
+  <data name="MenuOpenUsagePage" xml:space="preserve">
+    <value>claude.ai/settings/usage adresini aç</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>Ayarlar…</value>
+  </data>
+  <data name="MenuQuit" xml:space="preserve">
+    <value>ClaudeBar'dan çık</value>
+  </data>
+  <data name="MenuRefresh" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="StatSession" xml:space="preserve">
+    <value>Geçerli oturum</value>
+  </data>
+  <data name="StatSessionDash" xml:space="preserve">
+    <value>Geçerli oturum: —</value>
+  </data>
+  <data name="StatSessionWithPct" xml:space="preserve">
+    <value>Geçerli oturum: %d%%</value>
+  </data>
+  <data name="StatWeekly" xml:space="preserve">
+    <value>Haftalık (tüm modeller)</value>
+  </data>
+  <data name="StatWeeklyDash" xml:space="preserve">
+    <value>Haftalık (tüm modeller): —</value>
+  </data>
+  <data name="StatWeeklyWithPct" xml:space="preserve">
+    <value>Haftalık (tüm modeller): %d%%</value>
+  </data>
+  <data name="StatResets" xml:space="preserve">
+    <value>Sıfırlanır %s</value>
+    <comment>%s is a time-relative string like 'in 5 min'.</comment>
+  </data>
+  <data name="TimeNow" xml:space="preserve">
+    <value>şimdi</value>
+  </data>
+  <data name="TimeDash" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="TimeInMinutes" xml:space="preserve">
+    <value>%d dk içinde</value>
+  </data>
+  <data name="TimeInHours" xml:space="preserve">
+    <value>%d sa içinde</value>
+  </data>
+  <data name="TimeInHoursMinutes" xml:space="preserve">
+    <value>%d sa %d dk içinde</value>
+  </data>
+  <data name="TimeInDays" xml:space="preserve">
+    <value>%d g içinde</value>
+  </data>
+  <data name="TimeInDaysHours" xml:space="preserve">
+    <value>%d g %d sa içinde</value>
+  </data>
+  <data name="StatusOffline" xml:space="preserve">
+    <value>Çevrimdışı — son değer güncel olmayabilir</value>
+  </data>
+  <data name="StatusRateLimited" xml:space="preserve">
+    <value>Claude API tarafından hız sınırı uygulandı</value>
+  </data>
+  <data name="StatusUnauthenticated" xml:space="preserve">
+    <value>Oturum açılmadı — token eklemek için Ayarlar'ı açın</value>
+  </data>
+  <data name="AuthSignIn" xml:space="preserve">
+    <value>Claude ile oturum aç</value>
+  </data>
+  <data name="AuthSignOut" xml:space="preserve">
+    <value>Oturumu kapat</value>
+  </data>
+  <data name="AuthSignedInToken" xml:space="preserve">
+    <value>Oturum açık (token şununla bitiyor: '…%s')</value>
+    <comment>%s is the last 6 chars of the access token.</comment>
+  </data>
+  <data name="AuthNotSignedIn" xml:space="preserve">
+    <value>Oturum açık değil</value>
+  </data>
+  <data name="AuthChecking" xml:space="preserve">
+    <value>Kontrol ediliyor…</value>
+  </data>
+  <data name="AuthWaitingBrowser" xml:space="preserve">
+    <value>Tarayıcıda oturum açılması bekleniyor…</value>
+  </data>
+  <data name="AuthKeyringError" xml:space="preserve">
+    <value>Anahtarlık hatası — günlüklere bakın</value>
+  </data>
+  <data name="AuthSignInFailed" xml:space="preserve">
+    <value>Oturum açma başarısız</value>
+  </data>
+  <data name="AuthCouldNotStart" xml:space="preserve">
+    <value>Oturum açma başlatılamadı</value>
+  </data>
+  <data name="AuthCopyLink" xml:space="preserve">
+    <value>Bağlantıyı kopyala</value>
+    <comment>Short button label — used both in prefs dialogs and as a system-notification action where supported.</comment>
+  </data>
+  <data name="AuthLinkCopiedNotify" xml:space="preserve">
+    <value>Oturum açma bağlantısı panoya kopyalandı</value>
+    <comment>Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.</comment>
+  </data>
+  <data name="PrefsAccount" xml:space="preserve">
+    <value>Hesap</value>
+  </data>
+  <data name="PrefsDisplay" xml:space="preserve">
+    <value>Görüntü</value>
+  </data>
+  <data name="PrefsAdvanced" xml:space="preserve">
+    <value>Gelişmiş</value>
+  </data>
+  <data name="PrefsGeneral" xml:space="preserve">
+    <value>Genel</value>
+  </data>
+  <data name="PrefsAuthentication" xml:space="preserve">
+    <value>Kimlik doğrulama</value>
+  </data>
+  <data name="PrefsStatus" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="PrefsTopBar" xml:space="preserve">
+    <value>Üst çubuk</value>
+  </data>
+  <data name="PrefsTrayIcon" xml:space="preserve">
+    <value>Sistem tepsisi simgesi</value>
+  </data>
+  <data name="PrefsColorThresholds" xml:space="preserve">
+    <value>Renk eşikleri</value>
+  </data>
+  <data name="PrefsRefreshSection" xml:space="preserve">
+    <value>Yenileme</value>
+  </data>
+  <data name="PrefsLabels" xml:space="preserve">
+    <value>Etiketler:</value>
+  </data>
+  <data name="PrefsAccountSubtitle" xml:space="preserve">
+    <value>Max planı kullanımını almak için Claude hesabınızla oturum açın. Belirteçler libsecret aracılığıyla GNOME Keyring içinde saklanır.</value>
+  </data>
+  <data name="PrefsShowPercentages" xml:space="preserve">
+    <value>Çubukların yanında sayısal yüzdeleri göster</value>
+  </data>
+  <data name="PrefsShowPercentagesSubtitle" xml:space="preserve">
+    <value>Çubukların yanında üst üste dizilmiş küçük oturum ve haftalık yüzdeler.</value>
+  </data>
+  <data name="PrefsShowPercentagesBeside" xml:space="preserve">
+    <value>Çubukların yanında sayısal yüzdeleri göster</value>
+  </data>
+  <data name="PrefsColorThresholdsDesc" xml:space="preserve">
+    <value>Çubukların yeşilden turuncuya ve kırmızıya geçtiği eşikler.</value>
+  </data>
+  <data name="PrefsOrangeAt" xml:space="preserve">
+    <value>Turuncu eşiği</value>
+  </data>
+  <data name="PrefsRedAt" xml:space="preserve">
+    <value>Kırmızı eşiği</value>
+  </data>
+  <data name="PrefsOrangeAtPct" xml:space="preserve">
+    <value>Turuncu eşiği (%)</value>
+  </data>
+  <data name="PrefsRedAtPct" xml:space="preserve">
+    <value>Kırmızı eşiği (%)</value>
+  </data>
+  <data name="PrefsOrangeAtShort" xml:space="preserve">
+    <value>Turuncu eşiği (%):</value>
+  </data>
+  <data name="PrefsRedAtShort" xml:space="preserve">
+    <value>Kırmızı eşiği (%):</value>
+  </data>
+  <data name="PrefsPollIntervalSeconds" xml:space="preserve">
+    <value>Yoklama aralığı (saniye)</value>
+  </data>
+  <data name="PrefsPollIntervalShort" xml:space="preserve">
+    <value>Yoklama aralığı (sn):</value>
+  </data>
+  <data name="PrefsHelperPath" xml:space="preserve">
+    <value>Yardımcı ikili dosya:</value>
+  </data>
+  <data name="MeterSection" xml:space="preserve">
+    <value>Yüzen masaüstü göstergesi</value>
+  </data>
+  <data name="MeterEnable" xml:space="preserve">
+    <value>Masaüstünde her zaman üstte göstergeyi göster</value>
+  </data>
+  <data name="MeterDesc" xml:space="preserve">
+    <value>Tam boyutlu çubuklar gösteren küçük şeffaf bir araç. İstediğiniz köşeye sürüklenebilir; kilitlemek veya gizlemek için sağ tıklayın.</value>
+  </data>
+  <data name="MeterShowPercentages" xml:space="preserve">
+    <value>Yüzen göstergede sayısal yüzdeleri göster</value>
+  </data>
+  <data name="MeterShowPercentagesSubtitle" xml:space="preserve">
+    <value>Yüzen masaüstü göstergesindeki çubukların yanına oturum ve haftalık yüzdeleri ekler (aşağıdan etkinleştirilmelidir). Sistem tepsisindeki ipucu her zaman yüzdeleri gösterir.</value>
+  </data>
+  <data name="MeterOpacity" xml:space="preserve">
+    <value>Opaklık:</value>
+  </data>
+  <data name="MeterWidthPx" xml:space="preserve">
+    <value>Genişlik (px):</value>
+  </data>
+  <data name="MeterWidthHint" xml:space="preserve">
+    <value>(120–320)</value>
+  </data>
+  <data name="MeterLock" xml:space="preserve">
+    <value>Konumu kilitle</value>
+  </data>
+  <data name="MeterUnlock" xml:space="preserve">
+    <value>Kilidi aç</value>
+  </data>
+  <data name="MeterHide" xml:space="preserve">
+    <value>Göstergeyi gizle</value>
+  </data>
+  <data name="ActionOk" xml:space="preserve">
+    <value>Tamam</value>
+  </data>
+  <data name="ActionCancel" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="ActionClose" xml:space="preserve">
+    <value>Kapat</value>
+  </data>
+  <data name="ActionOpen" xml:space="preserve">
+    <value>Aç</value>
+  </data>
+  <data name="SigninDialogHeading" xml:space="preserve">
+    <value>Claude ile oturum aç</value>
+  </data>
+  <data name="SigninDialogBody" xml:space="preserve">
+    <value>Tarayıcınız claude.ai adresini açmış olmalı. Oturum açmayı orada tamamlayın ve buraya geri dönün. Bu iletişim kutusu otomatik olarak kapanacak.</value>
+  </data>
+  <data name="WindowPreferencesTitle" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipDefault" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipLines" xml:space="preserve">
+    <value>ClaudeBar
+Oturum: %d%%
+Haftalık: %d%%</value>
+  </data>
+  <data name="InstallerWelcome" xml:space="preserve">
+    <value>ClaudeBar Kurulumuna Hoş Geldiniz</value>
+  </data>
+  <data name="InstallerRuntimeStep" xml:space="preserve">
+    <value>.NET 8 Desktop Runtime (x64)</value>
+  </data>
+  <data name="InstallerAppStep" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+</root>

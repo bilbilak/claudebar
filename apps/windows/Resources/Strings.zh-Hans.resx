@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrandName" xml:space="preserve">
+    <value>ClaudeBar</value>
+    <comment>DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.</comment>
+  </data>
+  <data name="MenuRefreshNow" xml:space="preserve">
+    <value>立即刷新</value>
+  </data>
+  <data name="MenuOpenUsagePage" xml:space="preserve">
+    <value>打开 claude.ai/settings/usage</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>设置…</value>
+  </data>
+  <data name="MenuQuit" xml:space="preserve">
+    <value>退出 ClaudeBar</value>
+  </data>
+  <data name="MenuRefresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="StatSession" xml:space="preserve">
+    <value>当前会话</value>
+  </data>
+  <data name="StatSessionDash" xml:space="preserve">
+    <value>当前会话:—</value>
+  </data>
+  <data name="StatSessionWithPct" xml:space="preserve">
+    <value>当前会话:%d%%</value>
+  </data>
+  <data name="StatWeekly" xml:space="preserve">
+    <value>每周(所有模型)</value>
+  </data>
+  <data name="StatWeeklyDash" xml:space="preserve">
+    <value>每周(所有模型):—</value>
+  </data>
+  <data name="StatWeeklyWithPct" xml:space="preserve">
+    <value>每周(所有模型):%d%%</value>
+  </data>
+  <data name="StatResets" xml:space="preserve">
+    <value>%s 后重置</value>
+    <comment>%s is a time-relative string like 'in 5 min'.</comment>
+  </data>
+  <data name="TimeNow" xml:space="preserve">
+    <value>现在</value>
+  </data>
+  <data name="TimeDash" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="TimeInMinutes" xml:space="preserve">
+    <value>%d 分钟后</value>
+  </data>
+  <data name="TimeInHours" xml:space="preserve">
+    <value>%d 小时后</value>
+  </data>
+  <data name="TimeInHoursMinutes" xml:space="preserve">
+    <value>%d 小时 %d 分钟后</value>
+  </data>
+  <data name="TimeInDays" xml:space="preserve">
+    <value>%d 天后</value>
+  </data>
+  <data name="TimeInDaysHours" xml:space="preserve">
+    <value>%d 天 %d 小时后</value>
+  </data>
+  <data name="StatusOffline" xml:space="preserve">
+    <value>离线 — 上次的值可能已过期</value>
+  </data>
+  <data name="StatusRateLimited" xml:space="preserve">
+    <value>已达到 Claude API 速率限制</value>
+  </data>
+  <data name="StatusUnauthenticated" xml:space="preserve">
+    <value>未登录 — 打开“设置”以添加令牌</value>
+  </data>
+  <data name="AuthSignIn" xml:space="preserve">
+    <value>使用 Claude 登录</value>
+  </data>
+  <data name="AuthSignOut" xml:space="preserve">
+    <value>退出登录</value>
+  </data>
+  <data name="AuthSignedInToken" xml:space="preserve">
+    <value>已登录(令牌以“…%s”结尾)</value>
+    <comment>%s is the last 6 chars of the access token.</comment>
+  </data>
+  <data name="AuthNotSignedIn" xml:space="preserve">
+    <value>未登录</value>
+  </data>
+  <data name="AuthChecking" xml:space="preserve">
+    <value>正在检查…</value>
+  </data>
+  <data name="AuthWaitingBrowser" xml:space="preserve">
+    <value>等待在浏览器中登录…</value>
+  </data>
+  <data name="AuthKeyringError" xml:space="preserve">
+    <value>密钥环错误 — 请查看日志</value>
+  </data>
+  <data name="AuthSignInFailed" xml:space="preserve">
+    <value>登录失败</value>
+  </data>
+  <data name="AuthCouldNotStart" xml:space="preserve">
+    <value>无法启动登录</value>
+  </data>
+  <data name="AuthCopyLink" xml:space="preserve">
+    <value>复制链接</value>
+    <comment>Short button label — used both in prefs dialogs and as a system-notification action where supported.</comment>
+  </data>
+  <data name="AuthLinkCopiedNotify" xml:space="preserve">
+    <value>登录链接已复制到剪贴板</value>
+    <comment>Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.</comment>
+  </data>
+  <data name="PrefsAccount" xml:space="preserve">
+    <value>账户</value>
+  </data>
+  <data name="PrefsDisplay" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="PrefsAdvanced" xml:space="preserve">
+    <value>高级</value>
+  </data>
+  <data name="PrefsGeneral" xml:space="preserve">
+    <value>通用</value>
+  </data>
+  <data name="PrefsAuthentication" xml:space="preserve">
+    <value>身份验证</value>
+  </data>
+  <data name="PrefsStatus" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="PrefsTopBar" xml:space="preserve">
+    <value>顶部栏</value>
+  </data>
+  <data name="PrefsTrayIcon" xml:space="preserve">
+    <value>托盘图标</value>
+  </data>
+  <data name="PrefsColorThresholds" xml:space="preserve">
+    <value>颜色阈值</value>
+  </data>
+  <data name="PrefsRefreshSection" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="PrefsLabels" xml:space="preserve">
+    <value>标签:</value>
+  </data>
+  <data name="PrefsAccountSubtitle" xml:space="preserve">
+    <value>使用您的 Claude 账户登录,以获取 Max 套餐用量。令牌通过 libsecret 存储在 GNOME Keyring 中。</value>
+  </data>
+  <data name="PrefsShowPercentages" xml:space="preserve">
+    <value>在条形旁显示数字百分比</value>
+  </data>
+  <data name="PrefsShowPercentagesSubtitle" xml:space="preserve">
+    <value>在条形旁堆叠显示小号的会话和每周百分比。</value>
+  </data>
+  <data name="PrefsShowPercentagesBeside" xml:space="preserve">
+    <value>在条形旁显示数字百分比</value>
+  </data>
+  <data name="PrefsColorThresholdsDesc" xml:space="preserve">
+    <value>条形从绿色变为橙色再变为红色的时机。</value>
+  </data>
+  <data name="PrefsOrangeAt" xml:space="preserve">
+    <value>橙色阈值</value>
+  </data>
+  <data name="PrefsRedAt" xml:space="preserve">
+    <value>红色阈值</value>
+  </data>
+  <data name="PrefsOrangeAtPct" xml:space="preserve">
+    <value>橙色阈值 (%)</value>
+  </data>
+  <data name="PrefsRedAtPct" xml:space="preserve">
+    <value>红色阈值 (%)</value>
+  </data>
+  <data name="PrefsOrangeAtShort" xml:space="preserve">
+    <value>橙色阈值 (%):</value>
+  </data>
+  <data name="PrefsRedAtShort" xml:space="preserve">
+    <value>红色阈值 (%):</value>
+  </data>
+  <data name="PrefsPollIntervalSeconds" xml:space="preserve">
+    <value>轮询间隔(秒)</value>
+  </data>
+  <data name="PrefsPollIntervalShort" xml:space="preserve">
+    <value>轮询间隔(秒):</value>
+  </data>
+  <data name="PrefsHelperPath" xml:space="preserve">
+    <value>辅助二进制文件:</value>
+  </data>
+  <data name="MeterSection" xml:space="preserve">
+    <value>桌面浮动计量器</value>
+  </data>
+  <data name="MeterEnable" xml:space="preserve">
+    <value>在桌面上显示置顶计量器</value>
+  </data>
+  <data name="MeterDesc" xml:space="preserve">
+    <value>小型透明小部件,显示完整尺寸的条形。可拖动到任意角落;右键单击可锁定或隐藏。</value>
+  </data>
+  <data name="MeterShowPercentages" xml:space="preserve">
+    <value>在浮动计量器上显示数字百分比</value>
+  </data>
+  <data name="MeterShowPercentagesSubtitle" xml:space="preserve">
+    <value>在桌面浮动计量器的条形旁添加会话和每周百分比(必须在下方启用)。托盘提示始终显示百分比。</value>
+  </data>
+  <data name="MeterOpacity" xml:space="preserve">
+    <value>不透明度:</value>
+  </data>
+  <data name="MeterWidthPx" xml:space="preserve">
+    <value>宽度(像素):</value>
+  </data>
+  <data name="MeterWidthHint" xml:space="preserve">
+    <value>(120–320)</value>
+  </data>
+  <data name="MeterLock" xml:space="preserve">
+    <value>锁定位置</value>
+  </data>
+  <data name="MeterUnlock" xml:space="preserve">
+    <value>解锁</value>
+  </data>
+  <data name="MeterHide" xml:space="preserve">
+    <value>隐藏计量器</value>
+  </data>
+  <data name="ActionOk" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ActionCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ActionClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ActionOpen" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="SigninDialogHeading" xml:space="preserve">
+    <value>使用 Claude 登录</value>
+  </data>
+  <data name="SigninDialogBody" xml:space="preserve">
+    <value>您的浏览器应已打开 claude.ai。请在那里完成登录,然后返回此处。此对话框将自动关闭。</value>
+  </data>
+  <data name="WindowPreferencesTitle" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipDefault" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+  <data name="TooltipLines" xml:space="preserve">
+    <value>ClaudeBar
+会话:%d%%
+每周:%d%%</value>
+  </data>
+  <data name="InstallerWelcome" xml:space="preserve">
+    <value>欢迎使用 ClaudeBar 安装程序</value>
+  </data>
+  <data name="InstallerRuntimeStep" xml:space="preserve">
+    <value>.NET 8 Desktop Runtime (x64)</value>
+  </data>
+  <data name="InstallerAppStep" xml:space="preserve">
+    <value>ClaudeBar</value>
+  </data>
+</root>

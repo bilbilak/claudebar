@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="hi-IN" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="BrandName" Value="ClaudeBar" />
+  <String Id="MenuRefreshNow" Value="अभी ताज़ा करें" />
+  <String Id="MenuOpenUsagePage" Value="claude.ai/settings/usage खोलें" />
+  <String Id="MenuSettings" Value="सेटिंग्स…" />
+  <String Id="MenuQuit" Value="ClaudeBar से बाहर निकलें" />
+  <String Id="MenuRefresh" Value="ताज़ा करें" />
+  <String Id="StatSession" Value="वर्तमान सत्र" />
+  <String Id="StatSessionDash" Value="वर्तमान सत्र: —" />
+  <String Id="StatSessionWithPct" Value="वर्तमान सत्र: %d%%" />
+  <String Id="StatWeekly" Value="साप्ताहिक (सभी मॉडल)" />
+  <String Id="StatWeeklyDash" Value="साप्ताहिक (सभी मॉडल): —" />
+  <String Id="StatWeeklyWithPct" Value="साप्ताहिक (सभी मॉडल): %d%%" />
+  <String Id="StatResets" Value="%s रीसेट होगा" />
+  <String Id="TimeNow" Value="अभी" />
+  <String Id="TimeDash" Value="—" />
+  <String Id="TimeInMinutes" Value="%d मिनट में" />
+  <String Id="TimeInHours" Value="%d घंटे में" />
+  <String Id="TimeInHoursMinutes" Value="%d घंटे %d मिनट में" />
+  <String Id="TimeInDays" Value="%d दिन में" />
+  <String Id="TimeInDaysHours" Value="%d दिन %d घंटे में" />
+  <String Id="StatusOffline" Value="ऑफ़लाइन — अंतिम मान पुराना हो सकता है" />
+  <String Id="StatusRateLimited" Value="Claude API द्वारा दर सीमा लागू" />
+  <String Id="StatusUnauthenticated" Value="साइन इन नहीं हैं — टोकन जोड़ने के लिए सेटिंग्स खोलें" />
+  <String Id="AuthSignIn" Value="Claude से साइन इन करें" />
+  <String Id="AuthSignOut" Value="साइन आउट" />
+  <String Id="AuthSignedInToken" Value="साइन इन (टोकन का अंत '…%s')" />
+  <String Id="AuthNotSignedIn" Value="साइन इन नहीं" />
+  <String Id="AuthChecking" Value="जाँच रहे हैं…" />
+  <String Id="AuthWaitingBrowser" Value="ब्राउज़र साइन-इन की प्रतीक्षा है…" />
+  <String Id="AuthKeyringError" Value="कीरिंग त्रुटि — लॉग देखें" />
+  <String Id="AuthSignInFailed" Value="साइन-इन विफल" />
+  <String Id="AuthCouldNotStart" Value="साइन-इन प्रारंभ नहीं हो सका" />
+  <String Id="AuthCopyLink" Value="लिंक कॉपी करें" />
+  <String Id="AuthLinkCopiedNotify" Value="साइन-इन लिंक क्लिपबोर्ड पर कॉपी किया गया" />
+  <String Id="PrefsAccount" Value="खाता" />
+  <String Id="PrefsDisplay" Value="प्रदर्शन" />
+  <String Id="PrefsAdvanced" Value="उन्नत" />
+  <String Id="PrefsGeneral" Value="सामान्य" />
+  <String Id="PrefsAuthentication" Value="प्रमाणीकरण" />
+  <String Id="PrefsStatus" Value="स्थिति" />
+  <String Id="PrefsTopBar" Value="शीर्ष बार" />
+  <String Id="PrefsTrayIcon" Value="ट्रे आइकन" />
+  <String Id="PrefsColorThresholds" Value="रंग सीमाएँ" />
+  <String Id="PrefsRefreshSection" Value="ताज़ा करें" />
+  <String Id="PrefsLabels" Value="लेबल:" />
+  <String Id="PrefsAccountSubtitle" Value="Max प्लान का उपयोग प्राप्त करने के लिए अपने Claude खाते से साइन इन करें। टोकन libsecret के माध्यम से GNOME Keyring में संग्रहीत होते हैं।" />
+  <String Id="PrefsShowPercentages" Value="बार के बगल में संख्यात्मक प्रतिशत दिखाएँ" />
+  <String Id="PrefsShowPercentagesSubtitle" Value="बार के बगल में लंबवत रूप से छोटे सत्र और साप्ताहिक प्रतिशत।" />
+  <String Id="PrefsShowPercentagesBeside" Value="बार के बगल में संख्यात्मक प्रतिशत दिखाएँ" />
+  <String Id="PrefsColorThresholdsDesc" Value="जब बार हरे से नारंगी और फिर लाल हो जाते हैं।" />
+  <String Id="PrefsOrangeAt" Value="नारंगी पर" />
+  <String Id="PrefsRedAt" Value="लाल पर" />
+  <String Id="PrefsOrangeAtPct" Value="नारंगी पर (%)" />
+  <String Id="PrefsRedAtPct" Value="लाल पर (%)" />
+  <String Id="PrefsOrangeAtShort" Value="नारंगी पर (%):" />
+  <String Id="PrefsRedAtShort" Value="लाल पर (%):" />
+  <String Id="PrefsPollIntervalSeconds" Value="पोल अंतराल (सेकंड)" />
+  <String Id="PrefsPollIntervalShort" Value="पोल अंतराल (से.):" />
+  <String Id="PrefsHelperPath" Value="हेल्पर बाइनरी:" />
+  <String Id="MeterSection" Value="डेस्कटॉप पर तैरता मीटर" />
+  <String Id="MeterEnable" Value="डेस्कटॉप पर हमेशा-शीर्ष पर मीटर दिखाएँ" />
+  <String Id="MeterDesc" Value="पूर्ण आकार के बार दिखाने वाला छोटा पारदर्शी विजेट। किसी भी कोने में खींचा जा सकता है; लॉक करने या छिपाने के लिए दायाँ-क्लिक करें।" />
+  <String Id="MeterShowPercentages" Value="तैरते मीटर पर संख्यात्मक प्रतिशत दिखाएँ" />
+  <String Id="MeterShowPercentagesSubtitle" Value="तैरते डेस्कटॉप मीटर पर बार के बगल में सत्र और साप्ताहिक प्रतिशत जोड़ता है (नीचे सक्षम होना चाहिए)। ट्रे टूलटिप हमेशा प्रतिशत दिखाता है।" />
+  <String Id="MeterOpacity" Value="अपारदर्शिता:" />
+  <String Id="MeterWidthPx" Value="चौड़ाई (पिक्सेल):" />
+  <String Id="MeterWidthHint" Value="(120–320)" />
+  <String Id="MeterLock" Value="स्थिति लॉक करें" />
+  <String Id="MeterUnlock" Value="अनलॉक" />
+  <String Id="MeterHide" Value="मीटर छिपाएँ" />
+  <String Id="ActionOk" Value="ठीक है" />
+  <String Id="ActionCancel" Value="रद्द करें" />
+  <String Id="ActionClose" Value="बंद करें" />
+  <String Id="ActionOpen" Value="खोलें" />
+  <String Id="SigninDialogHeading" Value="Claude से साइन इन करें" />
+  <String Id="SigninDialogBody" Value="आपका ब्राउज़र claude.ai पर खुल गया होगा। वहाँ साइन-इन पूरा करें, फिर यहाँ लौटें। यह संवाद स्वतः बंद हो जाएगा।" />
+  <String Id="WindowPreferencesTitle" Value="ClaudeBar" />
+  <String Id="TooltipDefault" Value="ClaudeBar" />
+  <String Id="TooltipLines" Value="ClaudeBar
+सत्र: %d%%
+साप्ताहिक: %d%%" />
+  <String Id="InstallerWelcome" Value="ClaudeBar सेटअप में आपका स्वागत है" />
+  <String Id="InstallerRuntimeStep" Value=".NET 8 Desktop Runtime (x64)" />
+  <String Id="InstallerAppStep" Value="ClaudeBar" />
+</WixLocalization>

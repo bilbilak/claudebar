@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="ru-RU" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="BrandName" Value="ClaudeBar" />
+  <String Id="MenuRefreshNow" Value="Обновить сейчас" />
+  <String Id="MenuOpenUsagePage" Value="Открыть claude.ai/settings/usage" />
+  <String Id="MenuSettings" Value="Настройки…" />
+  <String Id="MenuQuit" Value="Закрыть ClaudeBar" />
+  <String Id="MenuRefresh" Value="Обновить" />
+  <String Id="StatSession" Value="Текущая сессия" />
+  <String Id="StatSessionDash" Value="Текущая сессия: —" />
+  <String Id="StatSessionWithPct" Value="Текущая сессия: %d%%" />
+  <String Id="StatWeekly" Value="За неделю (все модели)" />
+  <String Id="StatWeeklyDash" Value="За неделю (все модели): —" />
+  <String Id="StatWeeklyWithPct" Value="За неделю (все модели): %d%%" />
+  <String Id="StatResets" Value="Сброс %s" />
+  <String Id="TimeNow" Value="сейчас" />
+  <String Id="TimeDash" Value="—" />
+  <String Id="TimeInMinutes" Value="через %d мин" />
+  <String Id="TimeInHours" Value="через %d ч" />
+  <String Id="TimeInHoursMinutes" Value="через %d ч %d мин" />
+  <String Id="TimeInDays" Value="через %d дн" />
+  <String Id="TimeInDaysHours" Value="через %d дн %d ч" />
+  <String Id="StatusOffline" Value="Нет подключения — последнее значение может быть устаревшим" />
+  <String Id="StatusRateLimited" Value="Превышен лимит запросов Claude API" />
+  <String Id="StatusUnauthenticated" Value="Вы не вошли — откройте Настройки, чтобы добавить токен" />
+  <String Id="AuthSignIn" Value="Войти через Claude" />
+  <String Id="AuthSignOut" Value="Выйти" />
+  <String Id="AuthSignedInToken" Value="Выполнен вход (токен заканчивается на «…%s»)" />
+  <String Id="AuthNotSignedIn" Value="Не выполнен вход" />
+  <String Id="AuthChecking" Value="Проверка…" />
+  <String Id="AuthWaitingBrowser" Value="Ожидание входа в браузере…" />
+  <String Id="AuthKeyringError" Value="Ошибка хранилища ключей — см. журналы" />
+  <String Id="AuthSignInFailed" Value="Не удалось войти" />
+  <String Id="AuthCouldNotStart" Value="Не удалось запустить вход" />
+  <String Id="AuthCopyLink" Value="Копировать ссылку" />
+  <String Id="AuthLinkCopiedNotify" Value="Ссылка для входа скопирована в буфер обмена" />
+  <String Id="PrefsAccount" Value="Учётная запись" />
+  <String Id="PrefsDisplay" Value="Отображение" />
+  <String Id="PrefsAdvanced" Value="Дополнительно" />
+  <String Id="PrefsGeneral" Value="Общие" />
+  <String Id="PrefsAuthentication" Value="Аутентификация" />
+  <String Id="PrefsStatus" Value="Состояние" />
+  <String Id="PrefsTopBar" Value="Верхняя панель" />
+  <String Id="PrefsTrayIcon" Value="Значок в трее" />
+  <String Id="PrefsColorThresholds" Value="Цветовые пороги" />
+  <String Id="PrefsRefreshSection" Value="Обновление" />
+  <String Id="PrefsLabels" Value="Метки:" />
+  <String Id="PrefsAccountSubtitle" Value="Войдите со своей учётной записью Claude, чтобы получить данные об использовании тарифа Max. Токены сохраняются в GNOME Keyring через libsecret." />
+  <String Id="PrefsShowPercentages" Value="Показывать числовые проценты рядом с полосами" />
+  <String Id="PrefsShowPercentagesSubtitle" Value="Небольшие проценты сессии и недели, расположенные рядом с полосами." />
+  <String Id="PrefsShowPercentagesBeside" Value="Показывать числовые проценты рядом с полосами" />
+  <String Id="PrefsColorThresholdsDesc" Value="Когда полосы меняют цвет с зелёного на оранжевый, затем на красный." />
+  <String Id="PrefsOrangeAt" Value="Оранжевый при" />
+  <String Id="PrefsRedAt" Value="Красный при" />
+  <String Id="PrefsOrangeAtPct" Value="Оранжевый при (%)" />
+  <String Id="PrefsRedAtPct" Value="Красный при (%)" />
+  <String Id="PrefsOrangeAtShort" Value="Оранжевый при (%):" />
+  <String Id="PrefsRedAtShort" Value="Красный при (%):" />
+  <String Id="PrefsPollIntervalSeconds" Value="Интервал опроса (секунды)" />
+  <String Id="PrefsPollIntervalShort" Value="Интервал опроса (с):" />
+  <String Id="PrefsHelperPath" Value="Вспомогательный двоичный файл:" />
+  <String Id="MeterSection" Value="Плавающий индикатор на рабочем столе" />
+  <String Id="MeterEnable" Value="Показывать индикатор поверх всех окон на рабочем столе" />
+  <String Id="MeterDesc" Value="Небольшой прозрачный виджет с полноразмерными полосами. Можно перетащить в любой угол; правый клик — закрепить или скрыть." />
+  <String Id="MeterShowPercentages" Value="Показывать числовые проценты на плавающем индикаторе" />
+  <String Id="MeterShowPercentagesSubtitle" Value="Добавляет проценты сессии и недели рядом с полосами на плавающем индикаторе рабочего стола (должен быть включён ниже). Подсказка в трее всегда показывает проценты." />
+  <String Id="MeterOpacity" Value="Непрозрачность:" />
+  <String Id="MeterWidthPx" Value="Ширина (пикс.):" />
+  <String Id="MeterWidthHint" Value="(120–320)" />
+  <String Id="MeterLock" Value="Зафиксировать положение" />
+  <String Id="MeterUnlock" Value="Снять блокировку" />
+  <String Id="MeterHide" Value="Скрыть индикатор" />
+  <String Id="ActionOk" Value="ОК" />
+  <String Id="ActionCancel" Value="Отмена" />
+  <String Id="ActionClose" Value="Закрыть" />
+  <String Id="ActionOpen" Value="Открыть" />
+  <String Id="SigninDialogHeading" Value="Войти через Claude" />
+  <String Id="SigninDialogBody" Value="Ваш браузер должен был открыть claude.ai. Завершите вход там и вернитесь сюда. Это диалоговое окно закроется автоматически." />
+  <String Id="WindowPreferencesTitle" Value="ClaudeBar" />
+  <String Id="TooltipDefault" Value="ClaudeBar" />
+  <String Id="TooltipLines" Value="ClaudeBar
+Сессия: %d%%
+За неделю: %d%%" />
+  <String Id="InstallerWelcome" Value="Добро пожаловать в установку ClaudeBar" />
+  <String Id="InstallerRuntimeStep" Value=".NET 8 Desktop Runtime (x64)" />
+  <String Id="InstallerAppStep" Value="ClaudeBar" />
+</WixLocalization>
