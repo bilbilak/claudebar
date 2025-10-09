@@ -1,0 +1,329 @@
+# ja translation for ClaudeBar.
+# Copyright (C) ClaudeBar contributors.
+# This file is distributed under the same license as the ClaudeBar package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: claudebar 1.0\n"
+"POT-Creation-Date: 2026-05-13 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. key: brand_name, window_preferences_title, tooltip_default, installer_app_step
+#. DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.
+msgid "ClaudeBar"
+msgstr "ClaudeBar"
+
+#. key: menu_refresh_now
+msgid "Refresh now"
+msgstr "今すぐ更新"
+
+#. key: menu_open_usage_page
+msgid "Open claude.ai/settings/usage"
+msgstr "claude.ai/settings/usage を開く"
+
+#. key: menu_settings
+msgid "Settings…"
+msgstr "設定…"
+
+#. key: menu_quit
+msgid "Quit ClaudeBar"
+msgstr "ClaudeBar を終了"
+
+#. key: menu_refresh, prefs_refresh_section
+msgid "Refresh"
+msgstr "更新"
+
+#. key: stat_session
+msgid "Current session"
+msgstr "現在のセッション"
+
+#. key: stat_session_dash
+msgid "Current session: —"
+msgstr "現在のセッション: —"
+
+#. key: stat_session_with_pct
+msgid "Current session: %1%%"
+msgstr "現在のセッション: %1%%"
+
+#. key: stat_weekly
+msgid "Weekly (all models)"
+msgstr "週間(全モデル)"
+
+#. key: stat_weekly_dash
+msgid "Weekly (all models): —"
+msgstr "週間(全モデル): —"
+
+#. key: stat_weekly_with_pct
+msgid "Weekly (all models): %1%%"
+msgstr "週間(全モデル): %1%%"
+
+#. key: stat_resets
+#. %s is a time-relative string like 'in 5 min'.
+msgid "Resets %1"
+msgstr "%1 にリセット"
+
+#. key: time_now
+msgid "now"
+msgstr "今"
+
+#. key: time_dash
+msgid "—"
+msgstr "—"
+
+#. key: time_in_minutes
+msgid "in %1 min"
+msgstr "%1 分後"
+
+#. key: time_in_hours
+msgid "in %1h"
+msgstr "%1 時間後"
+
+#. key: time_in_hours_minutes
+msgid "in %1h %2m"
+msgstr "%1 時間 %2 分後"
+
+#. key: time_in_days
+msgid "in %1d"
+msgstr "%1 日後"
+
+#. key: time_in_days_hours
+msgid "in %1d %2h"
+msgstr "%1 日 %2 時間後"
+
+#. key: status_offline
+msgid "Offline — last value may be stale"
+msgstr "オフライン — 最後の値は古い可能性があります"
+
+#. key: status_rate_limited
+msgid "Rate limited by Claude API"
+msgstr "Claude API のレート制限に達しました"
+
+#. key: status_unauthenticated
+msgid "Not signed in — open Settings to add a token"
+msgstr "サインインしていません — 設定を開いてトークンを追加してください"
+
+#. key: auth_sign_in, signin_dialog_heading
+msgid "Sign in with Claude"
+msgstr "Claude でサインイン"
+
+#. key: auth_sign_out
+msgid "Sign out"
+msgstr "サインアウト"
+
+#. key: auth_signed_in_token
+#. %s is the last 6 chars of the access token.
+msgid "Signed in (token ends '…%1')"
+msgstr "サインイン済み(トークン末尾「…%1」)"
+
+#. key: auth_not_signed_in
+msgid "Not signed in"
+msgstr "サインインしていません"
+
+#. key: auth_checking
+msgid "Checking…"
+msgstr "確認中…"
+
+#. key: auth_waiting_browser
+msgid "Waiting for browser sign-in…"
+msgstr "ブラウザでのサインインを待っています…"
+
+#. key: auth_keyring_error
+msgid "Keyring error — see logs"
+msgstr "キーリングのエラー — ログを参照してください"
+
+#. key: auth_sign_in_failed
+msgid "Sign-in failed"
+msgstr "サインインに失敗しました"
+
+#. key: auth_could_not_start
+msgid "Could not start sign-in"
+msgstr "サインインを開始できませんでした"
+
+#. key: auth_copy_link
+#. Short button label — used both in prefs dialogs and as a system-notification action where supported.
+msgid "Copy link"
+msgstr "リンクをコピー"
+
+#. key: auth_link_copied_notify
+#. Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.
+msgid "Sign-in link copied to clipboard"
+msgstr "サインインリンクをクリップボードにコピーしました"
+
+#. key: prefs_account
+msgid "Account"
+msgstr "アカウント"
+
+#. key: prefs_display
+msgid "Display"
+msgstr "表示"
+
+#. key: prefs_advanced
+msgid "Advanced"
+msgstr "詳細"
+
+#. key: prefs_general
+msgid "General"
+msgstr "一般"
+
+#. key: prefs_authentication
+msgid "Authentication"
+msgstr "認証"
+
+#. key: prefs_status
+msgid "Status"
+msgstr "ステータス"
+
+#. key: prefs_top_bar
+msgid "Top bar"
+msgstr "上部バー"
+
+#. key: prefs_tray_icon
+msgid "Tray icon"
+msgstr "トレイアイコン"
+
+#. key: prefs_color_thresholds
+msgid "Color thresholds"
+msgstr "色のしきい値"
+
+#. key: prefs_labels
+msgid "Labels:"
+msgstr "ラベル:"
+
+#. key: prefs_account_subtitle
+msgid "Sign in with your Claude account to fetch Max plan usage. Tokens are stored in GNOME Keyring via libsecret."
+msgstr "Max プランの使用状況を取得するには、Claude アカウントでサインインしてください。トークンは libsecret 経由で GNOME Keyring に保存されます。"
+
+#. key: prefs_show_percentages
+msgid "Show numeric percentages next to bars"
+msgstr "バーの横に数値のパーセンテージを表示"
+
+#. key: prefs_show_percentages_subtitle
+msgid "Small session and weekly percentages, stacked beside the bars."
+msgstr "セッションと週間の小さなパーセンテージをバーの横に縦に並べて表示します。"
+
+#. key: prefs_show_percentages_beside
+msgid "Show numeric percentages beside the bars"
+msgstr "バーの横に数値のパーセンテージを表示"
+
+#. key: prefs_color_thresholds_desc
+msgid "When bars switch from green to orange to red."
+msgstr "バーが緑からオレンジ、そして赤に切り替わるタイミング。"
+
+#. key: prefs_orange_at
+msgid "Orange at"
+msgstr "オレンジ"
+
+#. key: prefs_red_at
+msgid "Red at"
+msgstr "レッド"
+
+#. key: prefs_orange_at_pct
+msgid "Orange at (%)"
+msgstr "オレンジ (%)"
+
+#. key: prefs_red_at_pct
+msgid "Red at (%)"
+msgstr "レッド (%)"
+
+#. key: prefs_orange_at_short
+msgid "Orange at (%):"
+msgstr "オレンジ (%):"
+
+#. key: prefs_red_at_short
+msgid "Red at (%):"
+msgstr "レッド (%):"
+
+#. key: prefs_poll_interval_seconds
+msgid "Poll interval (seconds)"
+msgstr "ポーリング間隔(秒)"
+
+#. key: prefs_poll_interval_short
+msgid "Poll interval (s):"
+msgstr "ポーリング間隔(秒):"
+
+#. key: prefs_helper_path
+msgid "Helper binary:"
+msgstr "ヘルパーバイナリ:"
+
+#. key: meter_section
+msgid "Floating desktop meter"
+msgstr "デスクトップのフローティングメーター"
+
+#. key: meter_enable
+msgid "Show always-on-top meter on the desktop"
+msgstr "デスクトップに常に最前面のメーターを表示"
+
+#. key: meter_desc
+msgid "Small transparent widget rendering full-size bars. Draggable into any corner; right-click to lock or hide."
+msgstr "フルサイズのバーを表示する小さな透明ウィジェット。任意の隅にドラッグでき、右クリックで固定または非表示にできます。"
+
+#. key: meter_show_percentages
+msgid "Show numeric percentages on the floating meter"
+msgstr "フローティングメーターに数値のパーセンテージを表示"
+
+#. key: meter_show_percentages_subtitle
+msgid "Adds session and weekly percentages next to the bars on the floating desktop meter (must be enabled below). The tray tooltip always shows percentages."
+msgstr "デスクトップのフローティングメーターのバーの横にセッションと週間のパーセンテージを追加します(下で有効にする必要があります)。トレイのツールチップには常にパーセンテージが表示されます。"
+
+#. key: meter_opacity
+msgid "Opacity:"
+msgstr "不透明度:"
+
+#. key: meter_width_px
+msgid "Width (px):"
+msgstr "幅(px):"
+
+#. key: meter_width_hint
+msgid "(120–320)"
+msgstr "(120–320)"
+
+#. key: meter_lock
+msgid "Lock position"
+msgstr "位置をロック"
+
+#. key: meter_unlock
+msgid "Unlock"
+msgstr "ロック解除"
+
+#. key: meter_hide
+msgid "Hide meter"
+msgstr "メーターを非表示"
+
+#. key: action_ok
+msgid "OK"
+msgstr "OK"
+
+#. key: action_cancel
+msgid "Cancel"
+msgstr "キャンセル"
+
+#. key: action_close
+msgid "Close"
+msgstr "閉じる"
+
+#. key: action_open
+msgid "Open"
+msgstr "開く"
+
+#. key: signin_dialog_body
+msgid "Your browser should have opened to claude.ai. Complete sign-in there, then return here. This dialog will close automatically."
+msgstr "ブラウザで claude.ai が開いているはずです。そちらでサインインを完了し、こちらに戻ってください。このダイアログは自動的に閉じます。"
+
+#. key: tooltip_lines
+msgid "ClaudeBar\nSession: %1%%\nWeekly: %2%%"
+msgstr "ClaudeBar\nセッション: %1%%\n週間: %2%%"
+
+#. key: installer_welcome
+msgid "Welcome to the ClaudeBar Setup"
+msgstr "ClaudeBar セットアップへようこそ"
+
+#. key: installer_runtime_step
+msgid ".NET 8 Desktop Runtime (x64)"
+msgstr ".NET 8 Desktop Runtime (x64)"

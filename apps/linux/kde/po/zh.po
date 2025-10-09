@@ -1,0 +1,329 @@
+# zh translation for ClaudeBar.
+# Copyright (C) ClaudeBar contributors.
+# This file is distributed under the same license as the ClaudeBar package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: claudebar 1.0\n"
+"POT-Creation-Date: 2026-05-13 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. key: brand_name, window_preferences_title, tooltip_default, installer_app_step
+#. DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.
+msgid "ClaudeBar"
+msgstr "ClaudeBar"
+
+#. key: menu_refresh_now
+msgid "Refresh now"
+msgstr "立即刷新"
+
+#. key: menu_open_usage_page
+msgid "Open claude.ai/settings/usage"
+msgstr "打开 claude.ai/settings/usage"
+
+#. key: menu_settings
+msgid "Settings…"
+msgstr "设置…"
+
+#. key: menu_quit
+msgid "Quit ClaudeBar"
+msgstr "退出 ClaudeBar"
+
+#. key: menu_refresh, prefs_refresh_section
+msgid "Refresh"
+msgstr "刷新"
+
+#. key: stat_session
+msgid "Current session"
+msgstr "当前会话"
+
+#. key: stat_session_dash
+msgid "Current session: —"
+msgstr "当前会话:—"
+
+#. key: stat_session_with_pct
+msgid "Current session: %1%%"
+msgstr "当前会话:%1%%"
+
+#. key: stat_weekly
+msgid "Weekly (all models)"
+msgstr "每周(所有模型)"
+
+#. key: stat_weekly_dash
+msgid "Weekly (all models): —"
+msgstr "每周(所有模型):—"
+
+#. key: stat_weekly_with_pct
+msgid "Weekly (all models): %1%%"
+msgstr "每周(所有模型):%1%%"
+
+#. key: stat_resets
+#. %s is a time-relative string like 'in 5 min'.
+msgid "Resets %1"
+msgstr "%1 后重置"
+
+#. key: time_now
+msgid "now"
+msgstr "现在"
+
+#. key: time_dash
+msgid "—"
+msgstr "—"
+
+#. key: time_in_minutes
+msgid "in %1 min"
+msgstr "%1 分钟后"
+
+#. key: time_in_hours
+msgid "in %1h"
+msgstr "%1 小时后"
+
+#. key: time_in_hours_minutes
+msgid "in %1h %2m"
+msgstr "%1 小时 %2 分钟后"
+
+#. key: time_in_days
+msgid "in %1d"
+msgstr "%1 天后"
+
+#. key: time_in_days_hours
+msgid "in %1d %2h"
+msgstr "%1 天 %2 小时后"
+
+#. key: status_offline
+msgid "Offline — last value may be stale"
+msgstr "离线 — 上次的值可能已过期"
+
+#. key: status_rate_limited
+msgid "Rate limited by Claude API"
+msgstr "已达到 Claude API 速率限制"
+
+#. key: status_unauthenticated
+msgid "Not signed in — open Settings to add a token"
+msgstr "未登录 — 打开“设置”以添加令牌"
+
+#. key: auth_sign_in, signin_dialog_heading
+msgid "Sign in with Claude"
+msgstr "使用 Claude 登录"
+
+#. key: auth_sign_out
+msgid "Sign out"
+msgstr "退出登录"
+
+#. key: auth_signed_in_token
+#. %s is the last 6 chars of the access token.
+msgid "Signed in (token ends '…%1')"
+msgstr "已登录(令牌以“…%1”结尾)"
+
+#. key: auth_not_signed_in
+msgid "Not signed in"
+msgstr "未登录"
+
+#. key: auth_checking
+msgid "Checking…"
+msgstr "正在检查…"
+
+#. key: auth_waiting_browser
+msgid "Waiting for browser sign-in…"
+msgstr "等待在浏览器中登录…"
+
+#. key: auth_keyring_error
+msgid "Keyring error — see logs"
+msgstr "密钥环错误 — 请查看日志"
+
+#. key: auth_sign_in_failed
+msgid "Sign-in failed"
+msgstr "登录失败"
+
+#. key: auth_could_not_start
+msgid "Could not start sign-in"
+msgstr "无法启动登录"
+
+#. key: auth_copy_link
+#. Short button label — used both in prefs dialogs and as a system-notification action where supported.
+msgid "Copy link"
+msgstr "复制链接"
+
+#. key: auth_link_copied_notify
+#. Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.
+msgid "Sign-in link copied to clipboard"
+msgstr "登录链接已复制到剪贴板"
+
+#. key: prefs_account
+msgid "Account"
+msgstr "账户"
+
+#. key: prefs_display
+msgid "Display"
+msgstr "显示"
+
+#. key: prefs_advanced
+msgid "Advanced"
+msgstr "高级"
+
+#. key: prefs_general
+msgid "General"
+msgstr "通用"
+
+#. key: prefs_authentication
+msgid "Authentication"
+msgstr "身份验证"
+
+#. key: prefs_status
+msgid "Status"
+msgstr "状态"
+
+#. key: prefs_top_bar
+msgid "Top bar"
+msgstr "顶部栏"
+
+#. key: prefs_tray_icon
+msgid "Tray icon"
+msgstr "托盘图标"
+
+#. key: prefs_color_thresholds
+msgid "Color thresholds"
+msgstr "颜色阈值"
+
+#. key: prefs_labels
+msgid "Labels:"
+msgstr "标签:"
+
+#. key: prefs_account_subtitle
+msgid "Sign in with your Claude account to fetch Max plan usage. Tokens are stored in GNOME Keyring via libsecret."
+msgstr "使用您的 Claude 账户登录,以获取 Max 套餐用量。令牌通过 libsecret 存储在 GNOME Keyring 中。"
+
+#. key: prefs_show_percentages
+msgid "Show numeric percentages next to bars"
+msgstr "在条形旁显示数字百分比"
+
+#. key: prefs_show_percentages_subtitle
+msgid "Small session and weekly percentages, stacked beside the bars."
+msgstr "在条形旁堆叠显示小号的会话和每周百分比。"
+
+#. key: prefs_show_percentages_beside
+msgid "Show numeric percentages beside the bars"
+msgstr "在条形旁显示数字百分比"
+
+#. key: prefs_color_thresholds_desc
+msgid "When bars switch from green to orange to red."
+msgstr "条形从绿色变为橙色再变为红色的时机。"
+
+#. key: prefs_orange_at
+msgid "Orange at"
+msgstr "橙色阈值"
+
+#. key: prefs_red_at
+msgid "Red at"
+msgstr "红色阈值"
+
+#. key: prefs_orange_at_pct
+msgid "Orange at (%)"
+msgstr "橙色阈值 (%)"
+
+#. key: prefs_red_at_pct
+msgid "Red at (%)"
+msgstr "红色阈值 (%)"
+
+#. key: prefs_orange_at_short
+msgid "Orange at (%):"
+msgstr "橙色阈值 (%):"
+
+#. key: prefs_red_at_short
+msgid "Red at (%):"
+msgstr "红色阈值 (%):"
+
+#. key: prefs_poll_interval_seconds
+msgid "Poll interval (seconds)"
+msgstr "轮询间隔(秒)"
+
+#. key: prefs_poll_interval_short
+msgid "Poll interval (s):"
+msgstr "轮询间隔(秒):"
+
+#. key: prefs_helper_path
+msgid "Helper binary:"
+msgstr "辅助二进制文件:"
+
+#. key: meter_section
+msgid "Floating desktop meter"
+msgstr "桌面浮动计量器"
+
+#. key: meter_enable
+msgid "Show always-on-top meter on the desktop"
+msgstr "在桌面上显示置顶计量器"
+
+#. key: meter_desc
+msgid "Small transparent widget rendering full-size bars. Draggable into any corner; right-click to lock or hide."
+msgstr "小型透明小部件,显示完整尺寸的条形。可拖动到任意角落;右键单击可锁定或隐藏。"
+
+#. key: meter_show_percentages
+msgid "Show numeric percentages on the floating meter"
+msgstr "在浮动计量器上显示数字百分比"
+
+#. key: meter_show_percentages_subtitle
+msgid "Adds session and weekly percentages next to the bars on the floating desktop meter (must be enabled below). The tray tooltip always shows percentages."
+msgstr "在桌面浮动计量器的条形旁添加会话和每周百分比(必须在下方启用)。托盘提示始终显示百分比。"
+
+#. key: meter_opacity
+msgid "Opacity:"
+msgstr "不透明度:"
+
+#. key: meter_width_px
+msgid "Width (px):"
+msgstr "宽度(像素):"
+
+#. key: meter_width_hint
+msgid "(120–320)"
+msgstr "(120–320)"
+
+#. key: meter_lock
+msgid "Lock position"
+msgstr "锁定位置"
+
+#. key: meter_unlock
+msgid "Unlock"
+msgstr "解锁"
+
+#. key: meter_hide
+msgid "Hide meter"
+msgstr "隐藏计量器"
+
+#. key: action_ok
+msgid "OK"
+msgstr "确定"
+
+#. key: action_cancel
+msgid "Cancel"
+msgstr "取消"
+
+#. key: action_close
+msgid "Close"
+msgstr "关闭"
+
+#. key: action_open
+msgid "Open"
+msgstr "打开"
+
+#. key: signin_dialog_body
+msgid "Your browser should have opened to claude.ai. Complete sign-in there, then return here. This dialog will close automatically."
+msgstr "您的浏览器应已打开 claude.ai。请在那里完成登录,然后返回此处。此对话框将自动关闭。"
+
+#. key: tooltip_lines
+msgid "ClaudeBar\nSession: %1%%\nWeekly: %2%%"
+msgstr "ClaudeBar\n会话:%1%%\n每周:%2%%"
+
+#. key: installer_welcome
+msgid "Welcome to the ClaudeBar Setup"
+msgstr "欢迎使用 ClaudeBar 安装程序"
+
+#. key: installer_runtime_step
+msgid ".NET 8 Desktop Runtime (x64)"
+msgstr ".NET 8 Desktop Runtime (x64)"

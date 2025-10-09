@@ -1,0 +1,329 @@
+# hi translation for ClaudeBar.
+# Copyright (C) ClaudeBar contributors.
+# This file is distributed under the same license as the ClaudeBar package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: claudebar 1.0\n"
+"POT-Creation-Date: 2026-05-13 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. key: brand_name, window_preferences_title, tooltip_default, installer_app_step
+#. DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.
+msgid "ClaudeBar"
+msgstr "ClaudeBar"
+
+#. key: menu_refresh_now
+msgid "Refresh now"
+msgstr "अभी ताज़ा करें"
+
+#. key: menu_open_usage_page
+msgid "Open claude.ai/settings/usage"
+msgstr "claude.ai/settings/usage खोलें"
+
+#. key: menu_settings
+msgid "Settings…"
+msgstr "सेटिंग्स…"
+
+#. key: menu_quit
+msgid "Quit ClaudeBar"
+msgstr "ClaudeBar से बाहर निकलें"
+
+#. key: menu_refresh, prefs_refresh_section
+msgid "Refresh"
+msgstr "ताज़ा करें"
+
+#. key: stat_session
+msgid "Current session"
+msgstr "वर्तमान सत्र"
+
+#. key: stat_session_dash
+msgid "Current session: —"
+msgstr "वर्तमान सत्र: —"
+
+#. key: stat_session_with_pct
+msgid "Current session: %1%%"
+msgstr "वर्तमान सत्र: %1%%"
+
+#. key: stat_weekly
+msgid "Weekly (all models)"
+msgstr "साप्ताहिक (सभी मॉडल)"
+
+#. key: stat_weekly_dash
+msgid "Weekly (all models): —"
+msgstr "साप्ताहिक (सभी मॉडल): —"
+
+#. key: stat_weekly_with_pct
+msgid "Weekly (all models): %1%%"
+msgstr "साप्ताहिक (सभी मॉडल): %1%%"
+
+#. key: stat_resets
+#. %s is a time-relative string like 'in 5 min'.
+msgid "Resets %1"
+msgstr "%1 रीसेट होगा"
+
+#. key: time_now
+msgid "now"
+msgstr "अभी"
+
+#. key: time_dash
+msgid "—"
+msgstr "—"
+
+#. key: time_in_minutes
+msgid "in %1 min"
+msgstr "%1 मिनट में"
+
+#. key: time_in_hours
+msgid "in %1h"
+msgstr "%1 घंटे में"
+
+#. key: time_in_hours_minutes
+msgid "in %1h %2m"
+msgstr "%1 घंटे %2 मिनट में"
+
+#. key: time_in_days
+msgid "in %1d"
+msgstr "%1 दिन में"
+
+#. key: time_in_days_hours
+msgid "in %1d %2h"
+msgstr "%1 दिन %2 घंटे में"
+
+#. key: status_offline
+msgid "Offline — last value may be stale"
+msgstr "ऑफ़लाइन — अंतिम मान पुराना हो सकता है"
+
+#. key: status_rate_limited
+msgid "Rate limited by Claude API"
+msgstr "Claude API द्वारा दर सीमा लागू"
+
+#. key: status_unauthenticated
+msgid "Not signed in — open Settings to add a token"
+msgstr "साइन इन नहीं हैं — टोकन जोड़ने के लिए सेटिंग्स खोलें"
+
+#. key: auth_sign_in, signin_dialog_heading
+msgid "Sign in with Claude"
+msgstr "Claude से साइन इन करें"
+
+#. key: auth_sign_out
+msgid "Sign out"
+msgstr "साइन आउट"
+
+#. key: auth_signed_in_token
+#. %s is the last 6 chars of the access token.
+msgid "Signed in (token ends '…%1')"
+msgstr "साइन इन (टोकन का अंत '…%1')"
+
+#. key: auth_not_signed_in
+msgid "Not signed in"
+msgstr "साइन इन नहीं"
+
+#. key: auth_checking
+msgid "Checking…"
+msgstr "जाँच रहे हैं…"
+
+#. key: auth_waiting_browser
+msgid "Waiting for browser sign-in…"
+msgstr "ब्राउज़र साइन-इन की प्रतीक्षा है…"
+
+#. key: auth_keyring_error
+msgid "Keyring error — see logs"
+msgstr "कीरिंग त्रुटि — लॉग देखें"
+
+#. key: auth_sign_in_failed
+msgid "Sign-in failed"
+msgstr "साइन-इन विफल"
+
+#. key: auth_could_not_start
+msgid "Could not start sign-in"
+msgstr "साइन-इन प्रारंभ नहीं हो सका"
+
+#. key: auth_copy_link
+#. Short button label — used both in prefs dialogs and as a system-notification action where supported.
+msgid "Copy link"
+msgstr "लिंक कॉपी करें"
+
+#. key: auth_link_copied_notify
+#. Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.
+msgid "Sign-in link copied to clipboard"
+msgstr "साइन-इन लिंक क्लिपबोर्ड पर कॉपी किया गया"
+
+#. key: prefs_account
+msgid "Account"
+msgstr "खाता"
+
+#. key: prefs_display
+msgid "Display"
+msgstr "प्रदर्शन"
+
+#. key: prefs_advanced
+msgid "Advanced"
+msgstr "उन्नत"
+
+#. key: prefs_general
+msgid "General"
+msgstr "सामान्य"
+
+#. key: prefs_authentication
+msgid "Authentication"
+msgstr "प्रमाणीकरण"
+
+#. key: prefs_status
+msgid "Status"
+msgstr "स्थिति"
+
+#. key: prefs_top_bar
+msgid "Top bar"
+msgstr "शीर्ष बार"
+
+#. key: prefs_tray_icon
+msgid "Tray icon"
+msgstr "ट्रे आइकन"
+
+#. key: prefs_color_thresholds
+msgid "Color thresholds"
+msgstr "रंग सीमाएँ"
+
+#. key: prefs_labels
+msgid "Labels:"
+msgstr "लेबल:"
+
+#. key: prefs_account_subtitle
+msgid "Sign in with your Claude account to fetch Max plan usage. Tokens are stored in GNOME Keyring via libsecret."
+msgstr "Max प्लान का उपयोग प्राप्त करने के लिए अपने Claude खाते से साइन इन करें। टोकन libsecret के माध्यम से GNOME Keyring में संग्रहीत होते हैं।"
+
+#. key: prefs_show_percentages
+msgid "Show numeric percentages next to bars"
+msgstr "बार के बगल में संख्यात्मक प्रतिशत दिखाएँ"
+
+#. key: prefs_show_percentages_subtitle
+msgid "Small session and weekly percentages, stacked beside the bars."
+msgstr "बार के बगल में लंबवत रूप से छोटे सत्र और साप्ताहिक प्रतिशत।"
+
+#. key: prefs_show_percentages_beside
+msgid "Show numeric percentages beside the bars"
+msgstr "बार के बगल में संख्यात्मक प्रतिशत दिखाएँ"
+
+#. key: prefs_color_thresholds_desc
+msgid "When bars switch from green to orange to red."
+msgstr "जब बार हरे से नारंगी और फिर लाल हो जाते हैं।"
+
+#. key: prefs_orange_at
+msgid "Orange at"
+msgstr "नारंगी पर"
+
+#. key: prefs_red_at
+msgid "Red at"
+msgstr "लाल पर"
+
+#. key: prefs_orange_at_pct
+msgid "Orange at (%)"
+msgstr "नारंगी पर (%)"
+
+#. key: prefs_red_at_pct
+msgid "Red at (%)"
+msgstr "लाल पर (%)"
+
+#. key: prefs_orange_at_short
+msgid "Orange at (%):"
+msgstr "नारंगी पर (%):"
+
+#. key: prefs_red_at_short
+msgid "Red at (%):"
+msgstr "लाल पर (%):"
+
+#. key: prefs_poll_interval_seconds
+msgid "Poll interval (seconds)"
+msgstr "पोल अंतराल (सेकंड)"
+
+#. key: prefs_poll_interval_short
+msgid "Poll interval (s):"
+msgstr "पोल अंतराल (से.):"
+
+#. key: prefs_helper_path
+msgid "Helper binary:"
+msgstr "हेल्पर बाइनरी:"
+
+#. key: meter_section
+msgid "Floating desktop meter"
+msgstr "डेस्कटॉप पर तैरता मीटर"
+
+#. key: meter_enable
+msgid "Show always-on-top meter on the desktop"
+msgstr "डेस्कटॉप पर हमेशा-शीर्ष पर मीटर दिखाएँ"
+
+#. key: meter_desc
+msgid "Small transparent widget rendering full-size bars. Draggable into any corner; right-click to lock or hide."
+msgstr "पूर्ण आकार के बार दिखाने वाला छोटा पारदर्शी विजेट। किसी भी कोने में खींचा जा सकता है; लॉक करने या छिपाने के लिए दायाँ-क्लिक करें।"
+
+#. key: meter_show_percentages
+msgid "Show numeric percentages on the floating meter"
+msgstr "तैरते मीटर पर संख्यात्मक प्रतिशत दिखाएँ"
+
+#. key: meter_show_percentages_subtitle
+msgid "Adds session and weekly percentages next to the bars on the floating desktop meter (must be enabled below). The tray tooltip always shows percentages."
+msgstr "तैरते डेस्कटॉप मीटर पर बार के बगल में सत्र और साप्ताहिक प्रतिशत जोड़ता है (नीचे सक्षम होना चाहिए)। ट्रे टूलटिप हमेशा प्रतिशत दिखाता है।"
+
+#. key: meter_opacity
+msgid "Opacity:"
+msgstr "अपारदर्शिता:"
+
+#. key: meter_width_px
+msgid "Width (px):"
+msgstr "चौड़ाई (पिक्सेल):"
+
+#. key: meter_width_hint
+msgid "(120–320)"
+msgstr "(120–320)"
+
+#. key: meter_lock
+msgid "Lock position"
+msgstr "स्थिति लॉक करें"
+
+#. key: meter_unlock
+msgid "Unlock"
+msgstr "अनलॉक"
+
+#. key: meter_hide
+msgid "Hide meter"
+msgstr "मीटर छिपाएँ"
+
+#. key: action_ok
+msgid "OK"
+msgstr "ठीक है"
+
+#. key: action_cancel
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#. key: action_close
+msgid "Close"
+msgstr "बंद करें"
+
+#. key: action_open
+msgid "Open"
+msgstr "खोलें"
+
+#. key: signin_dialog_body
+msgid "Your browser should have opened to claude.ai. Complete sign-in there, then return here. This dialog will close automatically."
+msgstr "आपका ब्राउज़र claude.ai पर खुल गया होगा। वहाँ साइन-इन पूरा करें, फिर यहाँ लौटें। यह संवाद स्वतः बंद हो जाएगा।"
+
+#. key: tooltip_lines
+msgid "ClaudeBar\nSession: %1%%\nWeekly: %2%%"
+msgstr "ClaudeBar\nसत्र: %1%%\nसाप्ताहिक: %2%%"
+
+#. key: installer_welcome
+msgid "Welcome to the ClaudeBar Setup"
+msgstr "ClaudeBar सेटअप में आपका स्वागत है"
+
+#. key: installer_runtime_step
+msgid ".NET 8 Desktop Runtime (x64)"
+msgstr ".NET 8 Desktop Runtime (x64)"

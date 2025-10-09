@@ -1,0 +1,329 @@
+# sv translation for ClaudeBar.
+# Copyright (C) ClaudeBar contributors.
+# This file is distributed under the same license as the ClaudeBar package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: claudebar 1.0\n"
+"POT-Creation-Date: 2026-05-13 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. key: brand_name, window_preferences_title, tooltip_default, installer_app_step
+#. DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.
+msgid "ClaudeBar"
+msgstr "ClaudeBar"
+
+#. key: menu_refresh_now
+msgid "Refresh now"
+msgstr "Uppdatera nu"
+
+#. key: menu_open_usage_page
+msgid "Open claude.ai/settings/usage"
+msgstr "Öppna claude.ai/settings/usage"
+
+#. key: menu_settings
+msgid "Settings…"
+msgstr "Inställningar…"
+
+#. key: menu_quit
+msgid "Quit ClaudeBar"
+msgstr "Avsluta ClaudeBar"
+
+#. key: menu_refresh, prefs_refresh_section
+msgid "Refresh"
+msgstr "Uppdatera"
+
+#. key: stat_session
+msgid "Current session"
+msgstr "Aktuell session"
+
+#. key: stat_session_dash
+msgid "Current session: —"
+msgstr "Aktuell session: —"
+
+#. key: stat_session_with_pct
+msgid "Current session: %1%%"
+msgstr "Aktuell session: %1%%"
+
+#. key: stat_weekly
+msgid "Weekly (all models)"
+msgstr "Vecka (alla modeller)"
+
+#. key: stat_weekly_dash
+msgid "Weekly (all models): —"
+msgstr "Vecka (alla modeller): —"
+
+#. key: stat_weekly_with_pct
+msgid "Weekly (all models): %1%%"
+msgstr "Vecka (alla modeller): %1%%"
+
+#. key: stat_resets
+#. %s is a time-relative string like 'in 5 min'.
+msgid "Resets %1"
+msgstr "Återställs %1"
+
+#. key: time_now
+msgid "now"
+msgstr "nu"
+
+#. key: time_dash
+msgid "—"
+msgstr "—"
+
+#. key: time_in_minutes
+msgid "in %1 min"
+msgstr "om %1 min"
+
+#. key: time_in_hours
+msgid "in %1h"
+msgstr "om %1 h"
+
+#. key: time_in_hours_minutes
+msgid "in %1h %2m"
+msgstr "om %1 h %2 min"
+
+#. key: time_in_days
+msgid "in %1d"
+msgstr "om %1 d"
+
+#. key: time_in_days_hours
+msgid "in %1d %2h"
+msgstr "om %1 d %2 h"
+
+#. key: status_offline
+msgid "Offline — last value may be stale"
+msgstr "Offline — senaste värdet kan vara inaktuellt"
+
+#. key: status_rate_limited
+msgid "Rate limited by Claude API"
+msgstr "Hastighetsbegränsad av Claude API"
+
+#. key: status_unauthenticated
+msgid "Not signed in — open Settings to add a token"
+msgstr "Inte inloggad — öppna Inställningar för att lägga till en token"
+
+#. key: auth_sign_in, signin_dialog_heading
+msgid "Sign in with Claude"
+msgstr "Logga in med Claude"
+
+#. key: auth_sign_out
+msgid "Sign out"
+msgstr "Logga ut"
+
+#. key: auth_signed_in_token
+#. %s is the last 6 chars of the access token.
+msgid "Signed in (token ends '…%1')"
+msgstr "Inloggad (token slutar med '…%1')"
+
+#. key: auth_not_signed_in
+msgid "Not signed in"
+msgstr "Inte inloggad"
+
+#. key: auth_checking
+msgid "Checking…"
+msgstr "Kontrollerar…"
+
+#. key: auth_waiting_browser
+msgid "Waiting for browser sign-in…"
+msgstr "Väntar på inloggning i webbläsaren…"
+
+#. key: auth_keyring_error
+msgid "Keyring error — see logs"
+msgstr "Nyckelringsfel — se loggar"
+
+#. key: auth_sign_in_failed
+msgid "Sign-in failed"
+msgstr "Inloggning misslyckades"
+
+#. key: auth_could_not_start
+msgid "Could not start sign-in"
+msgstr "Det gick inte att starta inloggningen"
+
+#. key: auth_copy_link
+#. Short button label — used both in prefs dialogs and as a system-notification action where supported.
+msgid "Copy link"
+msgstr "Kopiera länken"
+
+#. key: auth_link_copied_notify
+#. Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.
+msgid "Sign-in link copied to clipboard"
+msgstr "Inloggningslänken kopierad till urklipp"
+
+#. key: prefs_account
+msgid "Account"
+msgstr "Konto"
+
+#. key: prefs_display
+msgid "Display"
+msgstr "Visning"
+
+#. key: prefs_advanced
+msgid "Advanced"
+msgstr "Avancerat"
+
+#. key: prefs_general
+msgid "General"
+msgstr "Allmänt"
+
+#. key: prefs_authentication
+msgid "Authentication"
+msgstr "Autentisering"
+
+#. key: prefs_status
+msgid "Status"
+msgstr "Status"
+
+#. key: prefs_top_bar
+msgid "Top bar"
+msgstr "Övre fält"
+
+#. key: prefs_tray_icon
+msgid "Tray icon"
+msgstr "Aktivitetsfältsikon"
+
+#. key: prefs_color_thresholds
+msgid "Color thresholds"
+msgstr "Färgtrösklar"
+
+#. key: prefs_labels
+msgid "Labels:"
+msgstr "Etiketter:"
+
+#. key: prefs_account_subtitle
+msgid "Sign in with your Claude account to fetch Max plan usage. Tokens are stored in GNOME Keyring via libsecret."
+msgstr "Logga in med ditt Claude-konto för att hämta användning av Max-abonnemanget. Tokens lagras i GNOME Keyring via libsecret."
+
+#. key: prefs_show_percentages
+msgid "Show numeric percentages next to bars"
+msgstr "Visa numeriska procentvärden bredvid staplarna"
+
+#. key: prefs_show_percentages_subtitle
+msgid "Small session and weekly percentages, stacked beside the bars."
+msgstr "Små procentvärden för session och vecka, staplade bredvid staplarna."
+
+#. key: prefs_show_percentages_beside
+msgid "Show numeric percentages beside the bars"
+msgstr "Visa numeriska procentvärden bredvid staplarna"
+
+#. key: prefs_color_thresholds_desc
+msgid "When bars switch from green to orange to red."
+msgstr "När staplarna växlar från grönt till orange till rött."
+
+#. key: prefs_orange_at
+msgid "Orange at"
+msgstr "Orange vid"
+
+#. key: prefs_red_at
+msgid "Red at"
+msgstr "Röd vid"
+
+#. key: prefs_orange_at_pct
+msgid "Orange at (%)"
+msgstr "Orange vid (%)"
+
+#. key: prefs_red_at_pct
+msgid "Red at (%)"
+msgstr "Röd vid (%)"
+
+#. key: prefs_orange_at_short
+msgid "Orange at (%):"
+msgstr "Orange vid (%):"
+
+#. key: prefs_red_at_short
+msgid "Red at (%):"
+msgstr "Röd vid (%):"
+
+#. key: prefs_poll_interval_seconds
+msgid "Poll interval (seconds)"
+msgstr "Pollningsintervall (sekunder)"
+
+#. key: prefs_poll_interval_short
+msgid "Poll interval (s):"
+msgstr "Pollningsintervall (s):"
+
+#. key: prefs_helper_path
+msgid "Helper binary:"
+msgstr "Hjälpbinär:"
+
+#. key: meter_section
+msgid "Floating desktop meter"
+msgstr "Flytande skrivbordsmätare"
+
+#. key: meter_enable
+msgid "Show always-on-top meter on the desktop"
+msgstr "Visa alltid-överst-mätare på skrivbordet"
+
+#. key: meter_desc
+msgid "Small transparent widget rendering full-size bars. Draggable into any corner; right-click to lock or hide."
+msgstr "Liten genomskinlig widget som visar staplar i full storlek. Kan dras till valfritt hörn; högerklicka för att låsa eller dölja."
+
+#. key: meter_show_percentages
+msgid "Show numeric percentages on the floating meter"
+msgstr "Visa numeriska procentvärden på den flytande mätaren"
+
+#. key: meter_show_percentages_subtitle
+msgid "Adds session and weekly percentages next to the bars on the floating desktop meter (must be enabled below). The tray tooltip always shows percentages."
+msgstr "Lägger till session- och veckoprocent bredvid staplarna på den flytande skrivbordsmätaren (måste aktiveras nedan). Verktygstipset i aktivitetsfältet visar alltid procent."
+
+#. key: meter_opacity
+msgid "Opacity:"
+msgstr "Opacitet:"
+
+#. key: meter_width_px
+msgid "Width (px):"
+msgstr "Bredd (px):"
+
+#. key: meter_width_hint
+msgid "(120–320)"
+msgstr "(120–320)"
+
+#. key: meter_lock
+msgid "Lock position"
+msgstr "Lås position"
+
+#. key: meter_unlock
+msgid "Unlock"
+msgstr "Lås upp"
+
+#. key: meter_hide
+msgid "Hide meter"
+msgstr "Dölj mätare"
+
+#. key: action_ok
+msgid "OK"
+msgstr "OK"
+
+#. key: action_cancel
+msgid "Cancel"
+msgstr "Avbryt"
+
+#. key: action_close
+msgid "Close"
+msgstr "Stäng"
+
+#. key: action_open
+msgid "Open"
+msgstr "Öppna"
+
+#. key: signin_dialog_body
+msgid "Your browser should have opened to claude.ai. Complete sign-in there, then return here. This dialog will close automatically."
+msgstr "Din webbläsare bör ha öppnats på claude.ai. Slutför inloggningen där och återvänd sedan hit. Den här dialogrutan stängs automatiskt."
+
+#. key: tooltip_lines
+msgid "ClaudeBar\nSession: %1%%\nWeekly: %2%%"
+msgstr "ClaudeBar\nSession: %1%%\nVecka: %2%%"
+
+#. key: installer_welcome
+msgid "Welcome to the ClaudeBar Setup"
+msgstr "Välkommen till installationen av ClaudeBar"
+
+#. key: installer_runtime_step
+msgid ".NET 8 Desktop Runtime (x64)"
+msgstr ".NET 8 Desktop Runtime (x64)"

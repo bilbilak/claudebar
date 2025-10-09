@@ -1,0 +1,329 @@
+# tr translation for ClaudeBar.
+# Copyright (C) ClaudeBar contributors.
+# This file is distributed under the same license as the ClaudeBar package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: claudebar 1.0\n"
+"POT-Creation-Date: 2026-05-13 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. key: brand_name, window_preferences_title, tooltip_default, installer_app_step
+#. DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.
+msgid "ClaudeBar"
+msgstr "ClaudeBar"
+
+#. key: menu_refresh_now
+msgid "Refresh now"
+msgstr "Şimdi yenile"
+
+#. key: menu_open_usage_page
+msgid "Open claude.ai/settings/usage"
+msgstr "claude.ai/settings/usage adresini aç"
+
+#. key: menu_settings
+msgid "Settings…"
+msgstr "Ayarlar…"
+
+#. key: menu_quit
+msgid "Quit ClaudeBar"
+msgstr "ClaudeBar'dan çık"
+
+#. key: menu_refresh, prefs_refresh_section
+msgid "Refresh"
+msgstr "Yenile"
+
+#. key: stat_session
+msgid "Current session"
+msgstr "Geçerli oturum"
+
+#. key: stat_session_dash
+msgid "Current session: —"
+msgstr "Geçerli oturum: —"
+
+#. key: stat_session_with_pct
+msgid "Current session: %1%%"
+msgstr "Geçerli oturum: %1%%"
+
+#. key: stat_weekly
+msgid "Weekly (all models)"
+msgstr "Haftalık (tüm modeller)"
+
+#. key: stat_weekly_dash
+msgid "Weekly (all models): —"
+msgstr "Haftalık (tüm modeller): —"
+
+#. key: stat_weekly_with_pct
+msgid "Weekly (all models): %1%%"
+msgstr "Haftalık (tüm modeller): %1%%"
+
+#. key: stat_resets
+#. %s is a time-relative string like 'in 5 min'.
+msgid "Resets %1"
+msgstr "Sıfırlanır %1"
+
+#. key: time_now
+msgid "now"
+msgstr "şimdi"
+
+#. key: time_dash
+msgid "—"
+msgstr "—"
+
+#. key: time_in_minutes
+msgid "in %1 min"
+msgstr "%1 dk içinde"
+
+#. key: time_in_hours
+msgid "in %1h"
+msgstr "%1 sa içinde"
+
+#. key: time_in_hours_minutes
+msgid "in %1h %2m"
+msgstr "%1 sa %2 dk içinde"
+
+#. key: time_in_days
+msgid "in %1d"
+msgstr "%1 g içinde"
+
+#. key: time_in_days_hours
+msgid "in %1d %2h"
+msgstr "%1 g %2 sa içinde"
+
+#. key: status_offline
+msgid "Offline — last value may be stale"
+msgstr "Çevrimdışı — son değer güncel olmayabilir"
+
+#. key: status_rate_limited
+msgid "Rate limited by Claude API"
+msgstr "Claude API tarafından hız sınırı uygulandı"
+
+#. key: status_unauthenticated
+msgid "Not signed in — open Settings to add a token"
+msgstr "Oturum açılmadı — token eklemek için Ayarlar'ı açın"
+
+#. key: auth_sign_in, signin_dialog_heading
+msgid "Sign in with Claude"
+msgstr "Claude ile oturum aç"
+
+#. key: auth_sign_out
+msgid "Sign out"
+msgstr "Oturumu kapat"
+
+#. key: auth_signed_in_token
+#. %s is the last 6 chars of the access token.
+msgid "Signed in (token ends '…%1')"
+msgstr "Oturum açık (token şununla bitiyor: '…%1')"
+
+#. key: auth_not_signed_in
+msgid "Not signed in"
+msgstr "Oturum açık değil"
+
+#. key: auth_checking
+msgid "Checking…"
+msgstr "Kontrol ediliyor…"
+
+#. key: auth_waiting_browser
+msgid "Waiting for browser sign-in…"
+msgstr "Tarayıcıda oturum açılması bekleniyor…"
+
+#. key: auth_keyring_error
+msgid "Keyring error — see logs"
+msgstr "Anahtarlık hatası — günlüklere bakın"
+
+#. key: auth_sign_in_failed
+msgid "Sign-in failed"
+msgstr "Oturum açma başarısız"
+
+#. key: auth_could_not_start
+msgid "Could not start sign-in"
+msgstr "Oturum açma başlatılamadı"
+
+#. key: auth_copy_link
+#. Short button label — used both in prefs dialogs and as a system-notification action where supported.
+msgid "Copy link"
+msgstr "Bağlantıyı kopyala"
+
+#. key: auth_link_copied_notify
+#. Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.
+msgid "Sign-in link copied to clipboard"
+msgstr "Oturum açma bağlantısı panoya kopyalandı"
+
+#. key: prefs_account
+msgid "Account"
+msgstr "Hesap"
+
+#. key: prefs_display
+msgid "Display"
+msgstr "Görüntü"
+
+#. key: prefs_advanced
+msgid "Advanced"
+msgstr "Gelişmiş"
+
+#. key: prefs_general
+msgid "General"
+msgstr "Genel"
+
+#. key: prefs_authentication
+msgid "Authentication"
+msgstr "Kimlik doğrulama"
+
+#. key: prefs_status
+msgid "Status"
+msgstr "Durum"
+
+#. key: prefs_top_bar
+msgid "Top bar"
+msgstr "Üst çubuk"
+
+#. key: prefs_tray_icon
+msgid "Tray icon"
+msgstr "Sistem tepsisi simgesi"
+
+#. key: prefs_color_thresholds
+msgid "Color thresholds"
+msgstr "Renk eşikleri"
+
+#. key: prefs_labels
+msgid "Labels:"
+msgstr "Etiketler:"
+
+#. key: prefs_account_subtitle
+msgid "Sign in with your Claude account to fetch Max plan usage. Tokens are stored in GNOME Keyring via libsecret."
+msgstr "Max planı kullanımını almak için Claude hesabınızla oturum açın. Belirteçler libsecret aracılığıyla GNOME Keyring içinde saklanır."
+
+#. key: prefs_show_percentages
+msgid "Show numeric percentages next to bars"
+msgstr "Çubukların yanında sayısal yüzdeleri göster"
+
+#. key: prefs_show_percentages_subtitle
+msgid "Small session and weekly percentages, stacked beside the bars."
+msgstr "Çubukların yanında üst üste dizilmiş küçük oturum ve haftalık yüzdeler."
+
+#. key: prefs_show_percentages_beside
+msgid "Show numeric percentages beside the bars"
+msgstr "Çubukların yanında sayısal yüzdeleri göster"
+
+#. key: prefs_color_thresholds_desc
+msgid "When bars switch from green to orange to red."
+msgstr "Çubukların yeşilden turuncuya ve kırmızıya geçtiği eşikler."
+
+#. key: prefs_orange_at
+msgid "Orange at"
+msgstr "Turuncu eşiği"
+
+#. key: prefs_red_at
+msgid "Red at"
+msgstr "Kırmızı eşiği"
+
+#. key: prefs_orange_at_pct
+msgid "Orange at (%)"
+msgstr "Turuncu eşiği (%)"
+
+#. key: prefs_red_at_pct
+msgid "Red at (%)"
+msgstr "Kırmızı eşiği (%)"
+
+#. key: prefs_orange_at_short
+msgid "Orange at (%):"
+msgstr "Turuncu eşiği (%):"
+
+#. key: prefs_red_at_short
+msgid "Red at (%):"
+msgstr "Kırmızı eşiği (%):"
+
+#. key: prefs_poll_interval_seconds
+msgid "Poll interval (seconds)"
+msgstr "Yoklama aralığı (saniye)"
+
+#. key: prefs_poll_interval_short
+msgid "Poll interval (s):"
+msgstr "Yoklama aralığı (sn):"
+
+#. key: prefs_helper_path
+msgid "Helper binary:"
+msgstr "Yardımcı ikili dosya:"
+
+#. key: meter_section
+msgid "Floating desktop meter"
+msgstr "Yüzen masaüstü göstergesi"
+
+#. key: meter_enable
+msgid "Show always-on-top meter on the desktop"
+msgstr "Masaüstünde her zaman üstte göstergeyi göster"
+
+#. key: meter_desc
+msgid "Small transparent widget rendering full-size bars. Draggable into any corner; right-click to lock or hide."
+msgstr "Tam boyutlu çubuklar gösteren küçük şeffaf bir araç. İstediğiniz köşeye sürüklenebilir; kilitlemek veya gizlemek için sağ tıklayın."
+
+#. key: meter_show_percentages
+msgid "Show numeric percentages on the floating meter"
+msgstr "Yüzen göstergede sayısal yüzdeleri göster"
+
+#. key: meter_show_percentages_subtitle
+msgid "Adds session and weekly percentages next to the bars on the floating desktop meter (must be enabled below). The tray tooltip always shows percentages."
+msgstr "Yüzen masaüstü göstergesindeki çubukların yanına oturum ve haftalık yüzdeleri ekler (aşağıdan etkinleştirilmelidir). Sistem tepsisindeki ipucu her zaman yüzdeleri gösterir."
+
+#. key: meter_opacity
+msgid "Opacity:"
+msgstr "Opaklık:"
+
+#. key: meter_width_px
+msgid "Width (px):"
+msgstr "Genişlik (px):"
+
+#. key: meter_width_hint
+msgid "(120–320)"
+msgstr "(120–320)"
+
+#. key: meter_lock
+msgid "Lock position"
+msgstr "Konumu kilitle"
+
+#. key: meter_unlock
+msgid "Unlock"
+msgstr "Kilidi aç"
+
+#. key: meter_hide
+msgid "Hide meter"
+msgstr "Göstergeyi gizle"
+
+#. key: action_ok
+msgid "OK"
+msgstr "Tamam"
+
+#. key: action_cancel
+msgid "Cancel"
+msgstr "İptal"
+
+#. key: action_close
+msgid "Close"
+msgstr "Kapat"
+
+#. key: action_open
+msgid "Open"
+msgstr "Aç"
+
+#. key: signin_dialog_body
+msgid "Your browser should have opened to claude.ai. Complete sign-in there, then return here. This dialog will close automatically."
+msgstr "Tarayıcınız claude.ai adresini açmış olmalı. Oturum açmayı orada tamamlayın ve buraya geri dönün. Bu iletişim kutusu otomatik olarak kapanacak."
+
+#. key: tooltip_lines
+msgid "ClaudeBar\nSession: %1%%\nWeekly: %2%%"
+msgstr "ClaudeBar\nOturum: %1%%\nHaftalık: %2%%"
+
+#. key: installer_welcome
+msgid "Welcome to the ClaudeBar Setup"
+msgstr "ClaudeBar Kurulumuna Hoş Geldiniz"
+
+#. key: installer_runtime_step
+msgid ".NET 8 Desktop Runtime (x64)"
+msgstr ".NET 8 Desktop Runtime (x64)"
