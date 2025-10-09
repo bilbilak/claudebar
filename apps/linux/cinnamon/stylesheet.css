@@ -1,0 +1,28 @@
+.claudebar-applet {
+    padding: 0 4px;
+}
+
+.claudebar-indicator-box {
+    spacing: 3px;
+}
+
+.claudebar-bars {
+    padding: 0;
+}
+
+.claudebar-percent-box {
+    spacing: 1px;
+    padding-left: 2px;
+}
+
+.claudebar-percent-label {
+    font-size: 8pt;
+    min-width: 28px;
+    text-align: right;
+}
+
+.claudebar-submenu {
+    font-size: 9pt;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 18px;
+}
