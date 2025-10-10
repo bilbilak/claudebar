@@ -1,0 +1,329 @@
+# it translation for ClaudeBar.
+# Copyright (C) ClaudeBar contributors.
+# This file is distributed under the same license as the ClaudeBar package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: claudebar 1.0\n"
+"POT-Creation-Date: 2026-05-13 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. key: brand_name, window_preferences_title, tooltip_default, installer_app_step
+#. DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.
+msgid "ClaudeBar"
+msgstr "ClaudeBar"
+
+#. key: menu_refresh_now
+msgid "Refresh now"
+msgstr "Aggiorna ora"
+
+#. key: menu_open_usage_page
+msgid "Open claude.ai/settings/usage"
+msgstr "Apri claude.ai/settings/usage"
+
+#. key: menu_settings
+msgid "Settings…"
+msgstr "Impostazioni…"
+
+#. key: menu_quit
+msgid "Quit ClaudeBar"
+msgstr "Esci da ClaudeBar"
+
+#. key: menu_refresh, prefs_refresh_section
+msgid "Refresh"
+msgstr "Aggiorna"
+
+#. key: stat_session
+msgid "Current session"
+msgstr "Sessione corrente"
+
+#. key: stat_session_dash
+msgid "Current session: —"
+msgstr "Sessione corrente: —"
+
+#. key: stat_session_with_pct
+msgid "Current session: %d%%"
+msgstr "Sessione corrente: %d%%"
+
+#. key: stat_weekly
+msgid "Weekly (all models)"
+msgstr "Settimanale (tutti i modelli)"
+
+#. key: stat_weekly_dash
+msgid "Weekly (all models): —"
+msgstr "Settimanale (tutti i modelli): —"
+
+#. key: stat_weekly_with_pct
+msgid "Weekly (all models): %d%%"
+msgstr "Settimanale (tutti i modelli): %d%%"
+
+#. key: stat_resets
+#. %s is a time-relative string like 'in 5 min'.
+msgid "Resets %s"
+msgstr "Reimpostazione %s"
+
+#. key: time_now
+msgid "now"
+msgstr "adesso"
+
+#. key: time_dash
+msgid "—"
+msgstr "—"
+
+#. key: time_in_minutes
+msgid "in %d min"
+msgstr "tra %d min"
+
+#. key: time_in_hours
+msgid "in %dh"
+msgstr "tra %d h"
+
+#. key: time_in_hours_minutes
+msgid "in %dh %dm"
+msgstr "tra %d h e %d min"
+
+#. key: time_in_days
+msgid "in %dd"
+msgstr "tra %d g"
+
+#. key: time_in_days_hours
+msgid "in %dd %dh"
+msgstr "tra %d g e %d h"
+
+#. key: status_offline
+msgid "Offline — last value may be stale"
+msgstr "Offline — l'ultimo valore potrebbe essere obsoleto"
+
+#. key: status_rate_limited
+msgid "Rate limited by Claude API"
+msgstr "Limite di velocità imposto da Claude API"
+
+#. key: status_unauthenticated
+msgid "Not signed in — open Settings to add a token"
+msgstr "Non hai effettuato l'accesso — apri Impostazioni per aggiungere un token"
+
+#. key: auth_sign_in, signin_dialog_heading
+msgid "Sign in with Claude"
+msgstr "Accedi con Claude"
+
+#. key: auth_sign_out
+msgid "Sign out"
+msgstr "Esci"
+
+#. key: auth_signed_in_token
+#. %s is the last 6 chars of the access token.
+msgid "Signed in (token ends '…%s')"
+msgstr "Accesso eseguito (il token termina con «…%s»)"
+
+#. key: auth_not_signed_in
+msgid "Not signed in"
+msgstr "Accesso non eseguito"
+
+#. key: auth_checking
+msgid "Checking…"
+msgstr "Verifica in corso…"
+
+#. key: auth_waiting_browser
+msgid "Waiting for browser sign-in…"
+msgstr "In attesa dell'accesso dal browser…"
+
+#. key: auth_keyring_error
+msgid "Keyring error — see logs"
+msgstr "Errore del portachiavi — consulta i registri"
+
+#. key: auth_sign_in_failed
+msgid "Sign-in failed"
+msgstr "Accesso non riuscito"
+
+#. key: auth_could_not_start
+msgid "Could not start sign-in"
+msgstr "Impossibile avviare l'accesso"
+
+#. key: auth_copy_link
+#. Short button label — used both in prefs dialogs and as a system-notification action where supported.
+msgid "Copy link"
+msgstr "Copia link"
+
+#. key: auth_link_copied_notify
+#. Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.
+msgid "Sign-in link copied to clipboard"
+msgstr "Link di accesso copiato negli appunti"
+
+#. key: prefs_account
+msgid "Account"
+msgstr "Account"
+
+#. key: prefs_display
+msgid "Display"
+msgstr "Visualizzazione"
+
+#. key: prefs_advanced
+msgid "Advanced"
+msgstr "Avanzate"
+
+#. key: prefs_general
+msgid "General"
+msgstr "Generali"
+
+#. key: prefs_authentication
+msgid "Authentication"
+msgstr "Autenticazione"
+
+#. key: prefs_status
+msgid "Status"
+msgstr "Stato"
+
+#. key: prefs_top_bar
+msgid "Top bar"
+msgstr "Barra superiore"
+
+#. key: prefs_tray_icon
+msgid "Tray icon"
+msgstr "Icona nella barra delle applicazioni"
+
+#. key: prefs_color_thresholds
+msgid "Color thresholds"
+msgstr "Soglie dei colori"
+
+#. key: prefs_labels
+msgid "Labels:"
+msgstr "Etichette:"
+
+#. key: prefs_account_subtitle
+msgid "Sign in with your Claude account to fetch Max plan usage. Tokens are stored in GNOME Keyring via libsecret."
+msgstr "Accedi con il tuo account Claude per recuperare l'utilizzo del piano Max. I token sono memorizzati in GNOME Keyring tramite libsecret."
+
+#. key: prefs_show_percentages
+msgid "Show numeric percentages next to bars"
+msgstr "Mostra le percentuali numeriche accanto alle barre"
+
+#. key: prefs_show_percentages_subtitle
+msgid "Small session and weekly percentages, stacked beside the bars."
+msgstr "Piccole percentuali di sessione e settimanali, impilate accanto alle barre."
+
+#. key: prefs_show_percentages_beside
+msgid "Show numeric percentages beside the bars"
+msgstr "Mostra le percentuali numeriche accanto alle barre"
+
+#. key: prefs_color_thresholds_desc
+msgid "When bars switch from green to orange to red."
+msgstr "Quando le barre passano dal verde all'arancione e poi al rosso."
+
+#. key: prefs_orange_at
+msgid "Orange at"
+msgstr "Arancione al"
+
+#. key: prefs_red_at
+msgid "Red at"
+msgstr "Rosso al"
+
+#. key: prefs_orange_at_pct
+msgid "Orange at (%)"
+msgstr "Arancione al (%)"
+
+#. key: prefs_red_at_pct
+msgid "Red at (%)"
+msgstr "Rosso al (%)"
+
+#. key: prefs_orange_at_short
+msgid "Orange at (%):"
+msgstr "Arancione al (%):"
+
+#. key: prefs_red_at_short
+msgid "Red at (%):"
+msgstr "Rosso al (%):"
+
+#. key: prefs_poll_interval_seconds
+msgid "Poll interval (seconds)"
+msgstr "Intervallo di polling (secondi)"
+
+#. key: prefs_poll_interval_short
+msgid "Poll interval (s):"
+msgstr "Intervallo di polling (s):"
+
+#. key: prefs_helper_path
+msgid "Helper binary:"
+msgstr "Binario di supporto:"
+
+#. key: meter_section
+msgid "Floating desktop meter"
+msgstr "Indicatore mobile sul desktop"
+
+#. key: meter_enable
+msgid "Show always-on-top meter on the desktop"
+msgstr "Mostra indicatore sempre in primo piano sul desktop"
+
+#. key: meter_desc
+msgid "Small transparent widget rendering full-size bars. Draggable into any corner; right-click to lock or hide."
+msgstr "Piccolo widget trasparente che mostra barre a grandezza naturale. Può essere trascinato in qualsiasi angolo; fai clic con il pulsante destro per bloccarlo o nasconderlo."
+
+#. key: meter_show_percentages
+msgid "Show numeric percentages on the floating meter"
+msgstr "Mostra le percentuali numeriche sull'indicatore mobile"
+
+#. key: meter_show_percentages_subtitle
+msgid "Adds session and weekly percentages next to the bars on the floating desktop meter (must be enabled below). The tray tooltip always shows percentages."
+msgstr "Aggiunge le percentuali di sessione e settimanali accanto alle barre sull'indicatore mobile del desktop (deve essere abilitato qui sotto). Il suggerimento nella barra delle applicazioni mostra sempre le percentuali."
+
+#. key: meter_opacity
+msgid "Opacity:"
+msgstr "Opacità:"
+
+#. key: meter_width_px
+msgid "Width (px):"
+msgstr "Larghezza (px):"
+
+#. key: meter_width_hint
+msgid "(120–320)"
+msgstr "(120–320)"
+
+#. key: meter_lock
+msgid "Lock position"
+msgstr "Blocca posizione"
+
+#. key: meter_unlock
+msgid "Unlock"
+msgstr "Sblocca"
+
+#. key: meter_hide
+msgid "Hide meter"
+msgstr "Nascondi indicatore"
+
+#. key: action_ok
+msgid "OK"
+msgstr "OK"
+
+#. key: action_cancel
+msgid "Cancel"
+msgstr "Annulla"
+
+#. key: action_close
+msgid "Close"
+msgstr "Chiudi"
+
+#. key: action_open
+msgid "Open"
+msgstr "Apri"
+
+#. key: signin_dialog_body
+msgid "Your browser should have opened to claude.ai. Complete sign-in there, then return here. This dialog will close automatically."
+msgstr "Il tuo browser dovrebbe aver aperto claude.ai. Completa l'accesso lì, quindi torna qui. Questa finestra di dialogo si chiuderà automaticamente."
+
+#. key: tooltip_lines
+msgid "ClaudeBar\nSession: %d%%\nWeekly: %d%%"
+msgstr "ClaudeBar\nSessione: %d%%\nSettimanale: %d%%"
+
+#. key: installer_welcome
+msgid "Welcome to the ClaudeBar Setup"
+msgstr "Benvenuto nell'installazione di ClaudeBar"
+
+#. key: installer_runtime_step
+msgid ".NET 8 Desktop Runtime (x64)"
+msgstr ".NET 8 Desktop Runtime (x64)"
