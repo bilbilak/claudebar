@@ -1,0 +1,329 @@
+# ar translation for ClaudeBar.
+# Copyright (C) ClaudeBar contributors.
+# This file is distributed under the same license as the ClaudeBar package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: claudebar 1.0\n"
+"POT-Creation-Date: 2026-05-13 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#. key: brand_name, window_preferences_title, tooltip_default, installer_app_step
+#. DO NOT TRANSLATE. Keep as 'ClaudeBar' in every language.
+msgid "ClaudeBar"
+msgstr "ClaudeBar"
+
+#. key: menu_refresh_now
+msgid "Refresh now"
+msgstr "تحديث الآن"
+
+#. key: menu_open_usage_page
+msgid "Open claude.ai/settings/usage"
+msgstr "افتح claude.ai/settings/usage"
+
+#. key: menu_settings
+msgid "Settings…"
+msgstr "الإعدادات…"
+
+#. key: menu_quit
+msgid "Quit ClaudeBar"
+msgstr "إنهاء ClaudeBar"
+
+#. key: menu_refresh, prefs_refresh_section
+msgid "Refresh"
+msgstr "تحديث"
+
+#. key: stat_session
+msgid "Current session"
+msgstr "الجلسة الحالية"
+
+#. key: stat_session_dash
+msgid "Current session: —"
+msgstr "الجلسة الحالية: —"
+
+#. key: stat_session_with_pct
+msgid "Current session: %d%%"
+msgstr "الجلسة الحالية: %d%%"
+
+#. key: stat_weekly
+msgid "Weekly (all models)"
+msgstr "أسبوعي (جميع النماذج)"
+
+#. key: stat_weekly_dash
+msgid "Weekly (all models): —"
+msgstr "أسبوعي (جميع النماذج): —"
+
+#. key: stat_weekly_with_pct
+msgid "Weekly (all models): %d%%"
+msgstr "أسبوعي (جميع النماذج): %d%%"
+
+#. key: stat_resets
+#. %s is a time-relative string like 'in 5 min'.
+msgid "Resets %s"
+msgstr "تتم إعادة التعيين %s"
+
+#. key: time_now
+msgid "now"
+msgstr "الآن"
+
+#. key: time_dash
+msgid "—"
+msgstr "—"
+
+#. key: time_in_minutes
+msgid "in %d min"
+msgstr "خلال %d دقيقة"
+
+#. key: time_in_hours
+msgid "in %dh"
+msgstr "خلال %d ساعة"
+
+#. key: time_in_hours_minutes
+msgid "in %dh %dm"
+msgstr "خلال %d ساعة و%d دقيقة"
+
+#. key: time_in_days
+msgid "in %dd"
+msgstr "خلال %d يوم"
+
+#. key: time_in_days_hours
+msgid "in %dd %dh"
+msgstr "خلال %d يوم و%d ساعة"
+
+#. key: status_offline
+msgid "Offline — last value may be stale"
+msgstr "غير متصل — قد تكون آخر قيمة قديمة"
+
+#. key: status_rate_limited
+msgid "Rate limited by Claude API"
+msgstr "تم تقييد المعدل بواسطة Claude API"
+
+#. key: status_unauthenticated
+msgid "Not signed in — open Settings to add a token"
+msgstr "غير مسجل الدخول — افتح الإعدادات لإضافة رمز"
+
+#. key: auth_sign_in, signin_dialog_heading
+msgid "Sign in with Claude"
+msgstr "تسجيل الدخول باستخدام Claude"
+
+#. key: auth_sign_out
+msgid "Sign out"
+msgstr "تسجيل الخروج"
+
+#. key: auth_signed_in_token
+#. %s is the last 6 chars of the access token.
+msgid "Signed in (token ends '…%s')"
+msgstr "تم تسجيل الدخول (ينتهي الرمز بـ '…%s')"
+
+#. key: auth_not_signed_in
+msgid "Not signed in"
+msgstr "غير مسجل الدخول"
+
+#. key: auth_checking
+msgid "Checking…"
+msgstr "جارٍ التحقق…"
+
+#. key: auth_waiting_browser
+msgid "Waiting for browser sign-in…"
+msgstr "في انتظار تسجيل الدخول عبر المتصفح…"
+
+#. key: auth_keyring_error
+msgid "Keyring error — see logs"
+msgstr "خطأ في حلقة المفاتيح — راجع السجلات"
+
+#. key: auth_sign_in_failed
+msgid "Sign-in failed"
+msgstr "فشل تسجيل الدخول"
+
+#. key: auth_could_not_start
+msgid "Could not start sign-in"
+msgstr "تعذّر بدء تسجيل الدخول"
+
+#. key: auth_copy_link
+#. Short button label — used both in prefs dialogs and as a system-notification action where supported.
+msgid "Copy link"
+msgstr "نسخ الرابط"
+
+#. key: auth_link_copied_notify
+#. Notification body shown after a menu/popup Sign-in click. Body of an OS desktop notification (libnotify on Linux). Title is the brand name.
+msgid "Sign-in link copied to clipboard"
+msgstr "تم نسخ رابط تسجيل الدخول إلى الحافظة"
+
+#. key: prefs_account
+msgid "Account"
+msgstr "الحساب"
+
+#. key: prefs_display
+msgid "Display"
+msgstr "العرض"
+
+#. key: prefs_advanced
+msgid "Advanced"
+msgstr "متقدم"
+
+#. key: prefs_general
+msgid "General"
+msgstr "عام"
+
+#. key: prefs_authentication
+msgid "Authentication"
+msgstr "المصادقة"
+
+#. key: prefs_status
+msgid "Status"
+msgstr "الحالة"
+
+#. key: prefs_top_bar
+msgid "Top bar"
+msgstr "الشريط العلوي"
+
+#. key: prefs_tray_icon
+msgid "Tray icon"
+msgstr "أيقونة الشريط"
+
+#. key: prefs_color_thresholds
+msgid "Color thresholds"
+msgstr "عتبات الألوان"
+
+#. key: prefs_labels
+msgid "Labels:"
+msgstr "التسميات:"
+
+#. key: prefs_account_subtitle
+msgid "Sign in with your Claude account to fetch Max plan usage. Tokens are stored in GNOME Keyring via libsecret."
+msgstr "سجّل الدخول بحسابك في Claude لجلب استخدام خطة Max. تُخزَّن الرموز في GNOME Keyring عبر libsecret."
+
+#. key: prefs_show_percentages
+msgid "Show numeric percentages next to bars"
+msgstr "إظهار النسب المئوية الرقمية بجانب الأشرطة"
+
+#. key: prefs_show_percentages_subtitle
+msgid "Small session and weekly percentages, stacked beside the bars."
+msgstr "نسب مئوية صغيرة للجلسة والأسبوع، مرتّبة بجانب الأشرطة."
+
+#. key: prefs_show_percentages_beside
+msgid "Show numeric percentages beside the bars"
+msgstr "إظهار النسب المئوية الرقمية بجانب الأشرطة"
+
+#. key: prefs_color_thresholds_desc
+msgid "When bars switch from green to orange to red."
+msgstr "متى تتغير الأشرطة من الأخضر إلى البرتقالي ثم إلى الأحمر."
+
+#. key: prefs_orange_at
+msgid "Orange at"
+msgstr "البرتقالي عند"
+
+#. key: prefs_red_at
+msgid "Red at"
+msgstr "الأحمر عند"
+
+#. key: prefs_orange_at_pct
+msgid "Orange at (%)"
+msgstr "البرتقالي عند (%)"
+
+#. key: prefs_red_at_pct
+msgid "Red at (%)"
+msgstr "الأحمر عند (%)"
+
+#. key: prefs_orange_at_short
+msgid "Orange at (%):"
+msgstr "البرتقالي عند (%):"
+
+#. key: prefs_red_at_short
+msgid "Red at (%):"
+msgstr "الأحمر عند (%):"
+
+#. key: prefs_poll_interval_seconds
+msgid "Poll interval (seconds)"
+msgstr "فاصل الاستطلاع (بالثواني)"
+
+#. key: prefs_poll_interval_short
+msgid "Poll interval (s):"
+msgstr "فاصل الاستطلاع (ث):"
+
+#. key: prefs_helper_path
+msgid "Helper binary:"
+msgstr "ملف المساعد التنفيذي:"
+
+#. key: meter_section
+msgid "Floating desktop meter"
+msgstr "مقياس عائم على سطح المكتب"
+
+#. key: meter_enable
+msgid "Show always-on-top meter on the desktop"
+msgstr "إظهار مقياس فوق كل النوافذ على سطح المكتب"
+
+#. key: meter_desc
+msgid "Small transparent widget rendering full-size bars. Draggable into any corner; right-click to lock or hide."
+msgstr "أداة شفافة صغيرة تعرض أشرطة بحجم كامل. يمكن سحبها إلى أي ركن؛ انقر بزر الفأرة الأيمن للتثبيت أو الإخفاء."
+
+#. key: meter_show_percentages
+msgid "Show numeric percentages on the floating meter"
+msgstr "إظهار النسب المئوية الرقمية على المقياس العائم"
+
+#. key: meter_show_percentages_subtitle
+msgid "Adds session and weekly percentages next to the bars on the floating desktop meter (must be enabled below). The tray tooltip always shows percentages."
+msgstr "يضيف النسب المئوية للجلسة والأسبوع بجوار الأشرطة على المقياس العائم على سطح المكتب (يجب تمكينه أدناه). تعرض تلميحة الشريط النسب المئوية دائمًا."
+
+#. key: meter_opacity
+msgid "Opacity:"
+msgstr "الإعتام:"
+
+#. key: meter_width_px
+msgid "Width (px):"
+msgstr "العرض (بكسل):"
+
+#. key: meter_width_hint
+msgid "(120–320)"
+msgstr "(120–320)"
+
+#. key: meter_lock
+msgid "Lock position"
+msgstr "قفل الموضع"
+
+#. key: meter_unlock
+msgid "Unlock"
+msgstr "إلغاء القفل"
+
+#. key: meter_hide
+msgid "Hide meter"
+msgstr "إخفاء المقياس"
+
+#. key: action_ok
+msgid "OK"
+msgstr "موافق"
+
+#. key: action_cancel
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. key: action_close
+msgid "Close"
+msgstr "إغلاق"
+
+#. key: action_open
+msgid "Open"
+msgstr "فتح"
+
+#. key: signin_dialog_body
+msgid "Your browser should have opened to claude.ai. Complete sign-in there, then return here. This dialog will close automatically."
+msgstr "من المفترض أن يكون متصفحك قد فتح claude.ai. أكمل تسجيل الدخول هناك ثم عُد إلى هنا. سيُغلق مربع الحوار هذا تلقائيًا."
+
+#. key: tooltip_lines
+msgid "ClaudeBar\nSession: %d%%\nWeekly: %d%%"
+msgstr "ClaudeBar\nالجلسة: %d%%\nأسبوعي: %d%%"
+
+#. key: installer_welcome
+msgid "Welcome to the ClaudeBar Setup"
+msgstr "مرحبًا بك في إعداد ClaudeBar"
+
+#. key: installer_runtime_step
+msgid ".NET 8 Desktop Runtime (x64)"
+msgstr ".NET 8 Desktop Runtime (x64)"
