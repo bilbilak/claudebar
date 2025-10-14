@@ -1,0 +1,385 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*.*.*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to release (e.g. v0.1.0). Must already exist on origin.'
+        required: true
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  TAG_NAME: ${{ github.event.inputs.tag || github.ref_name }}
+
+jobs:
+  macos:
+    name: Build macOS
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ env.TAG_NAME }}
+      - name: Stamp version from tag
+        shell: bash
+        run: bash scripts/set-version.sh "${TAG_NAME#v}"
+      - name: Regenerate translation files from i18n/strings.yaml
+        shell: bash
+        run: |
+          python3 -m pip install --quiet --break-system-packages PyYAML
+          python3 scripts/regenerate-translations.py --all
+      - name: Bundle .app (universal arm64 + x86_64)
+        working-directory: apps/macos
+        run: make bundle
+      - name: Install create-dmg
+        run: brew install create-dmg
+      - name: Create .dmg with drag-to-Applications layout
+        working-directory: apps/macos
+        run: |
+          create-dmg \
+            --volname "ClaudeBar" \
+            --volicon dist/ClaudeBar.app/Contents/Resources/AppIcon.icns \
+            --window-pos 200 120 \
+            --window-size 540 380 \
+            --icon-size 100 \
+            --icon "ClaudeBar.app" 140 190 \
+            --hide-extension "ClaudeBar.app" \
+            --app-drop-link 400 190 \
+            --no-internet-enable \
+            "claudebar-macos-${TAG_NAME}.dmg" \
+            dist/ClaudeBar.app
+      - uses: actions/upload-artifact@v7
+        with:
+          name: macos
+          path: apps/macos/claudebar-macos-*.dmg
+          if-no-files-found: error
+
+  windows:
+    name: Build Windows
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ env.TAG_NAME }}
+      - name: Stamp version from tag
+        shell: bash
+        run: bash scripts/set-version.sh "${TAG_NAME#v}"
+      - name: Regenerate translation files from i18n/strings.yaml
+        shell: bash
+        run: |
+          python3 -m pip install --quiet --break-system-packages PyYAML
+          python3 scripts/regenerate-translations.py --all
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '8.0.x'
+      - name: Publish single-file exe
+        working-directory: apps/windows
+        shell: pwsh
+        run: |
+          # Inject the release version into ClaudeBar.exe's file metadata
+          # so Explorer "Properties > Details" and Event Viewer crash reports
+          # show the actual shipped version, not the csproj default.
+          $version = "$env:TAG_NAME".TrimStart('v')
+          $fileVersion = "${version}.0"
+          dotnet publish ClaudeBar.csproj `
+            -c Release `
+            -r win-x64 `
+            -p:PublishSingleFile=true `
+            --self-contained false `
+            -p:Version=$version `
+            -p:FileVersion=$fileVersion `
+            -p:AssemblyVersion=$fileVersion `
+            -p:InformationalVersion=$version `
+            -o publish
+      - name: Install WiX v4 + extensions
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $PSNativeCommandUseErrorActionPreference = $true
+          dotnet tool install --global wix
+          wix --version
+          wix extension add -g -acceptEula wix7 WixToolset.UI.wixext
+          # In WiX 7 the Bal extension was renamed: the legacy
+          # WixToolset.Bal.wixext NuGet package ships a DLL whose name
+          # was changed to WixToolset.BootstrapperApplications.wixext.dll.
+          # wix CLI's -ext resolution is path-literal, so we install and
+          # reference by the new name (matching what's inside the package).
+          wix extension add -g -acceptEula wix7 WixToolset.BootstrapperApplications.wixext
+          wix extension add -g -acceptEula wix7 WixToolset.Util.wixext
+      - name: Install pandoc
+        run: choco install pandoc -y --no-progress
+      - name: Generate LICENSE.rtf for MSI license dialog
+        shell: pwsh
+        run: |
+          pandoc --from=gfm --to=rtf --standalone `
+            LICENSE.md `
+            -o apps/windows/Resources/LICENSE.rtf
+      - name: Build MSI
+        working-directory: apps/windows
+        shell: pwsh
+        run: |
+          $version = "$env:TAG_NAME".TrimStart('v')
+          # With multiple -loc flags, WiX builds a single multilingual MSI
+          # where the user's system locale picks the language at install
+          # time. en-US is the neutral fallback and must come first.
+          wix build `
+            -acceptEula wix7 `
+            -ext WixToolset.UI.wixext `
+            -culture en-us `
+            -loc installer\loc\en-us.wxl `
+            -loc installer\loc\fr-FR.wxl `
+            -loc installer\loc\nl-NL.wxl `
+            -loc installer\loc\de-DE.wxl `
+            -loc installer\loc\es-ES.wxl `
+            -loc installer\loc\pt-PT.wxl `
+            -loc installer\loc\sv-SE.wxl `
+            -loc installer\loc\cs-CZ.wxl `
+            -loc installer\loc\pl-PL.wxl `
+            -loc installer\loc\ru-RU.wxl `
+            -loc installer\loc\uk-UA.wxl `
+            -loc installer\loc\ar-SA.wxl `
+            -loc installer\loc\fa-IR.wxl `
+            -loc installer\loc\zh-CN.wxl `
+            -loc installer\loc\ja-JP.wxl `
+            -loc installer\loc\ko-KR.wxl `
+            -loc installer\loc\tr-TR.wxl `
+            -loc installer\loc\it-IT.wxl `
+            -loc installer\loc\hi-IN.wxl `
+            -d Version=$version `
+            -o "claudebar-windows-$env:TAG_NAME.msi" `
+            installer\ClaudeBar.wxs
+      - name: Download .NET 8 Desktop Runtime for bundle hash computation
+        # Burn embeds the SHA hash of the payload into the bundle (so the
+        # download can be verified at install time). To compute that hash,
+        # WiX needs the actual .exe at build time. With Compressed="no"
+        # the file isn't bundled into the .exe — only its hash + URL are.
+        working-directory: apps/windows
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Invoke-WebRequest `
+            -Uri 'https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x64.exe' `
+            -OutFile 'windowsdesktop-runtime-8.0-win-x64.exe'
+      - name: Build bootstrapper bundle (.exe)
+        working-directory: apps/windows
+        shell: pwsh
+        run: |
+          $version = "$env:TAG_NAME".TrimStart('v')
+          wix build `
+            -acceptEula wix7 `
+            -ext WixToolset.BootstrapperApplications.wixext `
+            -ext WixToolset.Util.wixext `
+            -culture en-us `
+            -loc installer\loc\en-us.wxl `
+            -loc installer\loc\fr-FR.wxl `
+            -loc installer\loc\nl-NL.wxl `
+            -loc installer\loc\de-DE.wxl `
+            -loc installer\loc\es-ES.wxl `
+            -loc installer\loc\pt-PT.wxl `
+            -loc installer\loc\sv-SE.wxl `
+            -loc installer\loc\cs-CZ.wxl `
+            -loc installer\loc\pl-PL.wxl `
+            -loc installer\loc\ru-RU.wxl `
+            -loc installer\loc\uk-UA.wxl `
+            -loc installer\loc\ar-SA.wxl `
+            -loc installer\loc\fa-IR.wxl `
+            -loc installer\loc\zh-CN.wxl `
+            -loc installer\loc\ja-JP.wxl `
+            -loc installer\loc\ko-KR.wxl `
+            -loc installer\loc\tr-TR.wxl `
+            -loc installer\loc\it-IT.wxl `
+            -loc installer\loc\hi-IN.wxl `
+            -d Version=$version `
+            -d MsiSource="claudebar-windows-$env:TAG_NAME.msi" `
+            -o "claudebar-windows-$env:TAG_NAME.exe" `
+            installer\ClaudeBarBundle.wxs
+      - uses: actions/upload-artifact@v7
+        with:
+          name: windows
+          path: |
+            apps/windows/claudebar-windows-*.msi
+            apps/windows/claudebar-windows-*.exe
+          if-no-files-found: error
+
+  linux-helper:
+    name: Build Linux helper
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ env.TAG_NAME }}
+      - name: Stamp version from tag
+        shell: bash
+        run: bash scripts/set-version.sh "${TAG_NAME#v}"
+      - name: Regenerate translation files from i18n/strings.yaml
+        shell: bash
+        run: |
+          python3 -m pip install --quiet --break-system-packages PyYAML
+          python3 scripts/regenerate-translations.py --all
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Install deps
+        run: sudo apt-get update && sudo apt-get install -y libdbus-1-dev pkg-config
+      - name: Build
+        working-directory: apps/linux/common/claudebar-helper
+        run: cargo build --release --locked
+      - name: Stage artifact
+        working-directory: apps/linux/common/claudebar-helper
+        run: |
+          mkdir -p artifact
+          cp target/release/claudebar-helper artifact/
+          cd artifact
+          tar -czf "claudebar-helper-${TAG_NAME}-linux-x64.tar.gz" claudebar-helper
+      - uses: actions/upload-artifact@v7
+        with:
+          name: linux-helper
+          path: apps/linux/common/claudebar-helper/artifact/*.tar.gz
+          if-no-files-found: error
+
+  linux-gnome:
+    name: Build Linux GNOME extension
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ env.TAG_NAME }}
+      - name: Stamp version from tag
+        shell: bash
+        run: bash scripts/set-version.sh "${TAG_NAME#v}"
+      - name: Regenerate translation files from i18n/strings.yaml
+        shell: bash
+        run: |
+          python3 -m pip install --quiet --break-system-packages PyYAML
+          python3 scripts/regenerate-translations.py --all
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: apps/linux/gnome/package-lock.json
+      - run: sudo apt-get update && sudo apt-get install -y libglib2.0-bin gettext
+      - name: Pack
+        working-directory: apps/linux/gnome
+        run: |
+          npm ci
+          npm run pack
+          mv claudebar@bilbilak.org.shell-extension.zip \
+             "claudebar-linux-gnome-${TAG_NAME}.zip"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: linux-gnome
+          path: apps/linux/gnome/claudebar-linux-gnome-*.zip
+          if-no-files-found: error
+
+  linux-kde:
+    name: Build Linux KDE Plasmoid
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ env.TAG_NAME }}
+      - name: Stamp version from tag
+        shell: bash
+        run: bash scripts/set-version.sh "${TAG_NAME#v}"
+      - name: Regenerate translation files from i18n/strings.yaml
+        shell: bash
+        run: |
+          python3 -m pip install --quiet --break-system-packages PyYAML
+          python3 scripts/regenerate-translations.py --all
+      - name: Package
+        working-directory: apps/linux/kde
+        run: |
+          mkdir -p dist
+          # A .plasmoid is a zip archive (NOT tar.gz). kpackagetool6 reads it
+          # as zip and rejects tar.gz with "Could not open package file".
+          zip -r "dist/claudebar-kde-${TAG_NAME}.plasmoid" metadata.json contents/
+      - uses: actions/upload-artifact@v7
+        with:
+          name: linux-kde
+          path: apps/linux/kde/dist/*.plasmoid
+          if-no-files-found: error
+
+  linux-cinnamon:
+    name: Build Linux Cinnamon applet
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ env.TAG_NAME }}
+      - name: Stamp version from tag
+        shell: bash
+        run: bash scripts/set-version.sh "${TAG_NAME#v}"
+      - name: Regenerate translation files from i18n/strings.yaml
+        shell: bash
+        run: |
+          python3 -m pip install --quiet --break-system-packages PyYAML
+          python3 scripts/regenerate-translations.py --all
+      - name: Install gettext
+        run: sudo apt-get update && sudo apt-get install -y gettext
+      - name: Package
+        working-directory: apps/linux/cinnamon
+        run: |
+          make pack
+          mv dist/claudebar@bilbilak.org.zip \
+             "dist/claudebar-linux-cinnamon-${TAG_NAME}.zip"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: linux-cinnamon
+          path: apps/linux/cinnamon/dist/*.zip
+          if-no-files-found: error
+
+  release:
+    name: Publish GitHub release
+    needs:
+      - macos
+      - windows
+      - linux-helper
+      - linux-gnome
+      - linux-kde
+      - linux-cinnamon
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ env.TAG_NAME }}
+      - name: Stamp version from tag
+        shell: bash
+        run: bash scripts/set-version.sh "${TAG_NAME#v}"
+      - name: Regenerate translation files from i18n/strings.yaml
+        shell: bash
+        run: |
+          python3 -m pip install --quiet --break-system-packages PyYAML
+          python3 scripts/regenerate-translations.py --all
+      - uses: actions/download-artifact@v8
+        with:
+          path: artifacts
+      - name: Collect artifacts
+        run: |
+          mkdir -p dist
+          find artifacts -type f \( \
+              -name '*.zip' -o \
+              -name '*.tar.gz' -o \
+              -name '*.plasmoid' -o \
+              -name '*.dmg' -o \
+              -name '*.msi' -o \
+              -name '*.exe' \
+            \) -print -exec cp {} dist/ \;
+          ls -lh dist/
+      - name: Generate SHA256 checksums
+        working-directory: dist
+        run: |
+          sha256sum * > "claudebar-${TAG_NAME}-SHA256SUMS"
+          cat "claudebar-${TAG_NAME}-SHA256SUMS"
+      - uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ env.TAG_NAME }}
+          name: ${{ env.TAG_NAME }}
+          files: dist/*
+          generate_release_notes: true
+          fail_on_unmatched_files: true
+          draft: false
+          prerelease: ${{ contains(env.TAG_NAME, '-') }}
