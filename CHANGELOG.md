@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.1.0 — 2026-03-18
+
+### Added
+
+- **_GNOME Shell_ 50 compatibility** — declared in `apps/linux/gnome/metadata.json`'s `shell-version` array. _GNOME_ 50 released March 2026 on the regular semi-annual cadence.
+- **_Cinnamon_ 6.6 compatibility** — declared in `apps/linux/cinnamon/metadata.json`'s `cinnamon-version` array. _Cinnamon_ 6.6 ships with _Linux Mint_ 22.2.
+
 ## 1.0.0 — 2025-10-17
 
 ### Added
