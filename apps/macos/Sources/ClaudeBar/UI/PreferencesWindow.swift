@@ -15,7 +15,7 @@ final class PreferencesWindowController: NSWindowController, NSWindowDelegate {
         window.delegate = self
     }
 
-    func showWindow(_ sender: Any?) {
+    override func showWindow(_ sender: Any?) {
         super.showWindow(sender)
         window?.makeKeyAndOrderFront(sender)
         NSApp.activate(ignoringOtherApps: true)

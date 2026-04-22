@@ -54,7 +54,7 @@ jobs:
           dotnet-version: '8.0.x'
       - name: Publish
         working-directory: apps/windows
-        run: dotnet publish -c Release -r win-x64 --self-contained false -o publish
+        run: dotnet publish ClaudeBar.csproj -c Release -r win-x64 --self-contained false -o publish
       - name: Zip publish output
         working-directory: apps/windows
         shell: pwsh

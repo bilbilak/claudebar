@@ -166,7 +166,8 @@ final class StatusItemController: NSObject {
         pollTimer?.invalidate()
         let interval = TimeInterval(SettingsStore.shared.pollInterval)
         let timer = Timer(timeInterval: interval, repeats: true) { [weak self] _ in
-            Task { @MainActor in await self?.refresh() }
+            guard let self else { return }
+            Task { @MainActor in await self.refresh() }
         }
         RunLoop.main.add(timer, forMode: .common)
         pollTimer = timer

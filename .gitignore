@@ -19,7 +19,6 @@ apps/linux/cinnamon/dist/
 # --- Rust (apps/linux/common/claudebar-helper) ------------------------------
 apps/linux/common/claudebar-helper/target/
 apps/linux/common/claudebar-helper/dist/
-apps/linux/common/claudebar-helper/Cargo.lock
 
 # --- Meson / Ninja builds (apps/linux/xfce, apps/linux/budgie) --------------
 apps/linux/*/build/
