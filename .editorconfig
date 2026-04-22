@@ -1,0 +1,36 @@
+; Top-level EditorConfig for claudebar — https://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[Makefile]
+indent_style = tab
+
+# --- Linux / GNOME extension (TypeScript) -----------------------------------
+[apps/linux/gnome/**.{ts,js,mjs,cjs,json}]
+indent_style = space
+indent_size = 2
+
+# --- macOS (Swift) ----------------------------------------------------------
+[apps/macos/**.swift]
+indent_style = space
+indent_size = 4
+
+# --- Windows (.NET / WPF) ---------------------------------------------------
+[apps/windows/**.{cs,xaml,csproj,sln,manifest}]
+indent_style = space
+indent_size = 4
+end_of_line = crlf
+
+[apps/windows/**.{cs,xaml,csproj,sln,manifest}]
+charset = utf-8-bom
+
+# --- Markdown: don't trim trailing whitespace (two-space line breaks) -------
+[*.md]
+trim_trailing_whitespace = false

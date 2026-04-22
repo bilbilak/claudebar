@@ -1,0 +1,25 @@
+name: '✨ Improvement Request'
+description: Propose a possible improvement
+title: '✨ [PIR]: '
+labels: ['improvement']
+assignees:
+  - 4r7if3x
+body:
+  - type: markdown
+    attributes:
+      value: Your invaluable contribution is appreciated! Your input help us improve our existing features or processes.
+  - type: textarea
+    id: description
+    attributes:
+      label: What's your proposal?
+      description: Please explain in detail how we can make this improvement.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: 'Before submitting this issue, you must read our [Code of Conduct](https://github.com/bilbilak/.github/blob/main/docs/CODE_OF_CONDUCT.md).'
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: '❓ Discussion Board'
+    url: https://github.com/bilbilak/claudebar/discussions/categories/q-a
+    about: Ask your questions here
+  - name: '📢 Support Policy'
+    url: https://github.com/bilbilak/claudebar/blob/main/docs/SUPPORT.md
+    about: Learn how to get help here

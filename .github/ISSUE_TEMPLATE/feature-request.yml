@@ -1,0 +1,25 @@
+name: '💡 Feature Request'
+description: Suggest a new feature
+title: '💡 [NFR]: '
+labels: ['enhancement']
+assignees:
+  - 4r7if3x
+body:
+  - type: markdown
+    attributes:
+      value: Your innovative ideas matter to us! Your input help us expand and enrich our project with new features.
+  - type: textarea
+    id: description
+    attributes:
+      label: What's your idea?
+      description: Please tell us about what's on your mind.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: 'Before submitting this issue, you must read our [Code of Conduct](https://github.com/bilbilak/.github/blob/main/docs/CODE_OF_CONDUCT.md).'
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

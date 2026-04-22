@@ -1,0 +1,33 @@
+# Normalize line endings; render diffs sanely across platforms.
+* text=auto eol=lf
+
+# Windows-specific files keep CRLF, which is the convention for .NET / VS tooling.
+*.sln   text eol=crlf
+*.csproj text eol=crlf
+*.xaml  text eol=crlf
+*.cs    text eol=crlf
+*.manifest text eol=crlf
+*.cmd   text eol=crlf
+*.bat   text eol=crlf
+*.ps1   text eol=crlf
+
+# Shell scripts must stay LF on all hosts.
+*.sh    text eol=lf
+Makefile text eol=lf
+
+# Treat known binary formats as such — no diff, no line-ending munging.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.icns  binary
+*.pdf   binary
+*.zip   binary
+*.tar.gz binary
+
+# Never export these when users run `git archive`.
+.github/    export-ignore
+.gitignore  export-ignore
+.gitattributes export-ignore
+.editorconfig export-ignore

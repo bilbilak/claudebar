@@ -1,0 +1,57 @@
+# --- OS ---------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editors / IDEs ---------------------------------------------------------
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+
+# --- Node.js (apps/linux/gnome, apps/linux/cinnamon JSON check) -------------
+**/node_modules/
+apps/linux/gnome/dist/
+apps/linux/cinnamon/dist/
+*.shell-extension.zip
+
+# --- Rust (apps/linux/common/claudebar-helper) ------------------------------
+apps/linux/common/claudebar-helper/target/
+apps/linux/common/claudebar-helper/dist/
+apps/linux/common/claudebar-helper/Cargo.lock
+
+# --- Meson / Ninja builds (apps/linux/xfce, apps/linux/budgie) --------------
+apps/linux/*/build/
+
+# --- CMake builds (apps/linux/lxqt, apps/linux/kde) -------------------------
+apps/linux/kde/dist/
+apps/linux/lxqt/build/
+
+# --- Swift / SwiftPM / Xcode (apps/macos) -----------------------------------
+apps/macos/.build/
+apps/macos/.swiftpm/
+apps/macos/dist/
+apps/macos/Package.resolved
+*.xcodeproj/
+*.xcworkspace/
+
+# --- .NET / WPF (apps/windows) ----------------------------------------------
+apps/windows/bin/
+apps/windows/obj/
+apps/windows/publish/
+*.user
+*.suo
+.vs/
+
+# --- Python bytecode (apps/linux/mate) --------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+
+# --- Release artifacts (produced by CI, never in-tree) ----------------------
+/artifacts/
+/release/
+
+# --- Wiki sub-repo (cloned via `mr checkout`) -------------------------------
+docs/wiki/
