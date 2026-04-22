@@ -249,14 +249,15 @@ fn post_token(body: &serde_json::Value) -> Result<Tokens> {
 }
 
 fn build_authorize_url(redirect_uri: &str, challenge: &str, state: &str) -> String {
-    let mut pairs: Vec<(&str, String)> = Vec::new();
-    pairs.push(("client_id", CLIENT_ID.to_string()));
-    pairs.push(("response_type", "code".into()));
-    pairs.push(("redirect_uri", redirect_uri.to_string()));
-    pairs.push(("scope", SCOPES.to_string()));
-    pairs.push(("code_challenge", challenge.to_string()));
-    pairs.push(("code_challenge_method", "S256".into()));
-    pairs.push(("state", state.to_string()));
+    let pairs: Vec<(&str, String)> = vec![
+        ("client_id", CLIENT_ID.to_string()),
+        ("response_type", "code".into()),
+        ("redirect_uri", redirect_uri.to_string()),
+        ("scope", SCOPES.to_string()),
+        ("code_challenge", challenge.to_string()),
+        ("code_challenge_method", "S256".into()),
+        ("state", state.to_string()),
+    ];
 
     let qs = pairs
         .into_iter()

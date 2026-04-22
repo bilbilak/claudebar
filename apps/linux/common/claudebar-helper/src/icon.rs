@@ -51,6 +51,7 @@ pub fn render(size: u32, snapshot: Option<&Snapshot>, warn_pct: u8, crit_pct: u8
     pixmap
 }
 
+#[allow(clippy::too_many_arguments)]
 fn draw_bar(
     pm: &mut Pixmap,
     x: f32,

@@ -75,7 +75,7 @@ pub fn load() -> Result<Option<Tokens>> {
 pub fn clear() -> Result<()> {
     let ss = SecretService::connect(EncryptionType::Dh).context("connecting to Secret Service")?;
     let items = ss.search_items(attrs()).context("searching secret items")?;
-    for item in items.unlocked.into_iter().chain(items.locked.into_iter()) {
+    for item in items.unlocked.into_iter().chain(items.locked) {
         item.delete().context("deleting secret item")?;
     }
     Ok(())
