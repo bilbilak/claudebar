@@ -30,17 +30,23 @@ jobs:
       - name: Bundle .app
         working-directory: apps/macos
         run: make bundle
-      - name: Zip the .app
-        working-directory: apps/macos/dist
-        run: zip -r "../claudebar-macos-${TAG_NAME}.zip" ClaudeBar.app
+      - name: Create .dmg
+        working-directory: apps/macos
+        run: |
+          hdiutil create \
+            -volname "ClaudeBar" \
+            -srcfolder dist/ClaudeBar.app \
+            -ov \
+            -format UDZO \
+            "claudebar-macos-${TAG_NAME}.dmg"
       - uses: actions/upload-artifact@v7
         with:
           name: macos
-          path: apps/macos/claudebar-macos-*.zip
+          path: apps/macos/claudebar-macos-*.dmg
           if-no-files-found: error
 
   # ---------------------------------------------------------------------
-  # Windows
+  # Windows (single-file exe + MSI installer)
   # ---------------------------------------------------------------------
   windows:
     name: Build Windows
@@ -52,17 +58,30 @@ jobs:
       - uses: actions/setup-dotnet@v5
         with:
           dotnet-version: '8.0.x'
-      - name: Publish
+      - name: Publish single-file exe
         working-directory: apps/windows
-        run: dotnet publish ClaudeBar.csproj -c Release -r win-x64 --self-contained false -o publish
-      - name: Zip publish output
+        run: >
+          dotnet publish ClaudeBar.csproj
+          -c Release
+          -r win-x64
+          -p:PublishSingleFile=true
+          --self-contained false
+          -o publish
+      - name: Install WiX v4
+        run: dotnet tool install --global wix
+      - name: Build MSI
         working-directory: apps/windows
         shell: pwsh
-        run: Compress-Archive -Path publish\* -DestinationPath "claudebar-windows-$env:TAG_NAME.zip"
+        run: |
+          $version = "$env:TAG_NAME".TrimStart('v')
+          wix build `
+            -d Version=$version `
+            -o "claudebar-windows-$env:TAG_NAME.msi" `
+            installer\ClaudeBar.wxs
       - uses: actions/upload-artifact@v7
         with:
           name: windows
-          path: apps/windows/claudebar-windows-*.zip
+          path: apps/windows/claudebar-windows-*.msi
           if-no-files-found: error
 
   # ---------------------------------------------------------------------
@@ -191,7 +210,13 @@ jobs:
       - name: Collect artifacts
         run: |
           mkdir -p dist
-          find artifacts -type f \( -name '*.zip' -o -name '*.tar.gz' -o -name '*.plasmoid' \) -print -exec cp {} dist/ \;
+          find artifacts -type f \( \
+              -name '*.zip' -o \
+              -name '*.tar.gz' -o \
+              -name '*.plasmoid' -o \
+              -name '*.dmg' -o \
+              -name '*.msi' \
+            \) -print -exec cp {} dist/ \;
           ls -lh dist/
       - name: Generate SHA256 checksums
         working-directory: dist

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  WiX v4 source for the ClaudeBar MSI installer.
+
+  The UpgradeCode is stable across every released version so that newer
+  installs upgrade in place. Do NOT change it.
+
+  Version is supplied at build time via `wix build -d Version=...`.
+-->
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package
+      Name="ClaudeBar"
+      Manufacturer="Bilbilak"
+      Version="$(var.Version)"
+      UpgradeCode="6B816C56-1A28-4592-AB15-FD2BA2184F27"
+      Scope="perMachine"
+      Compressed="yes">
+
+    <SummaryInformation Description="ClaudeBar — Claude.ai session and weekly usage in the Windows system tray." />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+
+    <MediaTemplate EmbedCab="yes" />
+
+    <!-- Install to %ProgramFiles%\Bilbilak\ClaudeBar -->
+    <StandardDirectory Id="ProgramFiles6432Folder">
+      <Directory Id="CompanyDir" Name="Bilbilak">
+        <Directory Id="INSTALLDIR" Name="ClaudeBar" />
+      </Directory>
+    </StandardDirectory>
+
+    <!-- Start Menu folder -->
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="AppMenuDir" Name="ClaudeBar" />
+    </StandardDirectory>
+
+    <Feature Id="Main" Title="ClaudeBar" Level="1" ConfigurableDirectory="INSTALLDIR">
+      <Component Id="MainExe" Directory="INSTALLDIR">
+        <File Id="ClaudeBarExe" Source="publish\ClaudeBar.exe" KeyPath="yes" />
+      </Component>
+
+      <Component Id="AppShortcut" Directory="AppMenuDir">
+        <Shortcut
+            Id="StartMenuShortcut"
+            Name="ClaudeBar"
+            Description="Claude.ai session and weekly usage in the system tray"
+            Target="[#ClaudeBarExe]"
+            WorkingDirectory="INSTALLDIR" />
+        <RemoveFolder Id="RemoveAppMenuDir" On="uninstall" />
+        <RegistryValue
+            Root="HKCU"
+            Key="Software\Bilbilak\ClaudeBar"
+            Name="installed"
+            Type="integer"
+            Value="1"
+            KeyPath="yes" />
+      </Component>
+
+      <!-- Auto-start at user login -->
+      <Component Id="AutoStart" Directory="INSTALLDIR">
+        <RegistryValue
+            Root="HKCU"
+            Key="Software\Microsoft\Windows\CurrentVersion\Run"
+            Name="ClaudeBar"
+            Type="string"
+            Value="[#ClaudeBarExe]"
+            KeyPath="yes" />
+      </Component>
+    </Feature>
+  </Package>
+</Wix>

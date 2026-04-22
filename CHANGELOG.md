@@ -44,4 +44,5 @@ Initial stable release. Spans _macOS_, _Windows_, and seven _Linux_ desktop envi
 #### CI / release pipeline
 
 - CI matrix builds and lints every platform on its native runner.
-- Release workflow produces the Linux helper binary (x86_64), GNOME `.shell-extension.zip`, KDE `.plasmoid`, Cinnamon applet zip, macOS `.app` zip, and Windows x64 publish zip — all attached to GitHub releases on tagged pushes, with SHA256 checksums for verification.
+- Release workflow produces the Linux helper binary (x86_64) tarball, GNOME `.shell-extension.zip`, KDE `.plasmoid`, Cinnamon applet zip, macOS `.dmg` disk image, and Windows `.msi` installer (single-file exe inside, auto-starts at login) — all attached to GitHub releases on tagged pushes, with SHA256 checksums for verification.
+- Windows and macOS apps register themselves to auto-start at user login (Run registry entry on Windows; `SMAppService` login item on macOS).
