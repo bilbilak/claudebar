@@ -1,0 +1,39 @@
+[package]
+name = "claudebar-helper"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+description = "Shared CLI helper for non-GNOME Linux claudebar front-ends (OAuth, token storage, SNI tray)."
+license = "GPL-3.0-or-later"
+authors = ["Bilbilak"]
+homepage = "https://github.com/bilbilak/claudebar"
+repository = "https://github.com/bilbilak/claudebar"
+readme = "README.md"
+
+[[bin]]
+name = "claudebar-helper"
+path = "src/main.rs"
+
+[dependencies]
+anyhow     = "1"
+base64     = "0.22"
+chrono     = { version = "0.4", default-features = false, features = ["clock", "serde"] }
+clap       = { version = "4", features = ["derive"] }
+ksni       = "0.2"
+rand       = "0.8"
+reqwest    = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+secret-service = { version = "4", features = ["rt-tokio-crypto-rust"] }
+serde      = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2       = "0.10"
+tiny-skia  = "0.11"
+tokio      = { version = "1", features = ["rt-multi-thread", "macros", "time", "signal"] }
+url        = "2"
+urlencoding = "2"
+webbrowser = "1"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = "symbols"
+opt-level = "z"

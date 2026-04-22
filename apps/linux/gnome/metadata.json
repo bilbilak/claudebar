@@ -1,0 +1,9 @@
+{
+  "uuid": "claudebar@bilbilak.org",
+  "name": "ClaudeBar",
+  "description": "Shows Claude.ai subscription session and weekly usage in the top bar.",
+  "shell-version": ["45", "46", "47", "48"],
+  "url": "https://github.com/bilbilak/claudebar",
+  "settings-schema": "org.gnome.shell.extensions.claudebar",
+  "gettext-domain": "claudebar"
+}

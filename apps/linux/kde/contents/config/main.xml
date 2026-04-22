@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+  <kcfgfile name=""/>
+
+  <group name="General">
+    <entry name="pollIntervalSeconds" type="Int">
+      <label>How often to refresh usage data, in seconds.</label>
+      <default>300</default>
+      <min>60</min>
+      <max>3600</max>
+    </entry>
+    <entry name="warnThreshold" type="Int">
+      <label>Percentage at which the bars turn orange.</label>
+      <default>60</default>
+      <min>0</min>
+      <max>100</max>
+    </entry>
+    <entry name="criticalThreshold" type="Int">
+      <label>Percentage at which the bars turn red.</label>
+      <default>85</default>
+      <min>0</min>
+      <max>100</max>
+    </entry>
+    <entry name="showPercentages" type="Bool">
+      <label>Draw numeric percentages next to the bars.</label>
+      <default>false</default>
+    </entry>
+    <entry name="helperPath" type="String">
+      <label>Path to the claudebar-helper binary.</label>
+      <default>claudebar-helper</default>
+    </entry>
+  </group>
+</kcfg>

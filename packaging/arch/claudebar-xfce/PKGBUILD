@@ -1,0 +1,25 @@
+# Maintainer: Bilbilak <info@bilbilak.org>
+pkgname=claudebar-xfce
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="XFCE panel plugin showing Claude.ai Max-plan session and weekly usage"
+arch=('x86_64' 'aarch64')
+url="https://github.com/bilbilak/claudebar"
+license=('GPL3')
+depends=('xfce4-panel>=4.14' 'json-glib' 'gtk3' 'libxfce4ui' 'libxfce4util' 'claudebar-helper')
+makedepends=('meson' 'ninja' 'pkgconf')
+source=("claudebar-$pkgver.tar.gz::https://github.com/bilbilak/claudebar/archive/v$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+    cd "claudebar-$pkgver/apps/linux/xfce"
+    meson setup --prefix=/usr --buildtype=release build
+    meson compile -C build
+}
+
+package() {
+    cd "claudebar-$pkgver/apps/linux/xfce"
+    meson install -C build --destdir="$pkgdir"
+    install -Dm644 "$srcdir/claudebar-$pkgver/LICENSE" \
+        "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

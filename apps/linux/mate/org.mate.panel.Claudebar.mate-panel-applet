@@ -1,0 +1,11 @@
+[Applet Factory]
+Id=ClaudebarAppletFactory
+Name=ClaudeBar Applet Factory
+Description=Claude.ai usage indicator for the MATE panel
+Location=org.mate.panel.applet.ClaudebarFactory
+
+[ClaudebarApplet]
+Name=ClaudeBar
+Description=Shows Claude.ai Max-plan session and weekly usage as two bars.
+Icon=im-claude
+MateComponentId=OAFIID:ClaudebarApplet

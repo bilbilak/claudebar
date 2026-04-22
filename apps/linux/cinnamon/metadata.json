@@ -1,0 +1,10 @@
+{
+  "uuid": "claudebar@bilbilak.org",
+  "name": "ClaudeBar",
+  "description": "Shows Claude.ai Max-plan session and weekly usage as two bars in the Cinnamon panel.",
+  "version": "0.1.0",
+  "cinnamon-version": ["5.0", "5.2", "5.4", "6.0", "6.2", "6.4"],
+  "role": "indicator",
+  "url": "https://github.com/bilbilak/claudebar",
+  "max-instances": 1
+}

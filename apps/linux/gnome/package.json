@@ -1,0 +1,30 @@
+{
+  "name": "claudebar-gnome",
+  "version": "0.1.0",
+  "description": "GNOME Shell extension showing Claude.ai subscription usage (part of claudebar)",
+  "type": "module",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "author": "Bilbilak",
+  "homepage": "https://github.com/bilbilak/claudebar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bilbilak/claudebar.git",
+    "directory": "apps/linux/gnome"
+  },
+  "bugs": {
+    "url": "https://github.com/bilbilak/claudebar/issues"
+  },
+  "scripts": {
+    "build": "node esbuild.config.mjs",
+    "watch": "node esbuild.config.mjs --watch",
+    "pack": "npm run build && cd dist && zip -r ../claudebar@bilbilak.org.shell-extension.zip .",
+    "install-local": "make install",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.2",
+    "sass": "^1.72.0",
+    "typescript": "^5.4.3"
+  }
+}

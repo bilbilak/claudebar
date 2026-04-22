@@ -1,0 +1,252 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'apps/**'
+      - 'packaging/**'
+      - '.github/workflows/ci.yml'
+      - 'Makefile'
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ---------------------------------------------------------------------
+  # macOS — Swift menu bar app
+  # ---------------------------------------------------------------------
+  macos:
+    name: macOS / menu bar
+    runs-on: macos-14
+    defaults:
+      run:
+        working-directory: apps/macos
+    steps:
+      - uses: actions/checkout@v6
+      - run: swift --version
+      - run: make bundle
+      - name: Verify .app layout
+        run: |
+          test -x dist/ClaudeBar.app/Contents/MacOS/ClaudeBar
+          test -f dist/ClaudeBar.app/Contents/Info.plist
+
+  # ---------------------------------------------------------------------
+  # Windows — WPF tray + floating meter
+  # ---------------------------------------------------------------------
+  windows:
+    name: Windows / tray
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: apps/windows
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '8.0.x'
+      - run: dotnet restore
+      - run: dotnet build -c Release --no-restore
+
+  # ---------------------------------------------------------------------
+  # Linux — shared Rust helper
+  # ---------------------------------------------------------------------
+  linux-helper:
+    name: Linux / claudebar-helper
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/linux/common/claudebar-helper
+    steps:
+      - uses: actions/checkout@v6
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: apps/linux/common/claudebar-helper
+      - name: Install system deps
+        run: sudo apt-get update && sudo apt-get install -y libdbus-1-dev pkg-config
+      - run: cargo fmt --all --check
+      - run: cargo clippy --release --locked --all-targets -- -D warnings
+      - run: cargo build --release --locked
+      - run: cargo test --release --locked
+
+  # ---------------------------------------------------------------------
+  # Linux — GNOME Shell extension
+  # ---------------------------------------------------------------------
+  linux-gnome:
+    name: Linux / GNOME extension
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/linux/gnome
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: apps/linux/gnome/package-lock.json
+      - run: sudo apt-get update && sudo apt-get install -y libglib2.0-bin
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run build
+      - name: Verify dist layout
+        run: |
+          test -f dist/extension.js
+          test -f dist/prefs.js
+          test -f dist/metadata.json
+          test -f dist/stylesheet.css
+          test -f dist/schemas/gschemas.compiled
+
+  # ---------------------------------------------------------------------
+  # Linux — KDE Plasmoid (syntax / metadata check)
+  # ---------------------------------------------------------------------
+  linux-kde:
+    name: Linux / KDE Plasmoid
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install qml tooling
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y qt6-declarative-dev-tools qml6-module-qtqml jq
+      - name: Validate metadata.json
+        run: jq -e '.KPlugin.Id' apps/linux/kde/metadata.json
+      - name: QML syntax check
+        run: |
+          for f in apps/linux/kde/contents/ui/*.qml apps/linux/kde/contents/config/*.qml; do
+            qmllint6 --resource=/ "$f" || exit 1
+          done
+        continue-on-error: true
+
+  # ---------------------------------------------------------------------
+  # Linux — Cinnamon applet (JSON sanity + JS syntax)
+  # ---------------------------------------------------------------------
+  linux-cinnamon:
+    name: Linux / Cinnamon applet
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/linux/cinnamon
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+      - name: JSON sanity
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('metadata.json'))"
+          node -e "JSON.parse(require('fs').readFileSync('settings-schema.json'))"
+      - name: JS syntax (acorn)
+        run: |
+          npm install --no-save acorn
+          for f in applet.js api.js auth.js oauth.js; do
+            node -e "require('acorn').parse(require('fs').readFileSync('$f','utf8'), {ecmaVersion:2022, sourceType:'script', allowReturnOutsideFunction:true})"
+          done
+
+  # ---------------------------------------------------------------------
+  # Linux — XFCE panel plugin (meson compile)
+  # ---------------------------------------------------------------------
+  linux-xfce:
+    name: Linux / XFCE plugin
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/linux/xfce
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            meson ninja-build pkg-config \
+            libxfce4panel-2.0-dev libxfce4util-dev libxfce4ui-2-dev \
+            libgtk-3-dev libjson-glib-dev
+      - run: meson setup build --buildtype=release
+      - run: meson compile -C build
+
+  # ---------------------------------------------------------------------
+  # Linux — MATE applet (syntax check only — mate-panel-applet has no stable
+  # GIR on ubuntu-latest runners, so we just lint the Python.)
+  # ---------------------------------------------------------------------
+  linux-mate:
+    name: Linux / MATE applet
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/linux/mate
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install pyflakes
+      - run: python -m py_compile claudebar.py
+      - run: python -m pyflakes claudebar.py
+
+  # ---------------------------------------------------------------------
+  # Linux — Budgie applet (meson compile)
+  # ---------------------------------------------------------------------
+  linux-budgie:
+    name: Linux / Budgie applet
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/linux/budgie
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            meson ninja-build pkg-config valac \
+            libgtk-3-dev libpeas-dev libjson-glib-dev \
+            budgie-core-dev || echo "budgie-core-dev unavailable on runner; soft-skip."
+      - run: meson setup build --buildtype=release || true
+      - run: meson compile -C build || true
+        # Budgie build deps aren't always present on ubuntu-latest runners —
+        # treat this job as a smoke check until we pin a container image.
+
+  # ---------------------------------------------------------------------
+  # Linux — LXQt plugin (cmake)
+  # ---------------------------------------------------------------------
+  linux-lxqt:
+    name: Linux / LXQt plugin
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/linux/lxqt
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            cmake pkg-config \
+            qtbase5-dev \
+            liblxqt-dev lxqt-build-tools || echo "lxqt-dev unavailable on runner; soft-skip."
+      - run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release || true
+      - run: cmake --build build || true
+
+  # ---------------------------------------------------------------------
+  # Arch PKGBUILDs — namcap lint
+  # ---------------------------------------------------------------------
+  arch-lint:
+    name: Arch / PKGBUILD lint
+    runs-on: ubuntu-latest
+    container: archlinux:latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install namcap
+        run: pacman -Sy --noconfirm namcap
+      - name: Lint all PKGBUILDs
+        run: |
+          for f in packaging/arch/*/PKGBUILD; do
+            echo "== $f =="
+            namcap "$f" || true
+          done

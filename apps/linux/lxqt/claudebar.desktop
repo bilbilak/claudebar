@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+Name=ClaudeBar
+Comment=Shows Claude.ai Max-plan session and weekly usage as two bars.
+Icon=im-claude
+X-LXQt-Module=true
+ServiceTypes=LXQtPanel/Plugin
+X-LXQt-Need-Restart=false

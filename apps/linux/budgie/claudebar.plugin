@@ -1,0 +1,11 @@
+[Plugin]
+Loader=C
+Module=claudebar
+IAge=2
+Name=ClaudeBar
+Description=Shows Claude.ai Max-plan session and weekly usage as two bars in the Budgie panel.
+Authors=Bilbilak
+Copyright=Copyright © 2025-2026 Bilbilak
+Website=https://github.com/bilbilak/claudebar
+Icon=im-claude
+Version=0.1.0

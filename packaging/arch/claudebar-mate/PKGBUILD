@@ -1,0 +1,18 @@
+# Maintainer: Bilbilak <info@bilbilak.org>
+pkgname=claudebar-mate
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="MATE panel applet showing Claude.ai Max-plan session and weekly usage"
+arch=('any')
+url="https://github.com/bilbilak/claudebar"
+license=('GPL3')
+depends=('mate-panel>=1.20' 'python' 'python-gobject' 'gtk3' 'claudebar-helper')
+source=("claudebar-$pkgver.tar.gz::https://github.com/bilbilak/claudebar/archive/v$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+package() {
+    cd "claudebar-$pkgver/apps/linux/mate"
+    make install PREFIX=/usr DESTDIR="$pkgdir"
+    install -Dm644 "$srcdir/claudebar-$pkgver/LICENSE" \
+        "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

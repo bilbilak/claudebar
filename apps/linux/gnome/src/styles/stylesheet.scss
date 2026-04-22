@@ -1,0 +1,42 @@
+.claudebar-indicator-box {
+  padding: 0 6px;
+  spacing: 3px;
+}
+
+.claudebar-percent-box {
+  spacing: 2px;
+  padding-left: 2px;
+}
+
+.claudebar-percent-label {
+  font-size: 7pt;
+  font-feature-settings: "tnum";
+  color: rgba(255, 255, 255, 0.92);
+  min-width: 28px;
+  text-align: right;
+}
+
+.claudebar-menu-header-item {
+  padding-top: 6px;
+  padding-bottom: 2px;
+}
+
+.claudebar-menu-header {
+  font-weight: bold;
+}
+
+.claudebar-menu-line {
+  padding-top: 2px;
+}
+
+.claudebar-menu-sub {
+  opacity: 0.68;
+  font-size: 9.5pt;
+  padding-bottom: 2px;
+}
+
+.claudebar-menu-status {
+  opacity: 0.55;
+  font-style: italic;
+  padding: 4px 0;
+}

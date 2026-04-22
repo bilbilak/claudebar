@@ -1,0 +1,27 @@
+# Maintainer: Bilbilak <info@bilbilak.org>
+pkgname=claudebar-gnome
+_uuid=claudebar@bilbilak.org
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="GNOME Shell extension showing Claude.ai Max-plan session and weekly usage"
+arch=('any')
+url="https://github.com/bilbilak/claudebar"
+license=('GPL3')
+depends=('gnome-shell>=45' 'libsecret')
+makedepends=('npm' 'nodejs>=20' 'zip')
+source=("claudebar-$pkgver.tar.gz::https://github.com/bilbilak/claudebar/archive/v$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+    cd "claudebar-$pkgver/apps/linux/gnome"
+    npm ci
+    npm run build
+}
+
+package() {
+    cd "claudebar-$pkgver/apps/linux/gnome"
+    install -dm755 "$pkgdir/usr/share/gnome-shell/extensions/$_uuid"
+    cp -r dist/* "$pkgdir/usr/share/gnome-shell/extensions/$_uuid/"
+    install -Dm644 "$srcdir/claudebar-$pkgver/LICENSE" \
+        "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

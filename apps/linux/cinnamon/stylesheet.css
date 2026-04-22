@@ -1,0 +1,13 @@
+.claudebar-applet {
+    padding: 0 4px;
+}
+
+.claudebar-bars {
+    padding: 0;
+}
+
+.claudebar-submenu {
+    font-size: 9pt;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 18px;
+}

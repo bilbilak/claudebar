@@ -1,0 +1,22 @@
+# Maintainer: Bilbilak <info@bilbilak.org>
+pkgname=claudebar-kde
+_id=org.bilbilak.claudebar
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="KDE Plasma 6 widget showing Claude.ai Max-plan session and weekly usage"
+arch=('any')
+url="https://github.com/bilbilak/claudebar"
+license=('GPL3')
+depends=('plasma-workspace>=6.0' 'claudebar-helper')
+source=("claudebar-$pkgver.tar.gz::https://github.com/bilbilak/claudebar/archive/v$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+package() {
+    cd "claudebar-$pkgver/apps/linux/kde"
+    local pkgdir_plasmoid="$pkgdir/usr/share/plasma/plasmoids/$_id"
+    install -dm755 "$pkgdir_plasmoid"
+    install -Dm644 metadata.json "$pkgdir_plasmoid/metadata.json"
+    cp -r contents "$pkgdir_plasmoid/"
+    install -Dm644 "$srcdir/claudebar-$pkgver/LICENSE" \
+        "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

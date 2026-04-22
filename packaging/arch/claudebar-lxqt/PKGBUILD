@@ -1,0 +1,28 @@
+# Maintainer: Bilbilak <info@bilbilak.org>
+pkgname=claudebar-lxqt
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="LXQt panel plugin showing Claude.ai Max-plan session and weekly usage"
+arch=('x86_64' 'aarch64')
+url="https://github.com/bilbilak/claudebar"
+license=('GPL3')
+depends=('lxqt-panel' 'qt5-base' 'liblxqt' 'claudebar-helper')
+makedepends=('cmake' 'ninja' 'lxqt-build-tools' 'pkgconf')
+source=("claudebar-$pkgver.tar.gz::https://github.com/bilbilak/claudebar/archive/v$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+    cd "claudebar-$pkgver/apps/linux/lxqt"
+    cmake -S . -B build -G Ninja \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib
+    cmake --build build
+}
+
+package() {
+    cd "claudebar-$pkgver/apps/linux/lxqt"
+    DESTDIR="$pkgdir" cmake --install build
+    install -Dm644 "$srcdir/claudebar-$pkgver/LICENSE" \
+        "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

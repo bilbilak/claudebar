@@ -1,0 +1,27 @@
+# Maintainer: Bilbilak <info@bilbilak.org>
+pkgname=claudebar-cinnamon
+_uuid=claudebar@bilbilak.org
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Cinnamon applet showing Claude.ai Max-plan session and weekly usage"
+arch=('any')
+url="https://github.com/bilbilak/claudebar"
+license=('GPL3')
+depends=('cinnamon>=5.0' 'libsecret')
+source=("claudebar-$pkgver.tar.gz::https://github.com/bilbilak/claudebar/archive/v$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+package() {
+    cd "claudebar-$pkgver/apps/linux/cinnamon"
+    local target="$pkgdir/usr/share/cinnamon/applets/$_uuid"
+    install -dm755 "$target"
+    install -Dm644 metadata.json       "$target/metadata.json"
+    install -Dm644 applet.js           "$target/applet.js"
+    install -Dm644 api.js              "$target/api.js"
+    install -Dm644 auth.js             "$target/auth.js"
+    install -Dm644 oauth.js            "$target/oauth.js"
+    install -Dm644 settings-schema.json "$target/settings-schema.json"
+    install -Dm644 stylesheet.css       "$target/stylesheet.css"
+    install -Dm644 "$srcdir/claudebar-$pkgver/LICENSE" \
+        "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

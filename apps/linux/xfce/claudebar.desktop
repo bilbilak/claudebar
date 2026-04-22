@@ -1,0 +1,8 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=ClaudeBar
+Comment=Shows Claude.ai Max-plan session and weekly usage as two bars.
+Icon=im-claude
+X-XFCE-Module=claudebar
+X-XFCE-Internal=FALSE

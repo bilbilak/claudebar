@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.claudebar" path="/org/gnome/shell/extensions/claudebar/">
+    <key name="poll-interval-seconds" type="i">
+      <default>300</default>
+      <summary>Polling interval</summary>
+      <description>How often to refresh usage data, in seconds.</description>
+      <range min="60" max="3600"/>
+    </key>
+    <key name="show-percentages" type="b">
+      <default>false</default>
+      <summary>Show numeric percentages next to bars</summary>
+    </key>
+    <key name="warn-threshold" type="i">
+      <default>60</default>
+      <summary>Warning color threshold (percent)</summary>
+      <range min="0" max="100"/>
+    </key>
+    <key name="critical-threshold" type="i">
+      <default>85</default>
+      <summary>Critical color threshold (percent)</summary>
+      <range min="0" max="100"/>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,68 @@
+{
+  "layout": {
+    "type": "layout",
+    "pages": ["general", "display"],
+    "general": {
+      "type": "page",
+      "title": "General",
+      "sections": ["account", "refresh"]
+    },
+    "display": {
+      "type": "page",
+      "title": "Display",
+      "sections": ["labels", "thresholds"]
+    },
+    "account": { "type": "section", "title": "Account" },
+    "refresh": { "type": "section", "title": "Refresh" },
+    "labels": { "type": "section", "title": "Labels" },
+    "thresholds": { "type": "section", "title": "Color thresholds" }
+  },
+  "sign-in": {
+    "type": "button",
+    "description": "Sign in with Claude…",
+    "callback": "onSignInClicked",
+    "section": "account"
+  },
+  "sign-out": {
+    "type": "button",
+    "description": "Sign out",
+    "callback": "onSignOutClicked",
+    "section": "account"
+  },
+  "poll-interval-seconds": {
+    "type": "spinbutton",
+    "default": 300,
+    "min": 60,
+    "max": 3600,
+    "step": 30,
+    "units": "seconds",
+    "description": "Poll interval",
+    "section": "refresh"
+  },
+  "show-percentages": {
+    "type": "switch",
+    "default": false,
+    "description": "Show numeric percentages next to bars",
+    "section": "labels"
+  },
+  "warn-threshold": {
+    "type": "spinbutton",
+    "default": 60,
+    "min": 0,
+    "max": 100,
+    "step": 5,
+    "units": "%",
+    "description": "Orange at",
+    "section": "thresholds"
+  },
+  "critical-threshold": {
+    "type": "spinbutton",
+    "default": 85,
+    "min": 0,
+    "max": 100,
+    "step": 5,
+    "units": "%",
+    "description": "Red at",
+    "section": "thresholds"
+  }
+}
