@@ -44,4 +44,4 @@ Initial stable release. Spans _macOS_, _Windows_, and seven _Linux_ desktop envi
 #### CI / release pipeline
 
 - CI matrix builds and lints every platform on its native runner.
-- Release workflow produces multi-arch helper binaries, GNOME `.shell-extension.zip`, KDE `.plasmoid`, Cinnamon applet zip, macOS `.app` zip, and Windows x64 + arm64 publish zips — all attached to GitHub releases on tagged pushes, with SHA256 checksums for verification.
+- Release workflow produces multi-arch Linux helper binaries, GNOME `.shell-extension.zip`, KDE `.plasmoid`, Cinnamon applet zip, macOS `.app` zip, and Windows x64 publish zip — all attached to GitHub releases on tagged pushes, with SHA256 checksums for verification.

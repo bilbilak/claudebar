@@ -40,15 +40,11 @@ jobs:
           if-no-files-found: error
 
   # ---------------------------------------------------------------------
-  # Windows (x64 + arm64)
+  # Windows
   # ---------------------------------------------------------------------
   windows:
-    name: Build Windows (${{ matrix.arch }})
+    name: Build Windows
     runs-on: windows-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        arch: [x64, arm64]
     steps:
       - uses: actions/checkout@v6
         with:
@@ -58,15 +54,15 @@ jobs:
           dotnet-version: '8.0.x'
       - name: Publish
         working-directory: apps/windows
-        run: dotnet publish -c Release -r win-${{ matrix.arch }} --self-contained false -o publish
+        run: dotnet publish -c Release -r win-x64 --self-contained false -o publish
       - name: Zip publish output
         working-directory: apps/windows
         shell: pwsh
-        run: Compress-Archive -Path publish\* -DestinationPath "claudebar-windows-${{ matrix.arch }}-$env:TAG_NAME.zip"
+        run: Compress-Archive -Path publish\* -DestinationPath "claudebar-windows-$env:TAG_NAME.zip"
       - uses: actions/upload-artifact@v7
         with:
-          name: windows-${{ matrix.arch }}
-          path: apps/windows/claudebar-windows-${{ matrix.arch }}-*.zip
+          name: windows
+          path: apps/windows/claudebar-windows-*.zip
           if-no-files-found: error
 
   # ---------------------------------------------------------------------
