@@ -17,7 +17,7 @@
     <Authors>Bilbilak</Authors>
     <Product>ClaudeBar</Product>
     <Description>Shows Claude.ai subscription session and weekly usage in the Windows system tray. Part of claudebar.</Description>
-    <Copyright>Copyright © 2025-2026 Bilbilak. Released under the GNU GPL v3.</Copyright>
+    <Copyright>Copyright © 2025–2026 Bilbilak. Released under the GNU GPL v3.</Copyright>
     <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/bilbilak/claudebar</PackageProjectUrl>
     <RepositoryUrl>https://github.com/bilbilak/claudebar.git</RepositoryUrl>

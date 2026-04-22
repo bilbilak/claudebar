@@ -42,7 +42,7 @@ We encourage contributions from the community to help improve **_ClaudeBar_** an
 
 ## ⚖️ License
 
-> Copyright © 2026 [Bilbilak](https://bilbilak.org)
+> Copyright © 2025–2026 [Bilbilak](https://bilbilak.org)
 
 **_ClaudeBar_** is distributed under the terms of the [GNU General Public License version 3](https://github.com/bilbilak/claudebar/blob/main/LICENSE.md). Unless it is explicitly stated otherwise, any contribution intentionally submitted for inclusion in this project shall be licensed as _GPLv3_, without any additional terms or conditions.
 
