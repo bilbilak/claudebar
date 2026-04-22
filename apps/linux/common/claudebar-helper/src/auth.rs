@@ -16,9 +16,17 @@ const SCHEMA: &str = "org.bilbilak.claudebar";
 pub struct Tokens {
     #[serde(rename = "access_token")]
     pub access_token: String,
-    #[serde(rename = "refresh_token", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "refresh_token",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub refresh_token: Option<String>,
-    #[serde(rename = "expires_at", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "expires_at",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub expires_at: Option<i64>,
 }
 
@@ -30,32 +38,30 @@ fn attrs() -> HashMap<&'static str, &'static str> {
 }
 
 pub fn store(tokens: &Tokens) -> Result<()> {
-    let ss = SecretService::connect(EncryptionType::Dh)
-        .context("connecting to Secret Service")?;
-    let collection = ss.get_default_collection().context("getting default collection")?;
+    let ss = SecretService::connect(EncryptionType::Dh).context("connecting to Secret Service")?;
+    let collection = ss
+        .get_default_collection()
+        .context("getting default collection")?;
     if collection.is_locked().unwrap_or(true) {
-        collection.unlock().context("unlocking default collection")?;
+        collection
+            .unlock()
+            .context("unlocking default collection")?;
     }
     let json = serde_json::to_vec(tokens).context("serializing tokens")?;
     collection
-        .create_item(
-            SERVICE_LABEL,
-            attrs(),
-            &json,
-            true,
-            "application/json",
-        )
+        .create_item(SERVICE_LABEL, attrs(), &json, true, "application/json")
         .context("creating secret item")?;
     Ok(())
 }
 
 pub fn load() -> Result<Option<Tokens>> {
-    let ss = SecretService::connect(EncryptionType::Dh)
-        .context("connecting to Secret Service")?;
-    let items = ss
-        .search_items(attrs())
-        .context("searching secret items")?;
-    let item = items.unlocked.into_iter().next().or_else(|| items.locked.into_iter().next());
+    let ss = SecretService::connect(EncryptionType::Dh).context("connecting to Secret Service")?;
+    let items = ss.search_items(attrs()).context("searching secret items")?;
+    let item = items
+        .unlocked
+        .into_iter()
+        .next()
+        .or_else(|| items.locked.into_iter().next());
     let Some(item) = item else { return Ok(None) };
     if item.is_locked().unwrap_or(false) {
         item.unlock().context("unlocking secret item")?;
@@ -67,8 +73,7 @@ pub fn load() -> Result<Option<Tokens>> {
 }
 
 pub fn clear() -> Result<()> {
-    let ss = SecretService::connect(EncryptionType::Dh)
-        .context("connecting to Secret Service")?;
+    let ss = SecretService::connect(EncryptionType::Dh).context("connecting to Secret Service")?;
     let items = ss.search_items(attrs()).context("searching secret items")?;
     for item in items.unlocked.into_iter().chain(items.locked.into_iter()) {
         item.delete().context("deleting secret item")?;

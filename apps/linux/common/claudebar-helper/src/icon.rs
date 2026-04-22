@@ -26,16 +26,41 @@ pub fn render(size: u32, snapshot: Option<&Snapshot>, warn_pct: u8, crit_pct: u8
         None => (Status::Offline, 0.0, 0.0),
     };
 
-    draw_bar(&mut pixmap, x, y_top, bar_width, bar_height, session, &status, warn_pct, crit_pct);
-    draw_bar(&mut pixmap, x, y_bot, bar_width, bar_height, weekly, &status, warn_pct, crit_pct);
+    draw_bar(
+        &mut pixmap,
+        x,
+        y_top,
+        bar_width,
+        bar_height,
+        session,
+        &status,
+        warn_pct,
+        crit_pct,
+    );
+    draw_bar(
+        &mut pixmap,
+        x,
+        y_bot,
+        bar_width,
+        bar_height,
+        weekly,
+        &status,
+        warn_pct,
+        crit_pct,
+    );
     pixmap
 }
 
 fn draw_bar(
     pm: &mut Pixmap,
-    x: f32, y: f32, w: f32, h: f32,
-    percent: f64, status: &Status,
-    warn_pct: u8, crit_pct: u8,
+    x: f32,
+    y: f32,
+    w: f32,
+    h: f32,
+    percent: f64,
+    status: &Status,
+    warn_pct: u8,
+    crit_pct: u8,
 ) {
     let radius = h / 2.0;
 
@@ -45,7 +70,13 @@ fn draw_bar(
         let mut paint = Paint::default();
         paint.set_color(Color::from_rgba8(255, 255, 255, 64));
         paint.anti_alias = true;
-        pm.fill_path(&track, &paint, tiny_skia::FillRule::Winding, Transform::identity(), None);
+        pm.fill_path(
+            &track,
+            &paint,
+            tiny_skia::FillRule::Winding,
+            Transform::identity(),
+            None,
+        );
     }
 
     let p = percent.clamp(0.0, 100.0) as f32;
@@ -58,7 +89,13 @@ fn draw_bar(
     let mut paint = Paint::default();
     paint.set_color(color);
     paint.anti_alias = true;
-    pm.fill_path(&fill, &paint, tiny_skia::FillRule::Winding, Transform::identity(), None);
+    pm.fill_path(
+        &fill,
+        &paint,
+        tiny_skia::FillRule::Winding,
+        Transform::identity(),
+        None,
+    );
 }
 
 fn build_rounded_rect(x: f32, y: f32, w: f32, h: f32, r: f32) -> tiny_skia::Path {

@@ -37,8 +37,14 @@ pub struct Snapshot {
 impl Snapshot {
     pub fn empty(status: Status) -> Self {
         Self {
-            session: Bucket { percent: 0.0, resets_at: None },
-            weekly: Bucket { percent: 0.0, resets_at: None },
+            session: Bucket {
+                percent: 0.0,
+                resets_at: None,
+            },
+            weekly: Bucket {
+                percent: 0.0,
+                resets_at: None,
+            },
             status,
             fetched_at: Utc::now(),
         }
@@ -132,12 +138,28 @@ fn call(access_token: &str) -> CallResult {
 fn map(body: UsageResponse) -> Snapshot {
     Snapshot {
         session: Bucket {
-            percent: body.five_hour.as_ref().and_then(|b| b.utilization).unwrap_or(0.0),
-            resets_at: body.five_hour.as_ref().and_then(|b| b.resets_at.as_deref()).and_then(parse_dt),
+            percent: body
+                .five_hour
+                .as_ref()
+                .and_then(|b| b.utilization)
+                .unwrap_or(0.0),
+            resets_at: body
+                .five_hour
+                .as_ref()
+                .and_then(|b| b.resets_at.as_deref())
+                .and_then(parse_dt),
         },
         weekly: Bucket {
-            percent: body.seven_day.as_ref().and_then(|b| b.utilization).unwrap_or(0.0),
-            resets_at: body.seven_day.as_ref().and_then(|b| b.resets_at.as_deref()).and_then(parse_dt),
+            percent: body
+                .seven_day
+                .as_ref()
+                .and_then(|b| b.utilization)
+                .unwrap_or(0.0),
+            resets_at: body
+                .seven_day
+                .as_ref()
+                .and_then(|b| b.resets_at.as_deref())
+                .and_then(parse_dt),
         },
         status: Status::Ok,
         fetched_at: Utc::now(),
@@ -145,5 +167,7 @@ fn map(body: UsageResponse) -> Snapshot {
 }
 
 fn parse_dt(s: &str) -> Option<DateTime<Utc>> {
-    DateTime::parse_from_rfc3339(s).ok().map(|d| d.with_timezone(&Utc))
+    DateTime::parse_from_rfc3339(s)
+        .ok()
+        .map(|d| d.with_timezone(&Utc))
 }

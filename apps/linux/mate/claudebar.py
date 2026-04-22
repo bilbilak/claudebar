@@ -12,7 +12,6 @@ gi.require_version("Gtk", "3.0")
 gi.require_version("MatePanelApplet", "4.0")
 
 from gi.repository import Gtk, Gio, GLib, MatePanelApplet
-import cairo
 import json
 import math
 import os

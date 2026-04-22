@@ -82,9 +82,7 @@ impl Tray for ClaudebarTray {
                 Status::Ok => String::new(),
                 Status::Offline => "Offline — last value may be stale".into(),
                 Status::RateLimited => "Rate limited by Claude API".into(),
-                Status::Unauthenticated => {
-                    "Not signed in — run: claudebar-helper signin".into()
-                }
+                Status::Unauthenticated => "Not signed in — run: claudebar-helper signin".into(),
             })
             .unwrap_or_default();
 

@@ -55,7 +55,12 @@ pub fn run_login_flow() -> Result<Tokens> {
         match listener.accept() {
             Ok((stream, _)) => {
                 if let Some(callback) = handle_callback(stream, &state)? {
-                    return exchange_code(&callback.code, callback.state.as_deref(), &redirect_uri, &verifier);
+                    return exchange_code(
+                        &callback.code,
+                        callback.state.as_deref(),
+                        &redirect_uri,
+                        &verifier,
+                    );
                 }
             }
             Err(e) if e.kind() == std::io::ErrorKind::WouldBlock => {
@@ -87,7 +92,10 @@ struct Callback {
     state: Option<String>,
 }
 
-fn handle_callback(mut stream: std::net::TcpStream, expected_state: &str) -> Result<Option<Callback>> {
+fn handle_callback(
+    mut stream: std::net::TcpStream,
+    expected_state: &str,
+) -> Result<Option<Callback>> {
     stream
         .set_read_timeout(Some(Duration::from_secs(5)))
         .context("setting stream read timeout")?;
@@ -180,7 +188,12 @@ fn respond(stream: &mut std::net::TcpStream, code: u16, message: &str) -> Result
     Ok(())
 }
 
-fn exchange_code(code: &str, state: Option<&str>, redirect_uri: &str, verifier: &str) -> Result<Tokens> {
+fn exchange_code(
+    code: &str,
+    state: Option<&str>,
+    redirect_uri: &str,
+    verifier: &str,
+) -> Result<Tokens> {
     let mut body = serde_json::json!({
         "grant_type": "authorization_code",
         "code": code,
@@ -210,10 +223,18 @@ fn post_token(body: &serde_json::Value) -> Result<Tokens> {
     let status = resp.status();
     let text = resp.text().unwrap_or_default();
     if !status.is_success() {
-        bail!("token endpoint returned {}: {}", status.as_u16(), truncate(&text, 300));
+        bail!(
+            "token endpoint returned {}: {}",
+            status.as_u16(),
+            truncate(&text, 300)
+        );
     }
-    let parsed: TokenResponse = serde_json::from_str(&text)
-        .map_err(|e| anyhow!("token response was not valid JSON: {e}; body={}", truncate(&text, 300)))?;
+    let parsed: TokenResponse = serde_json::from_str(&text).map_err(|e| {
+        anyhow!(
+            "token response was not valid JSON: {e}; body={}",
+            truncate(&text, 300)
+        )
+    })?;
     let access = parsed
         .access_token
         .ok_or_else(|| anyhow!("token response missing access_token"))?;
@@ -252,8 +273,12 @@ fn parse_query(q: &str) -> HashMap<String, String> {
     }
     for pair in q.split('&') {
         let (k, v) = pair.split_once('=').unwrap_or((pair, ""));
-        let k = urlencoding::decode(k).map(|s| s.into_owned()).unwrap_or_else(|_| k.to_string());
-        let v = urlencoding::decode(v).map(|s| s.into_owned()).unwrap_or_else(|_| v.to_string());
+        let k = urlencoding::decode(k)
+            .map(|s| s.into_owned())
+            .unwrap_or_else(|_| k.to_string());
+        let v = urlencoding::decode(v)
+            .map(|s| s.into_owned())
+            .unwrap_or_else(|_| v.to_string());
         out.insert(k, v);
     }
     out
@@ -281,7 +306,9 @@ fn base64_url(bytes: &[u8]) -> String {
 }
 
 fn html_escape(s: &str) -> String {
-    s.replace('&', "&amp;").replace('<', "&lt;").replace('>', "&gt;")
+    s.replace('&', "&amp;")
+        .replace('<', "&lt;")
+        .replace('>', "&gt;")
 }
 
 fn truncate(s: &str, max: usize) -> String {
