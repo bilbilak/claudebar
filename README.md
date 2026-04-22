@@ -50,8 +50,6 @@ We encourage contributions from the community to help improve **_ClaudeBar_** an
 
 The name of this project, **ClaudeBar™**, and its associated logo are subject to trademark rights. Despite the open-source nature of the project, these rights apply—even if the trademark is not registered. If you wish to reference this name or employ the associated branding elements, please refer to our [Brand Guidelines](https://github.com/bilbilak/claudebar/blob/main/docs/BRAND_GUIDELINES.md).
 
-**_Claude_** and **_Claude.ai_** are trademarks of **_Anthropic, PBC_**. **_ClaudeBar_** is an independent project and is not affiliated with, endorsed by, or sponsored by _Anthropic_.
-
-<br>
-
-💖 Thank you for your contribution!
+<sup>
+    <strong><em>Claude</em></strong> and <strong><em>Claude.ai</em></strong> are trademarks of <strong><em>Anthropic, PBC</em></strong>. <strong><em>ClaudeBar</em></strong> is an independent project and is not affiliated with, endorsed by, or sponsored by <em>Anthropic</em>.
+</sup>
