@@ -86,7 +86,7 @@ jobs:
         working-directory: apps/linux/gnome
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version: '20'
           cache: 'npm'
@@ -135,7 +135,7 @@ jobs:
         working-directory: apps/linux/cinnamon
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version: '20'
       - name: JSON sanity
