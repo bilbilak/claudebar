@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] — 2026-04-22
+
+### Added
+
+- **macOS `.dmg` disk image** replaces the `.app` zip as the distributed release artifact — users mount and drag to Applications, the native _macOS_ install flow.
+- **Windows `.msi` installer** replaces the `dotnet publish` output zip. Built with _WiX v4_; installs to `Program Files\Bilbilak\ClaudeBar\`, creates a Start Menu shortcut, and upgrades cleanly between versions via a stable `UpgradeCode`.
+- **Auto-start at user login** on both desktops:
+  - **Windows:** the MSI writes `HKCU\Software\Microsoft\Windows\CurrentVersion\Run\ClaudeBar` pointing at the installed executable. Removed cleanly on uninstall.
+  - **macOS:** the app registers itself as a _Login Item_ via `SMAppService` on first launch (_macOS 13+_). Users can disable from _System Settings → General → Login Items_.
+
 ## 1.0.0 — 2026-04-22
 
 Initial stable release. Spans _macOS_, _Windows_, and seven _Linux_ desktop environments (_GNOME_, _KDE_ Plasma, _Cinnamon_, _XFCE_, _MATE_, _Budgie_, _LXQt_), plus a shared _Rust_ helper binary for _OAuth_ and Secret Service token storage.
@@ -44,5 +54,6 @@ Initial stable release. Spans _macOS_, _Windows_, and seven _Linux_ desktop envi
 #### CI / release pipeline
 
 - CI matrix builds and lints every platform on its native runner.
-- Release workflow produces the Linux helper binary (x86_64) tarball, GNOME `.shell-extension.zip`, KDE `.plasmoid`, Cinnamon applet zip, macOS `.dmg` disk image, and Windows `.msi` installer (single-file exe inside, auto-starts at login) — all attached to GitHub releases on tagged pushes, with SHA256 checksums for verification.
-- Windows and macOS apps register themselves to auto-start at user login (Run registry entry on Windows; `SMAppService` login item on macOS).
+- Release workflow produces the Linux helper binary (x86_64) tarball, GNOME `.shell-extension.zip`, KDE `.plasmoid`, Cinnamon applet zip, macOS `.app` inside a zip, and Windows x64 publish output inside a zip — all attached to GitHub releases on tagged pushes, with SHA256 checksums for verification.
+
+[1.1.0]: https://github.com/bilbilak/claudebar/releases/tag/v1.1.0
