@@ -75,7 +75,7 @@ jobs:
         run: |
           $version = "$env:TAG_NAME".TrimStart('v')
           wix build `
-            -acceptEula `
+            -acceptEula wix7 `
             -d Version=$version `
             -o "claudebar-windows-$env:TAG_NAME.msi" `
             installer\ClaudeBar.wxs
